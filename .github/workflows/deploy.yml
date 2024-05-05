@@ -14,18 +14,18 @@ jobs:
       - uses: actions/checkout@v2
       - uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 3.1
+          ruby-version: 3.2
           bundler-cache: true
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
-          node-version: 16.x
+          node-version: 18.x
       - name: Run install
         uses: borales/actions-yarn@v4
         with:
           cmd: install # will run `yarn install` command
       - name: Build
-        uses: jerryjvl/jekyll-build-action@v1
+        uses: actions/jekyll-build-pages@v1
       - name: Deploy to Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
