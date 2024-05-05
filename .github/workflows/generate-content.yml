@@ -1,15 +1,12 @@
 name: Generate Content
 
 on:
-  # schedule:
-  #   - cron: "43 20 * * *"
-  # workflow_dispatch:
-  push:
-    branches:
-      - main
+  schedule:
+    - cron: "43 20 * * *"
+  workflow_dispatch:
 
 jobs:
-  random_commit:
+  generate_story:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
