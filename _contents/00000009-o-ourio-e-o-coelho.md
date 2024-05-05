@@ -1,4 +1,5 @@
 ---
+layout: story
 title: O Ouriço e o Coelho
 hook: In a dense forest, a timid rabbit and a prickly hedgehog crossed paths. Both had to learn that appearances can be deceiving. Who will emerge victorious in this clash of personalities?
 moral: Não julgue alguém pelas aparências, pois a verdadeira essência de uma pessoa vai além do que os olhos podem ver.

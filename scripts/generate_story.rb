@@ -23,6 +23,7 @@ id = get_next_id
 filename = "./_contents/#{id}-#{kebab_case(title)}.md"
 file_content = <<~MD
 ---
+layout: story
 title: #{title}
 hook: #{hook}
 moral: #{moral}

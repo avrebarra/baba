@@ -1,4 +1,5 @@
 ---
+layout: story
 title: O Lobo Sabido e o Cordeiro Gentil
 hook: In a peaceful forest, a clever wolf and a gentle lamb lived side by side. As tensions rose, who will come out on top in this tale of wit and kindness?
 moral: The fable teaches us that kindness and truth prevail over cunning deceit. It is better to seek understanding and resolve conflicts peacefully rather than resorting to aggression.
