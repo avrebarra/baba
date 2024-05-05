@@ -24,8 +24,8 @@ jobs:
         uses: borales/actions-yarn@v4
         with:
           cmd: install # will run `yarn install` command
-      - name: Build static files
-        run: make build
+      - name: Build
+        uses: jerryjvl/jekyll-build-action@v1
       - name: Deploy to Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
