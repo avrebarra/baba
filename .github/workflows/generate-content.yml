@@ -1,0 +1,40 @@
+name: Generate Content
+
+on:
+  # schedule:
+  #   - cron: "43 20 * * *"
+  # workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  random_commit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 3.2
+          bundler-cache: true
+
+      - name: Generate new story
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          ruby ./scripts/generate_fable.rb -l portugues -t any -c 3 | ruby ./scripts/util_clean_json.rb | ruby ./scripts/generate_story.rb
+
+      - name: Commit changes
+        run: |
+          git config --local user.email "avrebarra@gmail.com"
+          git config --local user.name "avrebarra"
+          git commit --allow-empty -m "New story addition"
+
+      - name: Push changes to main
+        uses: ad-m/github-push-action@v0.6.0
+        with:
+          directory: "."
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: main
