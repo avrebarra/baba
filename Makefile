@@ -14,6 +14,10 @@ install:
 watch:
 	@jekyll serve
 
+## build: Build production version
+build:
+	@jekyll build
+
 .PHONY: help
 all: help
 help: Makefile
