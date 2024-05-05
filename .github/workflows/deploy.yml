@@ -24,6 +24,8 @@ jobs:
         uses: borales/actions-yarn@v4
         with:
           cmd: install # will run `yarn install` command
+      - name: Install bundle
+        run: bundle install
       - name: Build
         uses: actions/jekyll-build-pages@v1
       - name: Deploy to Pages
