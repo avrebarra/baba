@@ -36,3 +36,8 @@ jobs:
           directory: "."
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: main
+
+      - name: Dispatch Generate Content Event
+        uses: peter-evans/repository-dispatch@v3
+        with:
+          event-type: generated-content
