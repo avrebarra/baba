@@ -1,0 +1,21 @@
+---
+---
+{
+    @tailwind base;
+    @tailwind components;
+    @tailwind utilities;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    text-rendering: optimizeLegibility;
+    font-size: 1em;
+    line-height: 1.9;
+    -webkit-font-smoothing: antialiased;
+}
+
+.content .title {
+    font-family: 'Libre Baskerville', serif;
+}
+
+

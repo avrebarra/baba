@@ -1,0 +1,14 @@
+---
+layout: default
+---
+
+{% for content in site.contents limit:1 %}
+<title>Baba - {{ content.title }}</title>
+
+<div class="content">
+  <div class="separator mt-10"></div>
+  <div class="title max-w-sm text-4xl font-black leading-normal">{{ content.title }}</div>
+  <div class="separator mt-5"></div>
+  <div class="excerpt text-lg leading-loose flex flex-col gap-y-3 text-gray-700">{{ content.content }}</div>
+</div>
+{% endfor %}
