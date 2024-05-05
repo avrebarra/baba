@@ -16,6 +16,7 @@ title = output['title']
 moral = output['moral']
 keywords = output['keywords']
 paragraphs = output['paragraphs']
+hook = output['hook']
 
 
 id = get_next_id
@@ -23,6 +24,7 @@ filename = "./_contents/#{id}-#{kebab_case(title)}.md"
 file_content = <<~MD
 ---
 title: #{title}
+hook: #{hook}
 moral: #{moral}
 keywords: #{keywords}
 ---

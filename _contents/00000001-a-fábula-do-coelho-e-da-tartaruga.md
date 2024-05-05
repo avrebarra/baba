@@ -1,5 +1,5 @@
 ---
-# layout: post
+layout: story
 title: A Fábula do Coelho e da Tartaruga
 ---
 

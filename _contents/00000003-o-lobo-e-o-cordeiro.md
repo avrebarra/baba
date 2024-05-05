@@ -1,4 +1,5 @@
 ---
+layout: story
 title: O Lobo e o Cordeiro
 moral: A ganância pode cegar nossos julgamentos e nos levar a cometer atos injustos. Devemos agir com bondade e respeito, pois colheremos o que plantarmos.
 keywords: ["Lobo", "Cordeiro", "Riacho", "Fome", "Delicadeza", "Gentileza", "Atacar", "Distração", "Gratidão", "Ganância", "Julgamentos", "Bondade"]

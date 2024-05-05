@@ -2,11 +2,25 @@
 layout: default
 ---
 
-<title>Baba - {{ site.contents.last.title }}</title>
+<title>Baba - New Story Every Day!</title>
 
+<div class="separator mt-10"></div>
 <div class="content">
-  <div class="separator mt-10"></div>
-  <div class="title max-w-sm text-4xl font-black leading-normal">{{ site.contents.last.title }}</div>
-  <div class="separator mt-5"></div>
-  <div class="excerpt text-lg leading-loose flex flex-col gap-y-3 text-gray-700">{{ site.contents.last.content }}</div>
+  <div class="font-semibold text-gray-500">Today's Story:</div>
+  <div class="separator mt-1"></div>
+  <div class="title max-w-md text-4xl font-black leading-normal">{{ site.contents.last.title }}</div>
+  <div class="separator mt-1"></div>
+  <div class="excerpt text-md leading-loose flex flex-col gap-y-3 text-gray-700">{{ site.contents.last.hook }}</div>
+  <div class="separator mt-4"></div>
 </div>
+
+<div class="button-reels flex flex-row gap-4 mt-3">
+  <a href="/today" id="bt-read" class="bg-lime-600 px-4 py-2 text-white hover:bg-lime-700 focus:bg-lime-700 focus:outline-none focus:shadow-outline"
+    >Read Today's
+  </a>
+  <a href="/storybank" id="bt-previous" class="bg-gray-100 px-4 py-2 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+    >Visit Story Bank</a
+  >
+</div>
+
+<div class="separator mt-20"></div>

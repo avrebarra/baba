@@ -1,4 +1,5 @@
 ---
+layout: story
 title: O Pássaro Ferido
 moral: A humildade e a amizade são virtudes essenciais para superar os desafios da vida.
 keywords: ["floresta", "pássaro", "asa", "coruja", "amizade", "fragilidade", "ajuda", "virtudes"]

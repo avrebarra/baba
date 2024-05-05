@@ -1,4 +1,16 @@
+<script>
+  const PopupLanguageSwitchNotSupported = new Popup({
+    id: "not-supported",
+    title: "Thank you for trying out Baba!",
+    content: `
+        I'm planning to expand to other languages. But for now, Baba only support Portugues.
+        Send me a message to (maybe) change my development priorities.`,
+  });
+
+  const showNoSwitchSupportPopup = () => PopupLanguageSwitchNotSupported.show();
+</script>
+
 <div class="title flex items-end justify-between">
-  <a class="text-2xl font-bold mr-8" href="/">Baba.</a>
-  <a class="text-2xl font-bold" href="/">🇧🇷</a>
+  <a class="text-2xl font-bold mr-8" href="{{ site.url }}">Baba.</a>
+  <a onclick="showNoSwitchSupportPopup()" class="text-2xl font-bold cursor-pointer">🇧🇷</a>
 </div>
