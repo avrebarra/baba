@@ -1,5 +1,5 @@
-url: ""
-baseurl: ""
+url: "https://avrebarra.github.io"
+baseurl: "baba"
 title: "Jekyllwind"
 
 plugins:
