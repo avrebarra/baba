@@ -8,7 +8,7 @@ layout: default
 <div class="content flex flex-col">
   <div class="separator mt-2"></div>
   <div class="title max-w-md text-4xl font-black leading-normal">
-    <a href="{{ post.url }}"><span class=""></span> {{ page.title }}</a>
+    <a href="{{ post.url | relative_url}}"><span class=""></span> {{ page.title }}</a>
   </div>
   <div class="excerpt text-lg leading-loose flex flex-col gap-y-5 mt-3 text-gray-700">{{ page.content }}</div>
   <div class="separator mt-4"></div>
@@ -16,7 +16,7 @@ layout: default
 
 <div class="button-reels flex flex-row gap-4 mt-3">
   <a
-    href="/storybank"
+    href="{{'/storybank' | relative_url}}"
     id="bt-read"
     class="bg-lime-600 px-4 py-2 text-white hover:bg-lime-700 focus:bg-lime-700 focus:outline-none focus:shadow-outline"
     >See Other Stories</a

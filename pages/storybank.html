@@ -9,7 +9,7 @@ permalink: /storybank/
   <div class="separator mt-10"></div>
   <div class="font-semibold text-gray-500">Today's Story:</div>
   <div class="separator mt-2"></div>
-  <a href="/today/">
+  <a href="{{'/today' | relative_url}}">
     <div class="title max-w-md text-4xl font-black leading-normal">{{ site.contents.last.title }}</div>
     <div class="excerpt text-sm leading-loose flex flex-col gap-y-5 text-gray-700">{{ site.contents.last.hook }}</div>
   </a>
@@ -22,7 +22,7 @@ permalink: /storybank/
   <div class="flex article items-center mb-2 mt-2" series="{{ post.series | downcase }}">
     <div class="flex flex-row gap-2 text-md">
       <span class="text-lime-600">⚉</span>
-      <a href="{{ post.url }}" class="title underlined block overflow-hidden whitespace-nowrap overflow-ellipsis">{{ post.title }}</a>
+      <a href="{{ post.url | relative_url }}" class="title underlined block overflow-hidden whitespace-nowrap overflow-ellipsis">{{ post.title }}</a>
     </div>
   </div>
   {% endfor %}

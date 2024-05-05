@@ -16,7 +16,7 @@ permalink: /today/
 
 <div class="button-reels flex flex-row gap-4 mt-3">
   <a
-    href="/storybank"
+    href="{{'/storybank' | relative_url}}"
     id="bt-read"
     class="bg-lime-600 px-4 py-2 text-white hover:bg-lime-700 focus:bg-lime-700 focus:outline-none focus:shadow-outline"
     >See Other Stories</a>

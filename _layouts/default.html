@@ -10,11 +10,11 @@
 
     {% include meta.html %}
 
-    <link rel="shortcut icon" href="/favicon.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="{{'/favicon.png' | relative_url}}" type="image/x-icon" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins" />
     <link rel="stylesheet" type="text/css" href="{{ "/assets/css/main.css" | relative_url }}"/>
-    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="href" ="{{'/feed.xml' | relative_url}}" />
 
     <script src="https://cdn.jsdelivr.net/npm/@simondmc/popup-js@1.4.3/popup.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
