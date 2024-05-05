@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  generate_story:
+  generate_content:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
