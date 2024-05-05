@@ -1,10 +1,6 @@
 ---
 ---
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 body {
     font-family: 'Poppins', sans-serif;
     text-rendering: optimizeLegibility;
@@ -23,4 +19,6 @@ a.underlined {
     font-family: 'Libre Baskerville', serif;
 }
 
-
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
