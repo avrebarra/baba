@@ -24,10 +24,10 @@ jobs:
         uses: borales/actions-yarn@v4
         with:
           cmd: install # will run `yarn install` command
-      - name: Install bundle
-        run: bundle install
-      - name: Build
-        uses: actions/jekyll-build-pages@v1
+      - name: Build with Jekyll
+        run: bundle exec jekyll build"
+        env:
+          JEKYLL_ENV: production
       - name: Deploy to Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
