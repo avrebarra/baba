@@ -3,8 +3,10 @@
     var keywords = {{ page.keywords | jsonify }};
     document.querySelectorAll(".content > .excerpt").forEach((excerpt) => {
       keywords.forEach((word) => {
-        const regex = new RegExp(word, "g");
-        excerpt.innerHTML = excerpt.innerHTML.replace(regex, `<span class="keyword font-semibold">${word}</span>`);
+        const regex = new RegExp("\\b" + word + "\\b", "g");
+        const wordkebab = word.replace(/\s+/g, '-').toLowerCase()
+
+        excerpt.innerHTML = excerpt.innerHTML.replace(regex, `<span class="keyword keyword-${wordkebab} font-semibold">${word}</span>`);
       });
     });
 
