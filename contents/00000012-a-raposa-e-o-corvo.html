@@ -14,11 +14,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
 
 
-<meta name="description" content="" />
-<meta property="og:description" content="" />
+<meta name="description" content="Num belo dia ensolarado, uma raposa esperta avistou um corvo majestoso empoleirado em um galho alto, segurando um pedaço suculento de queijo em seu bico.
+" />
+<meta property="og:description" content="Num belo dia ensolarado, uma raposa esperta avistou um corvo majestoso empoleirado em um galho alto, segurando um pedaço suculento de queijo em seu bico.
+" />
 
 <meta name="author" content="Avre Barra" />
 
+
+<meta property="og:title" content="A Raposa e o Corvo" />
+<meta property="twitter:title" content="A Raposa e o Corvo" />
 
 
 
@@ -60,34 +65,54 @@
 </div>
 
       <div class="mb-4"></div>
-      <title>Baba - New Story Every Day!</title>
+      <title>Baba - A Raposa e o Corvo</title>
 
 <div class="separator mt-10"></div>
-<div class="content">
-  <div class="font-semibold text-gray-500">Today's Story:</div>
-  <div class="separator mt-1"></div>
-  <div class="title max-w-md text-4xl font-black leading-normal">O Pássaro e a Lua</div>
-  <div class="separator mt-1"></div>
-  <div class="excerpt text-md leading-loose flex flex-col gap-y-3 text-gray-700">In a magical forest, a curious bird embarks on a journey to reach the mesmerizing moon. Will the bird succeed in its enchanting quest, or will it learn a valuable lesson along the way?</div>
+<div class="content flex flex-col">
+  <div class="separator mt-2"></div>
+  <div class="title max-w-md text-4xl font-black leading-normal">
+    <a href=""><span class=""></span> A Raposa e o Corvo</a>
+  </div>
+  <div class="excerpt text-lg leading-loose flex flex-col gap-y-5 mt-3 text-gray-700"><p>Num belo dia ensolarado, uma raposa esperta avistou um corvo majestoso empoleirado em um galho alto, segurando um pedaço suculento de queijo em seu bico.</p>
+
+<p>A raposa, com seu jeito astuto, teve uma ideia brilhante para obter o queijo para si. Ela começou a elogiar a bela voz do corvo, dizendo que ele deveria cantar para que todos pudessem apreciar sua melodia encantadora.</p>
+
+<p>O corvo, lisonjeado com os elogios, abriu o bico para soltar um grito de prazer. No momento em que abriu a boca, o queijo caiu no chão, e a raposa ágil o apanhou em um salto rápido e saiu correndo em direção à floresta, deixando o corvo sem sua preciosa guloseima.</p>
+
+<p>O corvo percebeu sua tolice ao cair na armadilha da raposa e lamentou sua falta de perspicácia. Desde então, ele aprendeu a não se deixar levar por lisonjas vazias e a manter sempre sua astúcia e discernimento.</p>
+
+<p>Moral da história: Não se deixe enganar por elogios falsos e mantenha-se alerta contra as artimanhas daqueles que procuram se aproveitar da ingenuidade alheia.</p>
+</div>
   <div class="separator mt-4"></div>
 </div>
 
 <div class="button-reels flex flex-row gap-4 mt-3">
   <a
-    href="/baba/contents/00000013-o-p%C3%A1ssaro-e-a-lua.html"
+    href="/baba/storybank"
     id="bt-read"
     class="bg-lime-600 px-4 py-2 text-white hover:bg-lime-700 focus:bg-lime-700 focus:outline-none focus:shadow-outline"
-    >Read Today's
-  </a>
-  <a
-    href="/baba/storybank"
-    id="bt-previous"
-    class="bg-gray-100 px-4 py-2 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-    >Other Stories</a
+    >See Other Stories</a
   >
 </div>
 
 <div class="separator mt-20"></div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", (event) => {
+    var keywords = ["raposa","corvo","queijo","astuto","lisonjas","ingenuidade"];
+    document.querySelectorAll(".content > .excerpt").forEach((excerpt) => {
+      keywords.forEach((word) => {
+        const regex = new RegExp("\\b" + word + "\\b", "g");
+        const wordkebab = word.replace(/\s+/g, '-').toLowerCase()
+
+        excerpt.innerHTML = excerpt.innerHTML.replace(regex, `<span class="keyword keyword-${wordkebab} font-semibold">${word}</span>`);
+      });
+    });
+
+    // new ReadingTime(270, "", "minutes read", "words", "Less than a minute read");
+  });
+</script>
+
 
       <div class="mb-4"></div>
       <div class="footer mb-4 text-sm text-gray-400">

@@ -14,11 +14,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
 
 
-<meta name="description" content="" />
-<meta property="og:description" content="" />
+<meta name="description" content="Era uma vez, em uma floresta encantada, um pequeno pássaro chamado Pedro. Pedro sempre olhava para a lua com admiração todas as noites, desejando estar mais perto dela. Um dia, ele decidiu que voaria até a lua para descobrir seus segredos.
+" />
+<meta property="og:description" content="Era uma vez, em uma floresta encantada, um pequeno pássaro chamado Pedro. Pedro sempre olhava para a lua com admiração todas as noites, desejando estar mais perto dela. Um dia, ele decidiu que voaria até a lua para descobrir seus segredos.
+" />
 
 <meta name="author" content="Avre Barra" />
 
+
+<meta property="og:title" content="O Pássaro e a Lua" />
+<meta property="twitter:title" content="O Pássaro e a Lua" />
 
 
 
@@ -60,34 +65,54 @@
 </div>
 
       <div class="mb-4"></div>
-      <title>Baba - New Story Every Day!</title>
+      <title>Baba - O Pássaro e a Lua</title>
 
 <div class="separator mt-10"></div>
-<div class="content">
-  <div class="font-semibold text-gray-500">Today's Story:</div>
-  <div class="separator mt-1"></div>
-  <div class="title max-w-md text-4xl font-black leading-normal">O Pássaro e a Lua</div>
-  <div class="separator mt-1"></div>
-  <div class="excerpt text-md leading-loose flex flex-col gap-y-3 text-gray-700">In a magical forest, a curious bird embarks on a journey to reach the mesmerizing moon. Will the bird succeed in its enchanting quest, or will it learn a valuable lesson along the way?</div>
+<div class="content flex flex-col">
+  <div class="separator mt-2"></div>
+  <div class="title max-w-md text-4xl font-black leading-normal">
+    <a href=""><span class=""></span> O Pássaro e a Lua</a>
+  </div>
+  <div class="excerpt text-lg leading-loose flex flex-col gap-y-5 mt-3 text-gray-700"><p>Era uma vez, em uma floresta encantada, um pequeno pássaro chamado Pedro. Pedro sempre olhava para a lua com admiração todas as noites, desejando estar mais perto dela. Um dia, ele decidiu que voaria até a lua para descobrir seus segredos.</p>
+
+<p>Determinado, Pedro levantou voo e voou alto, ainda mais alto do que jamais voara antes. Conforme se aproximava da lua, uma nuvem escura cobriu subitamente o céu, bloqueando sua visão. Desorientado, o pássaro tentava desviar da nuvem, mas era em vão.</p>
+
+<p>Após várias tentativas falhas, Pedro sentiu seu coração acelerar e seu medo crescer. Foi então que ele ouviu uma sábia voz dizendo para ele não ter pressa, pois tudo acontece no seu devido tempo. O pássaro parou de lutar contra a nuvem e permitiu que o vento o levasse de volta ao chão.</p>
+
+<p>Ao pousar suavemente entre as árvores da floresta, Pedro olhou para a lua mais uma vez, mas desta vez com um novo entendimento. Ele percebeu que era a jornada para alcançar a lua que o tornava mais corajoso e sábio, não o destino em si.</p>
+
+<p>Assim, todas as noites, Pedro cantava para a lua, agradecendo pela sabedoria que adquiriu em sua jornada. E a lua, com seu brilho tranquilo, parecia sorrir para o pequeno pássaro, iluminando seu caminho com amor e conhecimento.</p>
+</div>
   <div class="separator mt-4"></div>
 </div>
 
 <div class="button-reels flex flex-row gap-4 mt-3">
   <a
-    href="/baba/contents/00000013-o-p%C3%A1ssaro-e-a-lua.html"
+    href="/baba/storybank"
     id="bt-read"
     class="bg-lime-600 px-4 py-2 text-white hover:bg-lime-700 focus:bg-lime-700 focus:outline-none focus:shadow-outline"
-    >Read Today's
-  </a>
-  <a
-    href="/baba/storybank"
-    id="bt-previous"
-    class="bg-gray-100 px-4 py-2 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-    >Other Stories</a
+    >See Other Stories</a
   >
 </div>
 
 <div class="separator mt-20"></div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", (event) => {
+    var keywords = ["pássaro","lua","floresta","jornada","coragem","sabedoria"];
+    document.querySelectorAll(".content > .excerpt").forEach((excerpt) => {
+      keywords.forEach((word) => {
+        const regex = new RegExp("\\b" + word + "\\b", "g");
+        const wordkebab = word.replace(/\s+/g, '-').toLowerCase()
+
+        excerpt.innerHTML = excerpt.innerHTML.replace(regex, `<span class="keyword keyword-${wordkebab} font-semibold">${word}</span>`);
+      });
+    });
+
+    // new ReadingTime(270, "", "minutes read", "words", "Less than a minute read");
+  });
+</script>
+
 
       <div class="mb-4"></div>
       <div class="footer mb-4 text-sm text-gray-400">

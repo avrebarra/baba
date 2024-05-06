@@ -22,7 +22,7 @@ def generate_fable(language, theme, complexity_level)
         },
         {
           "role": "user",
-          "content": "Generate original 250-300 words mature themed fables. Use clear sentence structures as much as possible. Give breathtaking conflict/climax. Split into paragraphs. Also add short english storyline hook sentences + question (2-3 sentences) that will be shown in overview. Also add english moral message. Also add list of learnable words as keywords.\nLanguage: #{language}\nTheme: #{theme}\nLanguage complexity level: #{complexity_level}yo local speaker.\nFormat: JSON {title:string,hook:string(en),paragraphs:string[],moral:string(en),keywords:string[5-10]} (without markdown script tag + ensure no trailing commas!)\n"
+          "content": "Generate original 250-300 words fables in foreign language. Use clear sentence structures as much as possible. 30% chance use original inanimate object. Give reasonable conflict/climax. Split into paragraphs. Also add short english storyline hook sentences + question (2-3 sentences) that will be shown in overview. Also add english moral message. Also add list of learnable foreign words used in story as keywords.\nLanguage: #{language}\nTheme: #{theme}\nLanguage complexity level: #{complexity_level}yo local speaker.\nFormat: JSON {title:string,hook:string(en),paragraphs:string[],moral:string(en),keywords:string[5-10]} (without markdown script tag + ensure no trailing commas!)\n"
         }
       ],
       "temperature": 1,

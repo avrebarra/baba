@@ -7,7 +7,7 @@ def get_next_id
 end
 
 def kebab_case(title)
-  title.downcase.gsub(/[^0-9a-z ]/, '').gsub(' ', '-')
+  title.downcase.gsub(' ', '-')
 end
 
 output = JSON.parse(ARGF.read)
@@ -20,7 +20,7 @@ hook = output['hook']
 
 
 id = get_next_id
-filename = "./_contents/#{id}-#{kebab_case(title)}.md"
+filename = "./_contents/#{id}-#{kebab_case(title)}"
 file_content = <<~MD
 ---
 layout: story
@@ -33,4 +33,5 @@ keywords: #{keywords}
 #{paragraphs.join("\n\n")}
 MD
 
-File.write(filename, file_content)
+File.write(filename+".md", file_content)
+File.write(filename+".json", output.to_json)

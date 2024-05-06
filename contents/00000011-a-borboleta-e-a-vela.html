@@ -14,11 +14,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
 
 
-<meta name="description" content="" />
-<meta property="og:description" content="" />
+<meta name="description" content="Num jardim colorido, uma borboleta curiosa voava de flor em flor, apreciando a beleza ao seu redor. Um dia, a borboleta viu uma vela acesa em cima de uma mesa e decidiu voar mais perto para descobrir o que era aquela luz diferente.
+" />
+<meta property="og:description" content="Num jardim colorido, uma borboleta curiosa voava de flor em flor, apreciando a beleza ao seu redor. Um dia, a borboleta viu uma vela acesa em cima de uma mesa e decidiu voar mais perto para descobrir o que era aquela luz diferente.
+" />
 
 <meta name="author" content="Avre Barra" />
 
+
+<meta property="og:title" content="A Borboleta e a Vela" />
+<meta property="twitter:title" content="A Borboleta e a Vela" />
 
 
 
@@ -60,34 +65,54 @@
 </div>
 
       <div class="mb-4"></div>
-      <title>Baba - New Story Every Day!</title>
+      <title>Baba - A Borboleta e a Vela</title>
 
 <div class="separator mt-10"></div>
-<div class="content">
-  <div class="font-semibold text-gray-500">Today's Story:</div>
-  <div class="separator mt-1"></div>
-  <div class="title max-w-md text-4xl font-black leading-normal">O Pássaro e a Lua</div>
-  <div class="separator mt-1"></div>
-  <div class="excerpt text-md leading-loose flex flex-col gap-y-3 text-gray-700">In a magical forest, a curious bird embarks on a journey to reach the mesmerizing moon. Will the bird succeed in its enchanting quest, or will it learn a valuable lesson along the way?</div>
+<div class="content flex flex-col">
+  <div class="separator mt-2"></div>
+  <div class="title max-w-md text-4xl font-black leading-normal">
+    <a href=""><span class=""></span> A Borboleta e a Vela</a>
+  </div>
+  <div class="excerpt text-lg leading-loose flex flex-col gap-y-5 mt-3 text-gray-700"><p>Num jardim colorido, uma borboleta curiosa voava de flor em flor, apreciando a beleza ao seu redor. Um dia, a borboleta viu uma vela acesa em cima de uma mesa e decidiu voar mais perto para descobrir o que era aquela luz diferente.</p>
+
+<p>A vela, que sempre ficava parada derretendo devagarinho, ficou surpresa com a visita inesperada da borboleta. Curiosa com as asas coloridas da borboleta, a vela começou a estalar suavemente, tentando chamar a atenção da borboleta.</p>
+
+<p>A borboleta, por sua vez, encantada com a chama brilhante da vela, aproximou-se mais e mais. Mas logo, a borboleta sentiu o calor intenso da chama e afastou-se com medo de se queimar. A vela, ao perceber o temor da borboleta, parou de estalar e suavemente se acalmou.</p>
+
+<p>No final, a borboleta e a vela perceberam que, apesar de suas diferenças, podiam apreciar a beleza um do outro à sua maneira. A borboleta admirava a luz da vela, enquanto a vela se encantava com a delicadeza das asas da borboleta.</p>
+
+<p>Moral: A verdadeira beleza está na aceitação e apreciação das diferenças dos outros.</p>
+</div>
   <div class="separator mt-4"></div>
 </div>
 
 <div class="button-reels flex flex-row gap-4 mt-3">
   <a
-    href="/baba/contents/00000013-o-p%C3%A1ssaro-e-a-lua.html"
+    href="/baba/storybank"
     id="bt-read"
     class="bg-lime-600 px-4 py-2 text-white hover:bg-lime-700 focus:bg-lime-700 focus:outline-none focus:shadow-outline"
-    >Read Today's
-  </a>
-  <a
-    href="/baba/storybank"
-    id="bt-previous"
-    class="bg-gray-100 px-4 py-2 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-    >Other Stories</a
+    >See Other Stories</a
   >
 </div>
 
 <div class="separator mt-20"></div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", (event) => {
+    var keywords = ["borboleta","vela","jardim","chama","diferenças"];
+    document.querySelectorAll(".content > .excerpt").forEach((excerpt) => {
+      keywords.forEach((word) => {
+        const regex = new RegExp("\\b" + word + "\\b", "g");
+        const wordkebab = word.replace(/\s+/g, '-').toLowerCase()
+
+        excerpt.innerHTML = excerpt.innerHTML.replace(regex, `<span class="keyword keyword-${wordkebab} font-semibold">${word}</span>`);
+      });
+    });
+
+    // new ReadingTime(270, "", "minutes read", "words", "Less than a minute read");
+  });
+</script>
+
 
       <div class="mb-4"></div>
       <div class="footer mb-4 text-sm text-gray-400">
