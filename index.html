@@ -16,7 +16,7 @@ layout: default
 
 <div class="button-reels flex flex-row gap-4 mt-3">
   <a
-    href="{{'/today' | relative_url}}"
+    href="{{ site.contents.last.url | relative_url }}"
     id="bt-read"
     class="bg-lime-600 px-4 py-2 text-white hover:bg-lime-700 focus:bg-lime-700 focus:outline-none focus:shadow-outline"
     >Read Today's
@@ -25,7 +25,7 @@ layout: default
     href="{{'/storybank' | relative_url}}"
     id="bt-previous"
     class="bg-gray-100 px-4 py-2 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-    >Visit Story Bank</a
+    >Other Stories</a
   >
 </div>
 
