@@ -14,11 +14,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
 
 
-<meta name="description" content="" />
-<meta property="og:description" content="" />
+<meta name="description" content="Num belo dia de verão, uma formiga trabalhadora carregava grãos de milho para o seu formigueiro. Enquanto isso, uma cigarra cantava alegremente, sem se preocupar com o futuro.
+" />
+<meta property="og:description" content="Num belo dia de verão, uma formiga trabalhadora carregava grãos de milho para o seu formigueiro. Enquanto isso, uma cigarra cantava alegremente, sem se preocupar com o futuro.
+" />
 
 <meta name="author" content="Avre Barra" />
 
+
+<meta property="og:title" content="A Formiga e a Cigarra" />
+<meta property="twitter:title" content="A Formiga e a Cigarra" />
 
 
 
@@ -60,34 +65,52 @@
 </div>
 
       <div class="mb-4"></div>
-      <title>Baba - New Story Every Day!</title>
+      <title>Baba - A Formiga e a Cigarra</title>
 
 <div class="separator mt-10"></div>
-<div class="content">
-  <div class="font-semibold text-gray-500">Today's Story:</div>
-  <div class="separator mt-1"></div>
-  <div class="title max-w-md text-4xl font-black leading-normal">A Formiga e a Cigarra</div>
-  <div class="separator mt-1"></div>
-  <div class="excerpt text-md leading-loose flex flex-col gap-y-3 text-gray-700">Follow the tale of a diligent ant and a carefree grasshopper in the midst of summer. Who will be prepared for the upcoming winter, and who will face the consequences of their choices? Dive into this classic fable of hard work and responsibility.</div>
+<div class="content flex flex-col">
+  <div class="separator mt-2"></div>
+  <div class="title max-w-md text-4xl font-black leading-normal">
+    <a href=""><span class=""></span> A Formiga e a Cigarra</a>
+  </div>
+  <div class="excerpt text-lg leading-loose flex flex-col gap-y-5 mt-3 text-gray-700"><p>Num belo dia de verão, uma formiga trabalhadora carregava grãos de milho para o seu formigueiro. Enquanto isso, uma cigarra cantava alegremente, sem se preocupar com o futuro.</p>
+
+<p>À medida que o verão chegava ao fim, as folhas começaram a cair e o clima tornou-se mais frio. A formiga continuava a armazenar alimentos, enquanto a cigarra percebia que não tinha reservas para o inverno.</p>
+
+<p>Ao ver a cigarra aflita, a formiga ofereceu-lhe parte dos seus grãos de milho, garantindo que não passasse fome. A cigarra, arrependida da sua displicência, aprendeu a importância do trabalho árduo e da previdência.</p>
+
+<p>Com a chegada do inverno, a formiga e a cigarra sobreviveram juntas, ensinando a todos na floresta a valiosa lição de que a perseverança e a solidariedade sempre prevalecem sobre a negligência e a preguiça.</p>
+</div>
   <div class="separator mt-4"></div>
 </div>
 
 <div class="button-reels flex flex-row gap-4 mt-3">
   <a
-    href="/baba/contents/00000014-a-formiga-e-a-cigarra.html"
+    href="/baba/storybank"
     id="bt-read"
     class="bg-lime-600 px-4 py-2 text-white hover:bg-lime-700 focus:bg-lime-700 focus:outline-none focus:shadow-outline"
-    >Read Today's
-  </a>
-  <a
-    href="/baba/storybank"
-    id="bt-previous"
-    class="bg-gray-100 px-4 py-2 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-    >Other Stories</a
+    >See Other Stories</a
   >
 </div>
 
 <div class="separator mt-20"></div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", (event) => {
+    var keywords = ["formiga","cigarra","verão","inverno","solidariedade"];
+    document.querySelectorAll(".content > .excerpt").forEach((excerpt) => {
+      keywords.forEach((word) => {
+        const regex = new RegExp("\\b" + word + "\\b", "g");
+        const wordkebab = word.replace(/\s+/g, '-').toLowerCase()
+
+        excerpt.innerHTML = excerpt.innerHTML.replace(regex, `<span class="keyword keyword-${wordkebab} font-semibold">${word}</span>`);
+      });
+    });
+
+    // new ReadingTime(270, "", "minutes read", "words", "Less than a minute read");
+  });
+</script>
+
 
       <div class="mb-4"></div>
       <div class="footer mb-4 text-sm text-gray-400">
