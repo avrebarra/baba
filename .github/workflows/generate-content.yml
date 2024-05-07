@@ -21,7 +21,7 @@ jobs:
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: |
-          ruby ./scripts/generate_fable.rb -l portugues -t any -c 3 | ruby ./scripts/util_clean_json.rb | ruby ./scripts/generate_story.rb
+          ruby ./scripts/generate_fable.rb -l portugues -t any -c 3 | ruby ./scripts/pipe_clean_json.rb | ruby ./scripts/funnel_register_story.rb
 
       - name: Commit changes
         run: |

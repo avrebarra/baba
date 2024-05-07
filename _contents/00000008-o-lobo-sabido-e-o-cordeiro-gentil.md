@@ -2,8 +2,8 @@
 layout: story
 title: O Lobo Sabido e o Cordeiro Gentil
 hook: In a peaceful forest, a clever wolf and a gentle lamb lived side by side. As tensions rose, who will come out on top in this tale of wit and kindness?
-moral: The fable teaches us that kindness and truth prevail over cunning deceit. It is better to seek understanding and resolve conflicts peacefully rather than resorting to aggression.
-keywords: ["wolf", "lamb", "friendship", "truth", "kindness", "conflict", "resolution", "cunning", "wisdom"]
+moral: A fábula ensina que a verdade e a bondade prevalecem sobre o engano ardiloso. É melhor buscar compreensão e resolver conflitos pacificamente do que recorrer à agressão.
+keywords: ["lobo", "cordeiro", "floresta", "bondade", "verdade", "conflitos", "amizade", "ensinamentos"]
 ---
 
 Numa densa floresta, viviam um lobo astuto e um cordeiro gentil. Apesar das diferenças, eram bons amigos e dividiam histórias ao luar.
