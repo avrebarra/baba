@@ -33,7 +33,6 @@
     <link rel="stylesheet" type="text/css" href="/baba/assets/css/main.css"/>
     <link rel="alternate" type="application/rss+xml" title=" - " href="href" ="/baba/feed.xml" />
 
-    <script src="https://cdn.jsdelivr.net/npm/@simondmc/popup-js@1.4.3/popup.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
     <script>
       function addDarkmodeWidget() {
@@ -47,13 +46,14 @@
   </head>
   <body class="flex justify-center mx-8 my-10 md:mt-52">
     <div class="site max-w-lg w-full">
-      <script>
+      <script src="https://cdn.jsdelivr.net/npm/@simondmc/popup-js@1.4.3/popup.min.js"></script>
+<script>
   const PopupLanguageSwitchNotSupported = new Popup({
     id: "not-supported",
     title: "Thank you for trying out Baba!",
     content: `
-        Currently Baba only support Portugues. There's plan to expand to other languages, but probably not now.
-        Send me a message to let me know if you want it faster.`,
+        Currently Baba only support English-Portugues. Of course there's plan to expand to other languages in the future.
+        Send me (<a href="http://twitter.com/avrebarra">@avrebarra</a>) a message to let me know if I should do it faster.`,
   });
 
   const showNoSwitchSupportPopup = () => PopupLanguageSwitchNotSupported.show();
@@ -61,7 +61,7 @@
 
 <div class="title flex items-end justify-between">
   <a class="text-2xl font-bold mr-8" href="/baba/">Baba.</a>
-  <a onclick="showNoSwitchSupportPopup()" class="text-2xl font-bold cursor-pointer">🇧🇷</a>
+  <a onclick="showNoSwitchSupportPopup()" class="text-3xl font-bold cursor-pointer">🇬🇧🇧🇷</a>
 </div>
 
       <div class="mb-4"></div>
@@ -70,7 +70,7 @@
 <div class="separator mt-10"></div>
 <div class="content flex flex-col">
   <div class="separator mt-2"></div>
-  <div class="title max-w-md text-4xl font-black leading-normal">
+  <div class="ba-serif max-w-md text-4xl font-black leading-normal">
     <a href=""><span class=""></span> A Fábula do Coelho e da Tartaruga</a>
   </div>
   <div class="excerpt text-lg leading-loose flex flex-col gap-y-5 mt-3 text-gray-700"><p>Era uma vez, numa floresta verdejante, um coelho rápido chamado Zeca e uma tartaruga lenta chamada Tita. Zeca adorava correr pela floresta, enquanto Tita preferia dar passos calmos e pausados.</p>
@@ -87,35 +87,92 @@
 
 <p>E assim, naquela floresta, a tartaruga ensinou uma lição importante ao coelho, mostrando que, às vezes, a corrida mais lenta pode levar ao destino desejado.</p>
 </div>
-  <div class="separator mt-4"></div>
+  <div class="excerpt text-lg italic leading-loose gap-y-5 mt-6 text-green-800">
+    <span class="font-semibold">Morals of Story:</span>
+    A pressa nem sempre leva à vitória, e a paciência e a determinação podem ser mais valiosas do que a velocidade.
+  </div>
+  <div class="separator mt-6"></div>
 </div>
 
 <div class="button-reels flex flex-row gap-4 mt-3">
   <a
     href="/baba/storybank"
     id="bt-read"
-    class="bg-lime-600 px-4 py-2 text-white hover:bg-lime-700 focus:bg-lime-700 focus:outline-none focus:shadow-outline"
-    >See Other Stories</a
+    class="bg-lime-600 px-4 py-3 text-white font-bold hover:bg-lime-700 focus:bg-lime-700 focus:outline-none focus:shadow-outline"
+    >Read Other Stories</a
   >
 </div>
 
 <div class="separator mt-20"></div>
 
+<!-- vars loader -->
 <script>
-  document.addEventListener("DOMContentLoaded", (event) => {
-    var keywords = null;
-    document.querySelectorAll(".content > .excerpt").forEach((excerpt) => {
-      keywords.forEach((word) => {
-        const regex = new RegExp("\\b" + word + "\\b", "g");
-        const wordkebab = word.replace(/\s+/g, '-').toLowerCase()
-
-        excerpt.innerHTML = excerpt.innerHTML.replace(regex, `<span class="keyword keyword-${wordkebab} font-semibold">${word}</span>`);
-      });
-    });
-
-    // new ReadingTime(270, "", "minutes read", "words", "Less than a minute read");
-  });
+  var DICTIONARY_URL = "/baba/assets/data/dict.json"
 </script>
+
+<script src="/baba/assets/js/dictionary-loader.js"></script>
+ <script src="https://unpkg.com/@popperjs/core@2"></script>
+
+<style>
+  #arrow, #arrow::before {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: inherit;
+  }
+
+  #arrow {
+    visibility: hidden;
+  }
+
+  #arrow::before {
+    visibility: visible;
+    content: '';
+    transform: rotate(45deg);
+  }
+
+  #tooltip {
+    /* background: #333;
+    color: white;
+    font-weight: bold;
+    padding: 4px 8px;
+    font-size: 13px;
+    border-radius: 4px; */
+    display: none;
+  }
+
+  #tooltip[data-show] {
+    display: block;
+  }
+
+  #tooltip[data-popper-placement^='top'] > #arrow {
+    bottom: -4px;
+  }
+
+  #tooltip[data-popper-placement^='bottom'] > #arrow {
+    top: -4px;
+  }
+
+  #tooltip[data-popper-placement^='left'] > #arrow {
+    right: -4px;
+  }
+
+  #tooltip[data-popper-placement^='right'] > #arrow {
+    left: -4px;
+  }
+</style>
+
+<div id="tooltip" class="px-3 py-1 bg-black text-white text-center rounded-md" role="tooltip">
+  <div id="content">Translation Not Found</div>
+  <div id="arrow" data-popper-arrow></div>
+</div>
+
+<!-- vars loader -->
+<script>
+  var keywords = ["coelho","tartaruga","floresta","corrida","pressa","paciência","determinação","lição"].map((e)=>e.toLowerCase());
+</script>
+
+<script src="/baba/assets/js/story-interaction-layer.js"></script>
 
 
       <div class="mb-4"></div>

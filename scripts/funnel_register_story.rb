@@ -10,14 +10,13 @@ def kebab_case(title)
   title.downcase.gsub(' ', '-')
 end
 
-output = JSON.parse(ARGF.read)
+parsed_input = JSON.parse(ARGF.read)
 
-title = output['title']
-moral = output['moral']
-keywords = output['keywords']
-paragraphs = output['paragraphs']
-hook = output['hook']
-
+title = parsed_input['title']
+moral = parsed_input['moral']
+keywords = parsed_input['keywords']
+paragraphs = parsed_input['paragraphs']
+hook = parsed_input['hook']
 
 id = get_next_id
 filename = "./_contents/#{id}-#{kebab_case(title)}"
@@ -34,4 +33,6 @@ keywords: #{keywords}
 MD
 
 File.write(filename+".md", file_content)
-File.write(filename+".json", output.to_json)
+File.write(filename+".json", parsed_input.to_json)
+
+puts parsed_input.to_json
