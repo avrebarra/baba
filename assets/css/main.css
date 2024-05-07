@@ -23,7 +23,7 @@ a.underlined {
     font-family: "Libre Baskerville", sans-serif;
 }
 
-.content .keyword {
+.ba-keyword {
     text-decoration: underline dotted;
     text-decoration-thickness: 2.5px;
     text-decoration-color: yellowgreen;
