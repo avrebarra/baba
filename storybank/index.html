@@ -88,10 +88,10 @@
 <div class="content flex flex-col">
   <div class="font-semibold text-gray-500">Today's Story:</div>
   <div class="separator mt-2"></div>
-  <a href="/baba/contents/0016-the-wise-serpent-and-the-greedy-camel.html">
-    <div class="ba-serif max-w-md text-4xl font-black leading-normal mb-2">The Wise Serpent and the Greedy Camel</div>
+  <a href="/baba/contents/0017-the-argumentative-antelope-and-the-stubborn-gazelle.html">
+    <div class="ba-serif max-w-md text-4xl font-black leading-normal mb-2">The Argumentative Antelope and the Stubborn Gazelle</div>
     <div id="story-hook">
-      <div class="data excerpt text-lg leading-loose flex flex-col gap-y-5 text-gray-700">In the heart of the Arabian desert, a wise serpent holds a secret that a greedy camel desperately wants to possess. What will unfold when their paths cross?</div>
+      <div class="data excerpt text-lg leading-loose flex flex-col gap-y-5 text-gray-700">An argumentative antelope and a stubborn gazelle clash over the best grazing spot, leading to an unexpected turn of events that leaves everyone questioning their assumptions.</div>
     </div>
   </a>
   <div class="separator mt-4"></div>
@@ -99,6 +99,13 @@
 
 <div class="table-of-content mt-3">
   <div class="font-semibold text-gray-500">All Stories:</div>
+  
+  <div class="flex article items-center mb-2 mt-2" series="">
+    <div class="flex flex-row gap-2 text-md">
+      <span class="text-lime-600">⚉</span>
+      <a href="/baba/contents/0017-the-argumentative-antelope-and-the-stubborn-gazelle.html" class="title underlined block overflow-hidden whitespace-nowrap overflow-ellipsis">The Argumentative Antelope and the Stubborn Gazelle</a>
+    </div>
+  </div>
   
   <div class="flex article items-center mb-2 mt-2" series="">
     <div class="flex flex-row gap-2 text-md">
@@ -221,7 +228,7 @@
     const { get: getLang } = await useLanguageSwitcher();
     const lang = await getLang();
 
-    const storyID = "/contents/0016-the-wise-serpent-and-the-greedy-camel.html".replace(".html", "");
+    const storyID = "/contents/0017-the-argumentative-antelope-and-the-stubborn-gazelle.html".replace(".html", "");
     const storyAssets = await useStoryAssets(storyID);
     const story = storyAssets.translations[lang];
 
