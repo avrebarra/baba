@@ -11,7 +11,7 @@ def clean_json(txt)
   return txt
 end
 
-def generate_fable(theme, complexity_level, culture)
+def generate_fable(mood, complexity_level, culture, character)
     api_key = ENV['OPENAI_API_KEY']
     raise "OpenAI API key not found in environment variables." if api_key.nil?
 
@@ -29,7 +29,7 @@ def generate_fable(theme, complexity_level, culture)
         },
         {
           "role": "user",
-          "content": "Generate original 300-400 words fables in english language. Use clear sentence structures as much as possible. You can use inanimate object. Give reasonable conflict/climax. Split into paragraphs. Also add short english storyline hook with closing curiosity hook question (max 3 sentences), that will be shown in overview. Also add list of learnable foreign terms/words used in the translated story as keywords. \nLanguage: english\nMood: any\nHappy Ending?: any\nCultural Influence: #{culture}\nTheme: #{theme}\nLanguage complexity level: #{complexity_level}yo local speaker.\nFormat: JSON {title:string,hook:string(en),moral:string(en),paragraphs:string[],keywords:string[8-15]} (without markdown script tag & ensure no trailing commas!)\n"
+          "content": "Generate original 300-400 words fables in english language. Use clear sentence structures as much as possible. Use #{character} category as main character. Give reasonable conflict/climax. Split into paragraphs. Also add short english storyline hook with closing curiosity hook question (max 3 sentences), that will be shown in overview. Also add list of learnable foreign terms/words used in the translated story as keywords. \nLanguage: english\nMood: #{mood}\nCultural Influence: #{culture}\nTheme: any\nLanguage complexity level: #{complexity_level}yo local speaker.\nFormat: JSON {title:string,hook:string(en),moral:string(en),paragraphs:string[],keywords:string[8-15]} (without markdown script tag & ensure no trailing commas!)\n"
         }
       ],
       "temperature": 1,
@@ -55,21 +55,23 @@ end
 
 options = {}
 OptionParser.new do |opts|
+  opts.on("-u", "--character CHARACTER", "Type of character used on the fable") { |t| options[:character] = t }
   opts.on("-n", "--culture CULTURE", "Culture base of the fable") { |t| options[:culture] = t }
-  opts.on("-t", "--theme THEME", "Theme of the fable") { |t| options[:theme] = t }
+  opts.on("-m", "--mood MOOD", "Mood of the fable") { |t| options[:mood] = t }
   opts.on("-c", "--complexity COMPLEXITY", "Language complexity level") { |c| options[:complexity] = c }
 end.parse!
 
-theme = options[:theme]
+mood = options[:mood]
+character = options[:character]
 complexity = options[:complexity]
 culture = options[:culture]
 
-if theme.nil? || complexity.nil? || culture.nil?
+if theme.nil? || complexity.nil? || culture.nil? || character.nil?
   puts "Error: incomplete required params. See --help for more informations."
   exit
 end
 
-out = JSON.parse(clean_json generate_fable(theme, complexity, culture))
+out = JSON.parse(clean_json generate_fable(mood, complexity, culture, character))
 out['keywords'] = out['keywords'].map(&:downcase)
 out['translations'] = {}
 puts out.to_json

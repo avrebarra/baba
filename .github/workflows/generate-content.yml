@@ -17,16 +17,24 @@ jobs:
           ruby-version: 3.2
           bundler-cache: true
 
+      - name: Generate seeds
+        run: |
+          MOOD=$(ruby scripts/generate_random_value.rb mysterious/happy-ending/sad-ending/mysterious-ending/any)
+          MAIN_CHARACTER=$(ruby scripts/generate_random_value.rb inanimate-object/animal/man)
+          CULTURE_INFLUENCE=$(ruby scripts/generate_random_value.rb asian/european/fantasy/scifi)
+          echo "MOOD=$MOOD" >> "$GITHUB_ENV"
+          echo "MAIN_CHARACTER=$MAIN_CHARACTER" >> "$GITHUB_ENV"
+          echo "CULTURE_INFLUENCE=$CULTURE_INFLUENCE" >> "$GITHUB_ENV"
+
       - name: Generate new story
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: |
-          ruby ./scripts/generate_fable.rb -l portugues -t any -c 3 \
-          | ruby ./scripts/pipe_clean_json.rb \
-          | ruby ./scripts/pipe_add_translations.rb -f detect -t english \
-          | ruby ./scripts/pipe_clean_json.rb \
-          | ruby ./scripts/funnel_register_translations.rb \
-          | ruby ./scripts/funnel_register_story.rb \
+          ruby ./scripts/generate_fable_base.rb -n $CULTURE_INFLUENCE -m $MOOD -u $MAIN_CHARACTER -c 3 \
+          | ruby scripts/pipe_add_fable_translations.rb -f en -t pt -c 3 \
+          | ruby scripts/pipe_add_fable_translations.rb -f id -t en -c 3 \
+          | ruby scripts/funnel_register_story.rb \
+          | ruby scripts/funnel_register_translations.rb \
           > /dev/null
 
       - name: Commit changes
