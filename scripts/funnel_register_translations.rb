@@ -13,12 +13,17 @@ end
 
 parsed_input = JSON.parse(ARGF.read)
 translations = parsed_input['translations']
+translations.each_key do |key|
+    from, to = key.split('-')
+    file_path = File.expand_path("../assets/data/#{key}.dict.json", __dir__)
+    
+    dict = load_json(file_path)
+    if dict.nil?
+        dict = {}
+    end
 
-# update dictionary
-PATH_DICTIONARY = file_path = File.expand_path("../assets/data/dict.json", __dir__)
-dict = load_json(PATH_DICTIONARY)
-dict = dict.merge(translations)
-
-File.write(PATH_DICTIONARY, dict.to_json)
+    dict = dict.merge(translations[key]['keywords'])
+    File.write(file_path, dict.to_json)
+end
 
 puts parsed_input.to_json
