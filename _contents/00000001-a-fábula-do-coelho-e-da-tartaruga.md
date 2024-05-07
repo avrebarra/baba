@@ -1,6 +1,9 @@
 ---
 layout: story
 title: A Fábula do Coelho e da Tartaruga
+hook: In a lush green forest, a fast rabbit named Zeca and a slow turtle named Tita lived peacefully. When Zeca challenged Tita to a race to the tallest tree in the forest, little did he know that the outcome would teach them both a valuable lesson. Who will emerge as the true winner in this race against speed and patience?
+moral: A pressa nem sempre leva à vitória, e a paciência e a determinação podem ser mais valiosas do que a velocidade.
+keywords: ["coelho", "tartaruga", "floresta", "corrida", "pressa", "paciência", "determinação", "lição"]
 ---
 
 Era uma vez, numa floresta verdejante, um coelho rápido chamado Zeca e uma tartaruga lenta chamada Tita. Zeca adorava correr pela floresta, enquanto Tita preferia dar passos calmos e pausados.
