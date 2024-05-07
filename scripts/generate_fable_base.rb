@@ -11,7 +11,7 @@ def clean_json(txt)
   return txt
 end
 
-def generate_fable(mood, complexity_level, culture, character)
+def generate_fable(mood, complexity_level, culture, character, plot)
     api_key = ENV['OPENAI_API_KEY']
     raise "OpenAI API key not found in environment variables." if api_key.nil?
 
@@ -25,11 +25,11 @@ def generate_fable(mood, complexity_level, culture, character)
       "messages": [
         {
           "role": "system",
-          "content": "You work on company generating daily mature fables to learn foreign language. Compact answer in requested format."
+          "content": "You work on company generating daily mature fables (it's okay to have bad ending) to learn foreign language. Compact answer in requested format."
         },
         {
           "role": "user",
-          "content": "Generate original 300-400 words fables in english language. Use clear sentence structures as much as possible. Use #{character} category as main character. Give reasonable conflict/climax. Split into paragraphs. Also add short english storyline hook with closing curiosity hook question (max 3 sentences), that will be shown in overview. Also add list of learnable foreign terms/words used in the translated story as keywords. \nLanguage: english\nMood: #{mood}\nCultural Influence: #{culture}\nTheme: any\nLanguage complexity level: #{complexity_level}yo local speaker.\nFormat: JSON {title:string,hook:string(en),moral:string(en),paragraphs:string[],keywords:string[8-15]} (without markdown script tag & ensure no trailing commas!)\n"
+          "content": "Generate original 250-350 words fables in english. Make the plot make sense. Plot note is #{plot}. Use short, clear, & descriptive sentence structures. Use #{character} category as main character. Give reasonable conflict/climax. Split into paragraphs. Also add short english storyline hook with closing curiosity hook question (max 3 sentences), that will be shown in overview. Also add list of learnable foreign terms/words used in the translated story as keywords. \nLanguage: english\nMood: #{mood}\nCultural Influence: #{culture}\nTheme: any\nLanguage vocabulary complexity level: #{complexity_level}yo local speaker.\nFormat: Valid JSON {title:string,hook:string(en),moral:string(en),paragraphs:string[],keywords:string[10-15 words]} (no markdown script tag & ensure valid JSON object structure!)\n"
         }
       ],
       "temperature": 1,
@@ -55,12 +55,14 @@ end
 
 options = {}
 OptionParser.new do |opts|
+  opts.on("-p", "--plot PLOT", "General plots to inspire from") { |t| options[:plot] = t }
   opts.on("-u", "--character CHARACTER", "Type of character used on the fable") { |t| options[:character] = t }
   opts.on("-n", "--culture CULTURE", "Culture base of the fable") { |t| options[:culture] = t }
   opts.on("-m", "--mood MOOD", "Mood of the fable") { |t| options[:mood] = t }
   opts.on("-c", "--complexity COMPLEXITY", "Language complexity level") { |c| options[:complexity] = c }
 end.parse!
 
+plot = options[:plot]
 mood = options[:mood]
 character = options[:character]
 complexity = options[:complexity]
@@ -71,7 +73,7 @@ if mood.nil? || complexity.nil? || culture.nil? || character.nil?
   exit
 end
 
-out = JSON.parse(clean_json generate_fable(mood, complexity, culture, character))
+out = JSON.parse(clean_json generate_fable(mood, complexity, culture, character, plot))
 out['keywords'] = out['keywords'].map(&:downcase)
 out['translations'] = {}
 puts out.to_json

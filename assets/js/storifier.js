@@ -14,7 +14,6 @@ const onload = async () => {
   const { get: getLang } = await useLanguageSwitcher();
   const lang = await getLang();
 
-  const dictionary = await useDictionary(lang);
   const storyAssets = await useStoryAssets(Babba.storyID);
   const story = storyAssets.translations[lang];
 
@@ -50,7 +49,7 @@ const onload = async () => {
 
     function showTooltip(el) {
       const word = el.getAttribute("word");
-      tooltip.querySelector("#content").innerHTML = tplKeywordTranslations(dictionary[word]) || "No Translation Found";
+      tooltip.querySelector("#content").innerHTML = tplKeywordTranslations(story.keywords[word]) || "No Translation Found";
       tooltip.setAttribute("data-show", "");
       popperInstance.update();
     }

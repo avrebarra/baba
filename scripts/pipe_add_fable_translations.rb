@@ -88,7 +88,7 @@ def generate_metadata_translations(source, target, complexity, metadatas)
             },
             {
             "role": "user",
-            "content": "Generate sentence-by-sentence translations for below story metadata. \nSource Lang: #{source}\nTarget Lang: #{target}\nTarget Language Complexity Level for Moral & Hook: #{complexity + 5}yo local speaker\nFormat: JSON Object {title:string(in target language),hook:string (in source language),moral:string (in source language)} (no markdown script tag & ensure no trailing commas!)\nMetadata:\n#{metadatas}"
+            "content": "Generate translations for story metadatas below. \nSource Language: #{source}\nTarget Language: #{target}\nVocabulary & Complexity Level: #{complexity + 5}yo local speaker.\nFormat: Valid JSON Object {title:string(in #{target}),hook:string (in #{source}),moral:string (in #{source})} (no markdown script tag & ensure valid JSON object structure!)\nMetadata:\n#{metadatas}"
             },
         ],
         "temperature": 1,
@@ -129,7 +129,7 @@ def generate_paragraph_translations(language, complexity, paragraphs)
             },
             {
                 "role": "user",
-                "content": "Generate literal sentence-by-sentence translations for below paragraphs. Also add list of learnable foreign terms/words used in the translated story as keywords.\n\nSource Lang: english\nTarget Lang: #{language}\nTarget Language Complexity Level: #{complexity}yo local speaker\nFormat: {paragraphs:string[],keywords:string[8-15]} (no markdown script tag & ensure no trailing commas!)\nParagraphs:\n#{paragraphs}"
+                "content": "Generate sentence-by-sentence translations for below paragraphs in target language. Add list of learnable foreign terms/words used in the translated story as keywords.\n\nTarget Language: #{language}\nTarget Language Vocabulary & Complexity Level: #{complexity}yo local speaker\nFormat: {paragraphs:string[],keywords:string[8-15]} (no markdown script tag & ensure valid JSON object structure!)\nParagraphs:\n#{paragraphs}"
             }
         ],
         "temperature": 1,
