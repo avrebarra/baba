@@ -74,7 +74,7 @@ json_input = ARGF.read
 dictionary = load_json("../assets/data/dict.json")
 
 parsed_input = JSON.parse(json_input)
-strange_keywords = parsed_input['keywords'].select { |str| !dictionary.key?(str) }
+strange_keywords = parsed_input['keywords'].select { |str| !dictionary.key?(str) }.map(&:downcase)
 parsed_input['translations'] = JSON.parse(generate_translations(strange_keywords, from_language, to_language))
 
 puts parsed_input.to_json
