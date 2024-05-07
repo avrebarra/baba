@@ -19,7 +19,7 @@ a.underlined {
     text-underline-offset: 0.15em;
 }
 
-.content > .title {
+.ba-serif {
     font-family: "Libre Baskerville", sans-serif;
 }
 
