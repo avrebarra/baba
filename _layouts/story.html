@@ -7,11 +7,14 @@ layout: default
 <div class="separator mt-10"></div>
 <div class="content flex flex-col">
   <div class="separator mt-2"></div>
-  <div class="ba-serif max-w-md text-4xl font-black leading-normal">
-    <a href="{{ post.url | relative_url}}"><span class=""></span> {{ page.title }}</a>
+  <div id="story-title" class="flex flex-col max-w-md mb-1">
+    <a class="text-md text-lg font-bold text-lime-600 leading-normal" href="{{ post.url | relative_url}}">{{ page.title }}</a>
+    <a class="data ba-serif text-4xl font-black leading-normal" href="{{ post.url | relative_url}}">{{ page.title }}</a>
   </div>
-  <div class="excerpt text-lg leading-loose flex flex-col gap-y-5 mt-3 text-gray-700">{{ page.content }}</div>
-  <div class="excerpt text-lg italic leading-loose gap-y-5 mt-6 text-green-800">
+  <div id="story-content">
+    <div class="data excerpt text-lg leading-loose flex flex-col gap-y-5 mt-2 text-gray-700">{{ page.content }}</div>
+  </div>
+  <div id="story-moral" class="excerpt text-lg italic leading-loose gap-y-5 mt-6 text-green-800">
     <span class="font-semibold">Morals of Story:</span>
     {{ page.moral }}
   </div>
@@ -29,4 +32,4 @@ layout: default
 
 <div class="separator mt-20"></div>
 
-{% include scripts/load_dictionary.md %} {% include scripts/decorate_story.md %}
+{% include scripts/load_story.md %} {% include scripts/load_dictionary.md %} {% include scripts/decorate_story.md %}

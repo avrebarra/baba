@@ -21,13 +21,20 @@ jobs:
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: |
-          ruby ./scripts/generate_fable.rb -l portugues -t any -c 3 | ruby ./scripts/pipe_clean_json.rb | ruby ./scripts/funnel_register_story.rb
+          ruby ./scripts/generate_fable.rb -l portugues -t any -c 3 \
+          | ruby ./scripts/pipe_clean_json.rb \
+          | ruby ./scripts/pipe_add_translations.rb -f detect -t english \
+          | ruby ./scripts/pipe_clean_json.rb \
+          | ruby ./scripts/funnel_register_translations.rb \
+          | ruby ./scripts/funnel_register_story.rb \
+          > /dev/null
 
       - name: Commit changes
         run: |
           git config --local user.email "avrebarra@gmail.com"
           git config --local user.name "avrebarra"
           git add ./_contents
+          git add ./assets
           git commit --allow-empty -m "New story addition"
 
       - name: Push changes to main
