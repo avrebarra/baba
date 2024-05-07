@@ -43,8 +43,6 @@ def generate_translations(words, from_language, to_language)
     req['Content-Type'] = 'application/json'
     req['Authorization'] = "Bearer #{api_key}"
     req.body = data.to_json
-
-    puts api_key
     
     response = Net::HTTP.start(uri.hostname, uri.port, use_ssl: true) do |http|
         http.request(req)
