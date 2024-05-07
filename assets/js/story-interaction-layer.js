@@ -34,7 +34,7 @@ const onload = async () => {
 
     function showTooltip(el) {
       const word = el.getAttribute("word");
-      tooltip.querySelector("#content").innerHTML = dictionary[word];
+      tooltip.querySelector("#content").innerHTML = dictionary[word] || "No Translation Found";
       tooltip.setAttribute("data-show", "");
       popperInstance.update();
     }
