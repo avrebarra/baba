@@ -11,15 +11,19 @@ layout: default
     <a href="{{ post.url | relative_url}}"><span class=""></span> {{ page.title }}</a>
   </div>
   <div class="excerpt text-lg leading-loose flex flex-col gap-y-5 mt-3 text-gray-700">{{ page.content }}</div>
-  <div class="separator mt-4"></div>
+  <div class="excerpt text-lg italic leading-loose gap-y-5 mt-6 text-green-800">
+    <span class="font-semibold">Morals of Story:</span>
+    {{ page.moral }}
+  </div>
+  <div class="separator mt-6"></div>
 </div>
 
 <div class="button-reels flex flex-row gap-4 mt-3">
   <a
     href="{{'/storybank' | relative_url}}"
     id="bt-read"
-    class="bg-lime-600 px-4 py-2 text-white hover:bg-lime-700 focus:bg-lime-700 focus:outline-none focus:shadow-outline"
-    >See Other Stories</a
+    class="bg-lime-600 px-4 py-3 text-white font-bold hover:bg-lime-700 focus:bg-lime-700 focus:outline-none focus:shadow-outline"
+    >Read Other Stories</a
   >
 </div>
 
