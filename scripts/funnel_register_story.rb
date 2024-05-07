@@ -28,6 +28,8 @@ hook: #{hook}
 moral: #{moral}
 keywords: #{keywords}
 ---
+
+#{paragraphs.join("\n\n")}
 MD
 
 File.write(filename+".md", file_content)

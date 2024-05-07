@@ -19,18 +19,23 @@ jobs:
 
       - name: Generate seeds
         run: |
-          MOOD=$(ruby scripts/generate_random_value.rb mysterious/happy-ending/sad-ending/mysterious-ending/any)
-          MAIN_CHARACTER=$(ruby scripts/generate_random_value.rb inanimate-object/animal/man)
-          CULTURE_INFLUENCE=$(ruby scripts/generate_random_value.rb asian/european/fantasy/scifi)
+          MOOD=$(ruby scripts/generate_random_value.rb happy-ending@4/tragedy-ending@2/wise-ending@3/open-ending@2/any@2)
+          GENRE=$(ruby scripts/generate_random_value.rb interactions@4/journey@5/serious@5/slice-of-life@2/metaphorical@2)
+          MAIN_CHARACTER=$(ruby scripts/generate_random_value.rb inanimate-objects@2/animals@5/humans@2/any)
+          CULTURE_INFLUENCE=$(ruby scripts/generate_random_value.rb asian/european/african/mongolian/any@4)
+          PLOT=$(ruby scripts/generate_random_value.rb involves-permanent-consequences@2/with-stupid-conflict@2/simple-plotline@4)
+
           echo "MOOD=$MOOD" >> "$GITHUB_ENV"
+          echo "GENRE=$GENRE" >> "$GITHUB_ENV"
           echo "MAIN_CHARACTER=$MAIN_CHARACTER" >> "$GITHUB_ENV"
           echo "CULTURE_INFLUENCE=$CULTURE_INFLUENCE" >> "$GITHUB_ENV"
+          echo "PLOT=$PLOT" >> "$GITHUB_ENV"
 
       - name: Generate new story
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: |
-          ruby ./scripts/generate_fable_base.rb -n $CULTURE_INFLUENCE -m $MOOD -u $MAIN_CHARACTER -c 3 \
+          ruby ./scripts/generate_fable_base.rb -n $CULTURE_INFLUENCE -m '$MOOD&$GENRE' -u $MAIN_CHARACTER -c 3 -p $PLOT \
           | ruby scripts/pipe_add_fable_translations.rb -f en -t pt -c 3 \
           | ruby scripts/pipe_add_fable_translations.rb -f id -t en -c 3 \
           | ruby scripts/funnel_register_story.rb \

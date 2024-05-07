@@ -10,7 +10,9 @@ layout: default
   <div class="separator mt-2"></div>
   <a href="{{ site.contents.last.url | relative_url }}" id="bt-read">
     <div class="ba-serif max-w-md text-4xl font-black leading-normal mb-2">{{ site.contents.last.title }}</div>
-    <div class="excerpt text-lg leading-loose flex flex-col gap-y-3 text-gray-700">{{ site.contents.last.hook }}</div>
+    <div id="story-hook">
+      <div class="data excerpt text-lg leading-loose flex flex-col gap-y-3 text-gray-700">{{ site.contents.last.hook }}</div>
+    </div>
   </a>
   <div class="separator mt-4"></div>
 </div>
@@ -31,3 +33,20 @@ layout: default
 </div>
 
 <div class="separator mt-20"></div>
+
+<script src="{{'/assets/js/useStoryAssets.js' | relative_url}}"></script>
+<script>
+  const onload = async () => {
+    const { get: getLang } = await useLanguageSwitcher();
+    const lang = await getLang();
+
+    const storyID = "{{ site.contents.last.url }}".replace(".html", "");
+    const storyAssets = await useStoryAssets(storyID);
+    const story = storyAssets.translations[lang];
+
+    const hookEl = document.querySelector("#story-hook > .data");
+    hookEl.innerHTML = story.hook || storyAssets.hook;
+  };
+
+  document.addEventListener("DOMContentLoaded", onload);
+</script>
