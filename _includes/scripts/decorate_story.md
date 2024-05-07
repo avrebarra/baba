@@ -54,9 +54,4 @@
   <div id="arrow" data-popper-arrow></div>
 </div>
 
-<!-- vars loader -->
-<script>
-  var keywords = {{ page.keywords | jsonify }}.map((e)=>e.toLowerCase());
-</script>
-
-<script src="{{ '/assets/js/story-interaction-layer.js' | relative_url}}"></script>
+<script src="{{ '/assets/js/storifier.js' | relative_url}}"></script>

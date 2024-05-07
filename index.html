@@ -9,13 +9,13 @@ layout: default
   <div class="font-semibold text-gray-500">Today's Story:</div>
   <div class="separator mt-2"></div>
   <a href="{{ site.contents.last.url | relative_url }}" id="bt-read">
-    <div class="ba-serif max-w-md text-4xl font-black leading-normal">{{ site.contents.last.title }}</div>
+    <div class="ba-serif max-w-md text-4xl font-black leading-normal mb-2">{{ site.contents.last.title }}</div>
     <div class="excerpt text-lg leading-loose flex flex-col gap-y-3 text-gray-700">{{ site.contents.last.hook }}</div>
   </a>
   <div class="separator mt-4"></div>
 </div>
 
-<div class="button-reels flex flex-col sm:flex-row gap-4 mt-3">
+<div class="button-reels flex flex-col sm:flex-row gap-4 mt-8">
   <a
     href="{{ site.contents.last.url | relative_url }}"
     id="bt-read"
