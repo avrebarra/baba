@@ -2,6 +2,7 @@ const kebabize = (w) => w.replace(/\s+/g, "-").toLowerCase();
 const wait = async (fx) => (fx() ? new Promise((r) => setTimeout(() => wait(fx).then(r), 100)) : Promise.resolve());
 
 const tplKeyword = (word) => `<span word="${word}" class="ba-keyword font-semibold cursor-pointer">${word}</span>`;
+const tplKeywordTranslations = (words) => words.map((word) => `<div class="text-center">${word}</div>`).join("");
 
 const onload = async () => {
   const showEvents = ["mouseenter", "focus"];
@@ -34,7 +35,7 @@ const onload = async () => {
 
     function showTooltip(el) {
       const word = el.getAttribute("word");
-      tooltip.querySelector("#content").innerHTML = dictionary[word] || "No Translation Found";
+      tooltip.querySelector("#content").innerHTML = tplKeywordTranslations(dictionary[word]) || "No Translation Found";
       tooltip.setAttribute("data-show", "");
       popperInstance.update();
     }
