@@ -49,7 +49,7 @@
   }
 </style>
 
-<div id="tooltip" class="px-3 py-1 bg-black text-white rounded-md" role="tooltip">
+<div id="tooltip" class="px-3 py-1 bg-black text-white text-center rounded-md" role="tooltip">
   <div id="content">Translation Not Found</div>
   <div id="arrow" data-popper-arrow></div>
 </div>
