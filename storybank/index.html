@@ -53,12 +53,15 @@
   </head>
   <body class="flex justify-center mx-8 my-10 md:mt-52">
     <div class="site max-w-lg w-full">
-      <div class="title flex items-end justify-between">
+      <div class="title flex items-center justify-between">
   <a class="text-2xl font-bold mr-8" href="/baba/">Baba.</a>
-  <select id="picker-lang" class="text-3xl font-bold cursor-pointer">
-    <option value="id-en">🇬🇧</option>
-    <option value="en-pt">🇧🇷</option>
-  </select>
+  <div class="flex flex-row items-center gap-1 bg-slate-50 px-4 rounded-md">
+    <span id="name-lang" class="data text-xs font-semibold">ID/EN</span>
+    <select id="picker-lang" class="text-3xl font-bold cursor-pointer bg-inherit">
+      <option value="id-en">🇬🇧</option>
+      <option value="en-pt">🇧🇷</option>
+    </select>
+  </div>
 </div>
 
 <script src="/baba/assets/js/useLanguageSwitcher.js"></script>
@@ -67,7 +70,10 @@
     const pickerEl = document.getElementById("picker-lang");
     const switcher = await useLanguageSwitcher();
 
+    const langname = (langcode) => langcode.toUpperCase().split("-").reverse().join("/");
+
     pickerEl.value = switcher.get();
+    document.querySelector("#name-lang").innerHTML = langname(pickerEl.value);
     pickerEl.addEventListener("change", async function () {
       await switcher.set(pickerEl.value);
       window.location.reload();
