@@ -66,7 +66,7 @@ character = options[:character]
 complexity = options[:complexity]
 culture = options[:culture]
 
-if theme.nil? || complexity.nil? || culture.nil? || character.nil?
+if mood.nil? || complexity.nil? || culture.nil? || character.nil?
   puts "Error: incomplete required params. See --help for more informations."
   exit
 end
