@@ -28,6 +28,18 @@
     <link rel="stylesheet" type="text/css" href="/baba/assets/css/main.css"/>
     <link rel="alternate" type="application/rss+xml" title=" - " href="href" ="/baba/feed.xml" />
 
+    <!-- vars loader -->
+<script>
+  var Babba = {}
+
+  Babba.baseURL = "/baba/"
+  Babba.storyURL = "/"
+  Babba.storyID = Babba.storyURL.replace('.html','')
+  Babba.storyAssetsURL = Babba.storyURL.replace('.html', '.json')
+
+</script>
+
+
     <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
     <script>
       function addDarkmodeWidget() {
@@ -41,23 +53,27 @@
   </head>
   <body class="flex justify-center mx-8 my-10 md:mt-52">
     <div class="site max-w-lg w-full">
-      <script src="https://cdn.jsdelivr.net/npm/@simondmc/popup-js@1.4.3/popup.min.js"></script>
-<script>
-  const PopupLanguageSwitchNotSupported = new Popup({
-    id: "not-supported",
-    title: "Thank you for trying out Baba!",
-    content: `
-        Currently Baba only support English-Portugues. Of course there's plan to expand to other languages in the future.
-        Send me (<a href="http://twitter.com/avrebarra">@avrebarra</a>) a message to let me know if I should do it faster.`,
-  });
-
-  const showNoSwitchSupportPopup = () => PopupLanguageSwitchNotSupported.show();
-</script>
-
-<div class="title flex items-end justify-between">
+      <div class="title flex items-end justify-between">
   <a class="text-2xl font-bold mr-8" href="/baba/">Baba.</a>
-  <a onclick="showNoSwitchSupportPopup()" class="text-3xl font-bold cursor-pointer">🇬🇧🇧🇷</a>
+  <select id="picker-lang" class="text-3xl font-bold cursor-pointer">
+    <option value="id-en">🇬🇧</option>
+    <option value="en-pt">🇧🇷</option>
+  </select>
 </div>
+
+<script src="/baba/assets/js/useLanguageSwitcher.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", async () => {
+    const pickerEl = document.getElementById("picker-lang");
+    const switcher = await useLanguageSwitcher();
+
+    pickerEl.value = switcher.get();
+    pickerEl.addEventListener("change", async function () {
+      await switcher.set(pickerEl.value);
+      window.location.reload();
+    });
+  });
+</script>
 
       <div class="mb-4"></div>
       <title>Baba - New Story Every Day!</title>
@@ -66,16 +82,18 @@
 <div class="content">
   <div class="font-semibold text-gray-500">Today's Story:</div>
   <div class="separator mt-2"></div>
-  <a href="/baba/contents/0016-the-wise-crane-and-the-enchanted-forest.html" id="bt-read">
-    <div class="ba-serif max-w-md text-4xl font-black leading-normal mb-2">The Wise Crane and the Enchanted Forest</div>
-    <div class="excerpt text-lg leading-loose flex flex-col gap-y-3 text-gray-700">In a mystical forest where shadows whisper ancient secrets, a wise crane seeks the answer to a haunting riddle amidst the ethereal mist. Will the crane's wisdom guide it through the maze of illusions?</div>
+  <a href="/baba/contents/0016-the-wise-serpent-and-the-greedy-camel.html" id="bt-read">
+    <div class="ba-serif max-w-md text-4xl font-black leading-normal mb-2">The Wise Serpent and the Greedy Camel</div>
+    <div id="story-hook">
+      <div class="data excerpt text-lg leading-loose flex flex-col gap-y-3 text-gray-700">In the heart of the Arabian desert, a wise serpent holds a secret that a greedy camel desperately wants to possess. What will unfold when their paths cross?</div>
+    </div>
   </a>
   <div class="separator mt-4"></div>
 </div>
 
 <div class="button-reels flex flex-col sm:flex-row gap-4 mt-8">
   <a
-    href="/baba/contents/0016-the-wise-crane-and-the-enchanted-forest.html"
+    href="/baba/contents/0016-the-wise-serpent-and-the-greedy-camel.html"
     id="bt-read"
     class="bg-lime-600 px-4 py-4 text-white font-bold hover:bg-lime-700 focus:bg-lime-700 focus:outline-none focus:shadow-outline"
     >Read Today's Tale
@@ -89,6 +107,23 @@
 </div>
 
 <div class="separator mt-20"></div>
+
+<script src="/baba/assets/js/useStoryAssets.js"></script>
+<script>
+  const onload = async () => {
+    const { get: getLang } = await useLanguageSwitcher();
+    const lang = await getLang();
+
+    const storyID = "/contents/0016-the-wise-serpent-and-the-greedy-camel.html".replace(".html", "");
+    const storyAssets = await useStoryAssets(storyID);
+    const story = storyAssets.translations[lang];
+
+    const hookEl = document.querySelector("#story-hook > .data");
+    hookEl.innerHTML = story.hook || storyAssets.hook;
+  };
+
+  document.addEventListener("DOMContentLoaded", onload);
+</script>
 
       <div class="mb-4"></div>
       <div class="footer mb-4 text-sm text-gray-400">
