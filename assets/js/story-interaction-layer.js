@@ -1,11 +1,15 @@
 const kebabize = (w) => w.replace(/\s+/g, "-").toLowerCase();
+const wait = async (fx) => (fx() ? new Promise((r) => setTimeout(() => wait(fx).then(r), 100)) : Promise.resolve());
 
 const tplKeyword = (word) => `<span word="${word}" class="ba-keyword font-semibold cursor-pointer">${word}</span>`;
 
-const onload = () => {
+const onload = async () => {
   const showEvents = ["mouseenter", "focus"];
   const hideEvents = ["mouseleave", "blur"];
   const tooltip = document.querySelector("#tooltip");
+
+  // wait for dictionary loading
+  const dictionary = await useDictionary();
 
   // transform keywords
   document.querySelectorAll(".content > .excerpt").forEach((excerpt) => {
@@ -16,8 +20,8 @@ const onload = () => {
   });
 
   // setup keyword tooltips
-  document.querySelectorAll(".ba-keyword").forEach((keyword) => {
-    const popperInstance = Popper.createPopper(keyword, tooltip, {
+  document.querySelectorAll(".ba-keyword").forEach((keywordEl) => {
+    const popperInstance = Popper.createPopper(keywordEl, tooltip, {
       modifiers: [
         {
           name: "offset",
@@ -28,7 +32,9 @@ const onload = () => {
       ],
     });
 
-    function showTooltip() {
+    function showTooltip(el) {
+      const word = el.getAttribute("word");
+      tooltip.querySelector("#content").innerHTML = dictionary[word];
       tooltip.setAttribute("data-show", "");
       popperInstance.update();
     }
@@ -37,8 +43,12 @@ const onload = () => {
       tooltip.removeAttribute("data-show");
     }
 
-    showEvents.forEach((event) => keyword.addEventListener(event, showTooltip));
-    hideEvents.forEach((event) => keyword.addEventListener(event, hideTooltip));
+    showEvents.forEach((e) => {
+      keywordEl.addEventListener(e, () => showTooltip(keywordEl));
+    });
+    hideEvents.forEach((e) => {
+      keywordEl.addEventListener(e, hideTooltip);
+    });
   });
 };
 

@@ -19,12 +19,12 @@
   }
 
   #tooltip {
-    background: #333;
+    /* background: #333;
     color: white;
     font-weight: bold;
     padding: 4px 8px;
     font-size: 13px;
-    border-radius: 4px;
+    border-radius: 4px; */
     display: none;
   }
 
@@ -49,8 +49,8 @@
   }
 </style>
 
-<div id="tooltip" role="tooltip">
-  <div id="content">Word Translation</div>
+<div id="tooltip" class="px-3 py-1 bg-black text-white rounded-md" role="tooltip">
+  <div id="content">Translation Not Found</div>
   <div id="arrow" data-popper-arrow></div>
 </div>
 
