@@ -1,17 +1,21 @@
-<script src="https://cdn.jsdelivr.net/npm/@simondmc/popup-js@1.4.3/popup.min.js"></script>
-<script>
-  const PopupLanguageSwitchNotSupported = new Popup({
-    id: "not-supported",
-    title: "Thank you for trying out Baba!",
-    content: `
-        Currently Baba only support English-Portugues. Of course there's plan to expand to other languages in the future.
-        Send me (<a href="http://twitter.com/avrebarra">@avrebarra</a>) a message to let me know if I should do it faster.`,
-  });
-
-  const showNoSwitchSupportPopup = () => PopupLanguageSwitchNotSupported.show();
-</script>
-
 <div class="title flex items-end justify-between">
   <a class="text-2xl font-bold mr-8" href="{{'/' | relative_url}}">Baba.</a>
-  <a onclick="showNoSwitchSupportPopup()" class="text-3xl font-bold cursor-pointer">🇬🇧🇧🇷</a>
+  <select id="picker-lang" class="text-3xl font-bold cursor-pointer">
+    <option value="id-en">🇬🇧</option>
+    <option value="en-pt">🇧🇷</option>
+  </select>
 </div>
+
+<script src="{{'/assets/js/useLanguageSwitcher.js' | relative_url}}"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", async () => {
+    const pickerEl = document.getElementById("picker-lang");
+    const switcher = await useLanguageSwitcher();
+
+    pickerEl.value = switcher.get();
+    pickerEl.addEventListener("change", async function () {
+      await switcher.set(pickerEl.value);
+      window.location.reload();
+    });
+  });
+</script>
