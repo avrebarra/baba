@@ -14,11 +14,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
 
 
-<meta name="description" content="" />
-<meta property="og:description" content="" />
+<meta name="description" content="
+" />
+<meta property="og:description" content="
+" />
 
 <meta name="author" content="Avre Barra" />
 
+
+<meta property="og:title" content="The Hedgehog and the Fox" />
+<meta property="twitter:title" content="The Hedgehog and the Fox" />
 
 
 
@@ -60,35 +65,107 @@
 </div>
 
       <div class="mb-4"></div>
-      <title>Baba - New Story Every Day!</title>
+      <title>Baba - The Hedgehog and the Fox</title>
 
 <div class="separator mt-10"></div>
-<div class="content">
-  <div class="font-semibold text-gray-500">Today's Story:</div>
+<div class="content flex flex-col">
   <div class="separator mt-2"></div>
-  <a href="/baba/contents/0014-the-ant-and-the-grasshopper.html" id="bt-read">
-    <div class="ba-serif max-w-md text-4xl font-black leading-normal mb-2">The Ant and the Grasshopper</div>
-    <div class="excerpt text-lg leading-loose flex flex-col gap-y-3 text-gray-700">Follow the tale of a diligent ant and a carefree grasshopper in the midst of summer. Who will be prepared for the upcoming winter, and who will face the consequences of their choices? Dive into this classic fable of hard work and responsibility.</div>
-  </a>
-  <div class="separator mt-4"></div>
+  <div id="story-title" class="flex flex-col max-w-md mb-1">
+    <a class="text-md text-lg font-bold text-lime-600 leading-normal" href="">The Hedgehog and the Fox</a>
+    <a class="data ba-serif text-4xl font-black leading-normal" href="">The Hedgehog and the Fox</a>
+  </div>
+  <div id="story-content">
+    <div class="data excerpt text-lg leading-loose flex flex-col gap-y-5 mt-2 text-gray-700">
+</div>
+  </div>
+  <div id="story-moral" class="excerpt text-lg italic leading-loose gap-y-5 mt-6 text-green-800">
+    <span class="font-semibold">Morals of Story:</span>
+    Union is strength, and true friendship is a treasure that is worth more than any material wealth.
+  </div>
+  <div class="separator mt-6"></div>
 </div>
 
-<div class="button-reels flex flex-col sm:flex-row gap-4 mt-8">
-  <a
-    href="/baba/contents/0014-the-ant-and-the-grasshopper.html"
-    id="bt-read"
-    class="bg-lime-600 px-4 py-4 text-white font-bold hover:bg-lime-700 focus:bg-lime-700 focus:outline-none focus:shadow-outline"
-    >Read Today's Tale
-  </a>
+<div class="button-reels flex flex-row gap-4 mt-3">
   <a
     href="/baba/storybank"
-    id="bt-previous"
-    class="bg-gray-100 px-4 py-4 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-    >Other Stories</a
+    id="bt-read"
+    class="bg-lime-600 px-4 py-3 text-white font-bold hover:bg-lime-700 focus:bg-lime-700 focus:outline-none focus:shadow-outline"
+    >Read Other Stories</a
   >
 </div>
 
 <div class="separator mt-20"></div>
+
+<!-- vars loader -->
+<script>
+  var STORY_URL = "/baba/contents/0005-the-hedgehog-and-the-fox.html".replace('.html', '.json')
+</script>
+
+<script src="/baba/assets/js/loader-story.js"></script>
+ <!-- vars loader -->
+<script>
+  var DICTIONARY_URL = "/baba/assets/data/en-pt.dict.json"
+</script>
+
+<script src="/baba/assets/js/loader-dictionary.js"></script>
+ <script src="https://unpkg.com/@popperjs/core@2"></script>
+
+<style>
+  #arrow, #arrow::before {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: inherit;
+  }
+
+  #arrow {
+    visibility: hidden;
+  }
+
+  #arrow::before {
+    visibility: visible;
+    content: '';
+    transform: rotate(45deg);
+  }
+
+  #tooltip {
+    /* background: #333;
+    color: white;
+    font-weight: bold;
+    padding: 4px 8px;
+    font-size: 13px;
+    border-radius: 4px; */
+    display: none;
+  }
+
+  #tooltip[data-show] {
+    display: block;
+  }
+
+  #tooltip[data-popper-placement^='top'] > #arrow {
+    bottom: -4px;
+  }
+
+  #tooltip[data-popper-placement^='bottom'] > #arrow {
+    top: -4px;
+  }
+
+  #tooltip[data-popper-placement^='left'] > #arrow {
+    right: -4px;
+  }
+
+  #tooltip[data-popper-placement^='right'] > #arrow {
+    left: -4px;
+  }
+</style>
+
+<div id="tooltip" class="px-3 py-1 bg-black text-white text-center rounded-md" role="tooltip">
+  <div id="content">Translation Not Found</div>
+  <div id="arrow" data-popper-arrow></div>
+</div>
+
+<script src="/baba/assets/js/storifier.js"></script>
+
 
       <div class="mb-4"></div>
       <div class="footer mb-4 text-sm text-gray-400">
