@@ -35,10 +35,12 @@ const onload = async () => {
   // transform keywords
   if (Object.keys(story.keywords).length > 0) {
     document.querySelectorAll("#story-content > .data").forEach((excerpt) => {
-      Object.keys(story.keywords).forEach((word) => {
-        const regex = new RegExp("\\b" + word + "\\b", "ig");
-        excerpt.innerHTML = excerpt.innerHTML.replace(regex, tplKeyword(word));
-      });
+      Object.keys(story.keywords)
+        .sort((a, b) => a.length - b.length)
+        .forEach((word) => {
+          const regex = new RegExp("\\b" + word + "\\b", "ig");
+          excerpt.innerHTML = excerpt.innerHTML.replace(regex, tplKeyword(word));
+        });
     });
   }
 
