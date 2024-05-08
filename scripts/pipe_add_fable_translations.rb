@@ -201,30 +201,34 @@ def exec(parsed_input, from_language, to_language, complexity)
         translation['paragraphs'] = ''
     end
     
-    # add translation to parsed input data
-    parsed_input['translations']["#{from_language}-#{to_language}"] = translation
-    
     # output final json
-    return parsed_input.to_json
+    return translation
 end
 
+parsed_input = JSON.parse($stdin.read)
+input_data = ARGV
 
-options = {}
-OptionParser.new do |opts|
-  opts.on("-f", "--from FROM", "Language to translate from") { |f| options[:from] = f }
-  opts.on("-t", "--to TO", "Language to translate to") { |t| options[:to] = t }
-  opts.on("-c", "--to COMPLEXITY", "Language complexity level to translate to") { |t| options[:complexity] = t }
-end.parse!
+language_pairs = input_data.map { |pair| pair.split('@') }
 
-from_language = options[:from]
-to_language = options[:to]
-complexity = Integer(options[:complexity])
+results = {}
+threads = []
 
-if from_language.nil? || to_language.nil? || complexity == 0
-  puts "Error: Incomplete required parameters. See --help for more information."
-  exit
+# Process each language pair and complexity
+language_pairs.each do |pair, complexity|
+  from_language, to_language = pair.split('-')
+
+  # Spawn a new thread for each execution
+  threads << Thread.new {
+    result = exec(parsed_input, from_language, to_language, complexity.to_i)
+    results[pair] = result
+  }
 end
 
-parsed_input = JSON.parse(ARGF.read)
+# Wait for all threads to finish
+threads.each(&:join)
 
-puts exec(parsed_input, from_language, to_language, complexity)
+# assign the results
+parsed_input['translations'] = parsed_input['translations'].merge(results)
+
+# Output the results
+puts parsed_input.to_json
