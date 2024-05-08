@@ -34,7 +34,7 @@
 
   Babba.baseURL = "/baba/"
   Babba.storyURL = "/storybank/"
-  Babba.storyID = Babba.storyURL.replace('.html','')
+  Babba.storyID = Babba.storyURL.replace('.html','').substring(1)
   Babba.storyAssetsURL = Babba.storyURL.replace('.html', '.json')
 
 </script>
@@ -60,6 +60,8 @@
     <select id="picker-lang" class="text-3xl font-bold cursor-pointer bg-inherit">
       <option value="id-en">🇬🇧</option>
       <option value="en-pt">🇧🇷</option>
+      <option value="en-de">🇩🇪</option>
+      <option value="en-fr">🇫🇷</option>
     </select>
   </div>
 </div>
@@ -88,10 +90,10 @@
 <div class="content flex flex-col">
   <div class="font-semibold text-gray-500">Today's Story:</div>
   <div class="separator mt-2"></div>
-  <a href="/baba/contents/0018-the-forbidden-lotus-dance.html">
-    <div class="ba-serif max-w-md text-4xl font-black leading-normal mb-2">The Forbidden Lotus Dance</div>
+  <a id="story-title" href="/baba/contents/0022-the-oasis-of-harmony.html">
+    <div class="data ba-serif max-w-md text-4xl font-black leading-normal mb-2">The Oasis of Harmony</div>
     <div id="story-hook">
-      <div class="data excerpt text-lg leading-loose flex flex-col gap-y-5 text-gray-700">In a small village, a talented dancer was forced to give up her passion because of a ridiculous misunderstanding. What led to her tragic fate?</div>
+      <div class="data excerpt text-lg leading-loose flex flex-col gap-y-5 text-gray-700">In the heart of the desert, a prideful oasis dominated by the gleaming Sun Stone, faces turbulence when the Moon Crystal challenges its authority. Who will prevail in this clash of elements?</div>
     </div>
   </a>
   <div class="separator mt-4"></div>
@@ -103,126 +105,84 @@
   <div class="flex article items-center mb-2 mt-2" series="">
     <div class="flex flex-row gap-2 text-md">
       <span class="text-lime-600">⚉</span>
-      <a href="/baba/contents/0018-the-forbidden-lotus-dance.html" class="title underlined block overflow-hidden whitespace-nowrap overflow-ellipsis">The Forbidden Lotus Dance</a>
+      <a href="/baba/contents/0022-the-oasis-of-harmony.html" class="title underlined">The Oasis of Harmony</a>
     </div>
   </div>
   
   <div class="flex article items-center mb-2 mt-2" series="">
     <div class="flex flex-row gap-2 text-md">
       <span class="text-lime-600">⚉</span>
-      <a href="/baba/contents/0017-the-argumentative-antelope-and-the-stubborn-gazelle.html" class="title underlined block overflow-hidden whitespace-nowrap overflow-ellipsis">The Argumentative Antelope and the Stubborn Gazelle</a>
+      <a href="/baba/contents/0020-the-wise-owl-and-the-curious-squirrel.html" class="title underlined">The Wise Owl and the Curious Squirrel</a>
     </div>
   </div>
   
   <div class="flex article items-center mb-2 mt-2" series="">
     <div class="flex flex-row gap-2 text-md">
       <span class="text-lime-600">⚉</span>
-      <a href="/baba/contents/0016-the-wise-serpent-and-the-greedy-camel.html" class="title underlined block overflow-hidden whitespace-nowrap overflow-ellipsis">The Wise Serpent and the Greedy Camel</a>
+      <a href="/baba/contents/0018-the-forbidden-lotus-dance.html" class="title underlined">The Forbidden Lotus Dance</a>
     </div>
   </div>
   
   <div class="flex article items-center mb-2 mt-2" series="">
     <div class="flex flex-row gap-2 text-md">
       <span class="text-lime-600">⚉</span>
-      <a href="/baba/contents/0015-the-brave-adventure-of-little-pen.html" class="title underlined block overflow-hidden whitespace-nowrap overflow-ellipsis">The Brave Adventure of Little Pen</a>
+      <a href="/baba/contents/0017-the-argumentative-antelope-and-the-stubborn-gazelle.html" class="title underlined">The Argumentative Antelope and the Stubborn Gazelle</a>
     </div>
   </div>
   
   <div class="flex article items-center mb-2 mt-2" series="">
     <div class="flex flex-row gap-2 text-md">
       <span class="text-lime-600">⚉</span>
-      <a href="/baba/contents/0014-the-sunflower's-journey.html" class="title underlined block overflow-hidden whitespace-nowrap overflow-ellipsis">The Sunflower's Journey</a>
+      <a href="/baba/contents/0013-the-greedy-squirrel.html" class="title underlined">The Greedy Squirrel</a>
     </div>
   </div>
   
   <div class="flex article items-center mb-2 mt-2" series="">
     <div class="flex flex-row gap-2 text-md">
       <span class="text-lime-600">⚉</span>
-      <a href="/baba/contents/0013-the-greedy-squirrel.html" class="title underlined block overflow-hidden whitespace-nowrap overflow-ellipsis">The Greedy Squirrel</a>
+      <a href="/baba/contents/0010-the-starlit-quest.html" class="title underlined">The Starlit Quest</a>
     </div>
   </div>
   
   <div class="flex article items-center mb-2 mt-2" series="">
     <div class="flex flex-row gap-2 text-md">
       <span class="text-lime-600">⚉</span>
-      <a href="/baba/contents/0012-the-wise-camel-and-the-tricky-wolf.html" class="title underlined block overflow-hidden whitespace-nowrap overflow-ellipsis">The Wise Camel and the Tricky Wolf</a>
+      <a href="/baba/contents/0009-the-fox-and-the-golden-palm.html" class="title underlined">The Fox and the Golden Palm</a>
     </div>
   </div>
   
   <div class="flex article items-center mb-2 mt-2" series="">
     <div class="flex flex-row gap-2 text-md">
       <span class="text-lime-600">⚉</span>
-      <a href="/baba/contents/0011-the-busy-bee-and-the-wanderer.html" class="title underlined block overflow-hidden whitespace-nowrap overflow-ellipsis">The Busy Bee and the Wanderer</a>
+      <a href="/baba/contents/0007-the-bravery-of-kofi.html" class="title underlined">The Bravery of Kofi</a>
     </div>
   </div>
   
   <div class="flex article items-center mb-2 mt-2" series="">
     <div class="flex flex-row gap-2 text-md">
       <span class="text-lime-600">⚉</span>
-      <a href="/baba/contents/0010-the-starlit-quest.html" class="title underlined block overflow-hidden whitespace-nowrap overflow-ellipsis">The Starlit Quest</a>
+      <a href="/baba/contents/0006-the-wise-lantern-and-the-lost-path.html" class="title underlined">The Wise Lantern and the Lost Path</a>
     </div>
   </div>
   
   <div class="flex article items-center mb-2 mt-2" series="">
     <div class="flex flex-row gap-2 text-md">
       <span class="text-lime-600">⚉</span>
-      <a href="/baba/contents/0009-the-fox-and-the-golden-palm.html" class="title underlined block overflow-hidden whitespace-nowrap overflow-ellipsis">The Fox and the Golden Palm</a>
+      <a href="/baba/contents/0003-the-brave-stallion.html" class="title underlined">The Brave Stallion</a>
     </div>
   </div>
   
   <div class="flex article items-center mb-2 mt-2" series="">
     <div class="flex flex-row gap-2 text-md">
       <span class="text-lime-600">⚉</span>
-      <a href="/baba/contents/0008-the-sneaky-tortoise.html" class="title underlined block overflow-hidden whitespace-nowrap overflow-ellipsis">The Sneaky Tortoise</a>
+      <a href="/baba/contents/0002-the-wise-owl-and-the-curious-squirrel.html" class="title underlined">The Wise Owl and the Curious Squirrel</a>
     </div>
   </div>
   
   <div class="flex article items-center mb-2 mt-2" series="">
     <div class="flex flex-row gap-2 text-md">
       <span class="text-lime-600">⚉</span>
-      <a href="/baba/contents/0007-the-bravery-of-kofi.html" class="title underlined block overflow-hidden whitespace-nowrap overflow-ellipsis">The Bravery of Kofi</a>
-    </div>
-  </div>
-  
-  <div class="flex article items-center mb-2 mt-2" series="">
-    <div class="flex flex-row gap-2 text-md">
-      <span class="text-lime-600">⚉</span>
-      <a href="/baba/contents/0006-the-wise-lantern-and-the-lost-path.html" class="title underlined block overflow-hidden whitespace-nowrap overflow-ellipsis">The Wise Lantern and the Lost Path</a>
-    </div>
-  </div>
-  
-  <div class="flex article items-center mb-2 mt-2" series="">
-    <div class="flex flex-row gap-2 text-md">
-      <span class="text-lime-600">⚉</span>
-      <a href="/baba/contents/0005-the-lantern-merchant-and-the-trickster.html" class="title underlined block overflow-hidden whitespace-nowrap overflow-ellipsis">The Lantern Merchant and the Trickster</a>
-    </div>
-  </div>
-  
-  <div class="flex article items-center mb-2 mt-2" series="">
-    <div class="flex flex-row gap-2 text-md">
-      <span class="text-lime-600">⚉</span>
-      <a href="/baba/contents/0004-the-curious-squirrel-and-the-mysterious-chest.html" class="title underlined block overflow-hidden whitespace-nowrap overflow-ellipsis">The Curious Squirrel and the Mysterious Chest</a>
-    </div>
-  </div>
-  
-  <div class="flex article items-center mb-2 mt-2" series="">
-    <div class="flex flex-row gap-2 text-md">
-      <span class="text-lime-600">⚉</span>
-      <a href="/baba/contents/0003-the-brave-stallion.html" class="title underlined block overflow-hidden whitespace-nowrap overflow-ellipsis">The Brave Stallion</a>
-    </div>
-  </div>
-  
-  <div class="flex article items-center mb-2 mt-2" series="">
-    <div class="flex flex-row gap-2 text-md">
-      <span class="text-lime-600">⚉</span>
-      <a href="/baba/contents/0002-the-brave-yak-and-the-cunning-fox.html" class="title underlined block overflow-hidden whitespace-nowrap overflow-ellipsis">The Brave Yak and the Cunning Fox</a>
-    </div>
-  </div>
-  
-  <div class="flex article items-center mb-2 mt-2" series="">
-    <div class="flex flex-row gap-2 text-md">
-      <span class="text-lime-600">⚉</span>
-      <a href="/baba/contents/0001-the-fox's-betrayal.html" class="title underlined block overflow-hidden whitespace-nowrap overflow-ellipsis">The Fox's Betrayal</a>
+      <a href="/baba/contents/0001-the-sneaky-tortoise.html" class="title underlined">The Sneaky Tortoise</a>
     </div>
   </div>
   
@@ -234,13 +194,18 @@
   const onload = async () => {
     const { get: getLang } = await useLanguageSwitcher();
     const lang = await getLang();
+    const [from, to] = lang.split("-");
 
-    const storyID = "/contents/0018-the-forbidden-lotus-dance.html".replace(".html", "");
+    const storyID = "/contents/0022-the-oasis-of-harmony.html".replace(".html", "");
     const storyAssets = await useStoryAssets(storyID);
     const story = storyAssets.translations[lang];
+    const hasTranslation = story ? true : false;
+
+    const titleEl = document.querySelector("#story-title > .data");
+    titleEl.innerHTML += !hasTranslation ? "*" : "";
 
     const hookEl = document.querySelector("#story-hook > .data");
-    hookEl.innerHTML = story.hook || storyAssets.hook;
+    hookEl.innerHTML = hasTranslation && from != "en" ? story.hook : storyAssets.hook;
   };
 
   document.addEventListener("DOMContentLoaded", onload);

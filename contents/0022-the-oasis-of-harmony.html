@@ -14,16 +14,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
 
 
-<meta name="description" content="Once upon a time, in a bustling garden, there stood a small sunflower named Sunny. Despite being surrounded by tall plants, Sunny always felt overshadowed and longed to bask in the warm embrace of the sun.
+<meta name="description" content="In the vast Arabian desert, the Sun Stone radiated warmth and light, claiming itself as the ruler of the Oasis of Harmony. The creatures and plants thrived under its golden rule.
 " />
-<meta property="og:description" content="Once upon a time, in a bustling garden, there stood a small sunflower named Sunny. Despite being surrounded by tall plants, Sunny always felt overshadowed and longed to bask in the warm embrace of the sun.
+<meta property="og:description" content="In the vast Arabian desert, the Sun Stone radiated warmth and light, claiming itself as the ruler of the Oasis of Harmony. The creatures and plants thrived under its golden rule.
 " />
 
 <meta name="author" content="Avre Barra" />
 
 
-<meta property="og:title" content="The Sunflower's Journey" />
-<meta property="twitter:title" content="The Sunflower's Journey" />
+<meta property="og:title" content="The Oasis of Harmony" />
+<meta property="twitter:title" content="The Oasis of Harmony" />
 
 
 
@@ -38,8 +38,8 @@
   var Babba = {}
 
   Babba.baseURL = "/baba/"
-  Babba.storyURL = "/contents/0014-the-sunflower's-journey.html"
-  Babba.storyID = Babba.storyURL.replace('.html','')
+  Babba.storyURL = "/contents/0022-the-oasis-of-harmony.html"
+  Babba.storyID = Babba.storyURL.replace('.html','').substring(1)
   Babba.storyAssetsURL = Babba.storyURL.replace('.html', '.json')
 
 </script>
@@ -65,6 +65,8 @@
     <select id="picker-lang" class="text-3xl font-bold cursor-pointer bg-inherit">
       <option value="id-en">🇬🇧</option>
       <option value="en-pt">🇧🇷</option>
+      <option value="en-de">🇩🇪</option>
+      <option value="en-fr">🇫🇷</option>
     </select>
   </div>
 </div>
@@ -87,31 +89,42 @@
 </script>
 
       <div class="mb-4"></div>
-      <title>Baba - The Sunflower's Journey</title>
+      <title>Baba - The Oasis of Harmony</title>
+
+<script src="https://unpkg.com/@popperjs/core@2"></script>
 
 <div class="separator mt-10"></div>
 <div class="content flex flex-col">
   <div class="separator mt-2"></div>
   <div id="story-title" class="flex flex-col max-w-md gap-2">
-    <a class="text-md text-lg font-bold text-lime-600 leading-normal" href="">The Sunflower's Journey</a>
-    <a class="data ba-serif text-4xl font-black leading-normal" href="">The Sunflower's Journey</a>
+    <a class="text-md text-lg font-bold text-lime-600 leading-normal" href="">The Oasis of Harmony</a>
+    <a class="data ba-serif text-4xl font-black leading-normal" href="">The Oasis of Harmony</a>
+    <span id="warning-no-translation" class="text-md text-sm max-w-sm text-gray-500 leading-normal mt-2" href="">
+      Has no translation in your language choice, yet.
+    </span>
   </div>
   <div class="separator mt-3"></div>
   <div id="story-content">
-    <div class="data excerpt text-lg leading-loose flex flex-col gap-y-5 mt-2 text-gray-700"><p>Once upon a time, in a bustling garden, there stood a small sunflower named Sunny. Despite being surrounded by tall plants, Sunny always felt overshadowed and longed to bask in the warm embrace of the sun.</p>
+    <div class="data excerpt text-lg leading-loose flex flex-col gap-y-5 mt-2 text-gray-700"><p>In the vast Arabian desert, the Sun Stone radiated warmth and light, claiming itself as the ruler of the Oasis of Harmony. The creatures and plants thrived under its golden rule.</p>
 
-<p>One day, a sudden storm swept through the garden, causing chaos and uprooting plants. Determined to find its place under the sun, Sunny seized the opportunity and broke free from the ground, embarking on a courageous journey.</p>
+<p>One fateful night, a shimmering Moon Crystal emerged, casting a cool glow upon the oasis. ‘Why must the Sun Stone reign alone?’ questioned the Moon Crystal, challenging the status quo.</p>
 
-<p>Traversing through the unpredictable garden, Sunny encountered various obstacles like sharp rocks and wild creatures. Through perseverance and a positive outlook, Sunny overcame each challenge, growing taller and stronger with every step.</p>
+<p>‘I am the source of light and life! Your presence disturbs the balance,’ declared the Sun Stone, its brilliance intensifying in defiance.</p>
 
-<p>As the days passed, Sunny’s bright yellow petals caught the attention of a nearby farmer who marveled at its resilience. Recognizing its beauty, the farmer carefully transplanted Sunny to a new patch of rich soil, where it finally found its place under the golden rays of the sun.</p>
+<p>As tensions escalated, a humble Sand Hourglass intervened, wise from years of measuring time. ‘Strength and gentleness must coexist for true harmony to reign. Embrace each other’s radiance,’ the Sand Hourglass advised.</p>
 
-<p>From that day on, Sunny flourished, spreading joy and warmth throughout the garden with its radiant glow. Its unwavering determination and courage had not only led it to its rightful spot but also inspired others to embrace change and strive towards their dreams.</p>
+<p>The Sun Stone and Moon Crystal hesitated, acknowledging the wisdom in the Hourglass’s words. Slowly, they began to appreciate each other’s unique luminance, blending their lights in a dance of balance.</p>
+
+<p>And so, the oasis witnessed a dazzling display of harmony, with the golden rays of the Sun Stone mingling with the silver glow of the Moon Crystal, creating a tapestry of light that painted the desert in a mesmerizing spectacle.</p>
+
+<p>The creatures and plants rejoiced in the newfound balance, acknowledging that true harmony arises from the unity of opposites.</p>
+
+<p>As day turned to night and night turned to day, the oasis stood as a testament to the beauty of diversity, where the Sun Stone and Moon Crystal thrived together in perfect unison.</p>
 </div>
   </div>
-  <div id="story-moral" class="excerpt text-lg italic leading-loose gap-y-5 mt-6 text-green-800">
+  <div id="story-moral" class="excerpt text-lg italic leading-loose gap-y-3 mt-6 text-green-800">
     <span class="font-semibold">Morals of Story:</span>
-    Sometimes our strengths shine brightest when we find the courage to navigate through challenges and embrace change.
+    <div class="data">True harmony arises from the balance of strength and gentleness.</div>
   </div>
   <div class="separator mt-6"></div>
 </div>
@@ -124,12 +137,12 @@
     >Read Other Stories</a
   >
 </div>
-
 <div class="separator mt-20"></div>
 
-<script src="/baba/assets/js/useStoryAssets.js"></script>
-<script src="/baba/assets/js/useDictionary.js"></script>
-<script src="https://unpkg.com/@popperjs/core@2"></script>
+<div id="tooltip" class="px-3 py-1 bg-black text-white text-center rounded-md" role="tooltip">
+  <div id="content">Translation Not Found</div>
+  <div id="arrow" data-popper-arrow></div>
+</div>
 
 <style>
   #arrow,
@@ -139,49 +152,37 @@
     height: 8px;
     background: inherit;
   }
-
   #arrow {
     visibility: hidden;
   }
-
   #arrow::before {
     visibility: visible;
     content: "";
     transform: rotate(45deg);
   }
-
   #tooltip {
     display: none;
   }
-
   #tooltip[data-show] {
     display: block;
   }
-
   #tooltip[data-popper-placement^="top"] > #arrow {
     bottom: -4px;
   }
-
   #tooltip[data-popper-placement^="bottom"] > #arrow {
     top: -4px;
   }
-
   #tooltip[data-popper-placement^="left"] > #arrow {
     right: -4px;
   }
-
   #tooltip[data-popper-placement^="right"] > #arrow {
     left: -4px;
   }
 </style>
 
-<div id="tooltip" class="px-3 py-1 bg-black text-white text-center rounded-md" role="tooltip">
-  <div id="content">Translation Not Found</div>
-  <div id="arrow" data-popper-arrow></div>
-</div>
-
-<script src="/baba/assets/js/storifier.js"></script>
-
+<!-- <script src="/baba/assets/js/useDictionary.js"></script> -->
+<script src="/baba/assets/js/useStoryAssets.js"></script>
+<script src="/baba/assets/js/storify.js"></script>
 
       <div class="mb-4"></div>
       <div class="footer mb-4 text-sm text-gray-400">

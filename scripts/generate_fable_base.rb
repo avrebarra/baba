@@ -25,11 +25,11 @@ def generate_fable(mood, complexity_level, culture, character, plot)
       "messages": [
         {
           "role": "system",
-          "content": "You work on company generating daily mature fables (it's okay to have bad ending) to learn foreign language. Compact answer in requested format."
+          "content": "You work on company generating daily mature fables to learn foreign language. Compact answer in requested format."
         },
         {
           "role": "user",
-          "content": "Generate original 250-350 words fables in english. Make the plot make sense. Plot note is #{plot}. Use short, clear, & descriptive sentence structures. Use #{character} category as main character. Give reasonable conflict/climax. Split into paragraphs. Also add short english storyline hook with closing curiosity hook question (max 3 sentences), that will be shown in overview. Also add list of learnable foreign terms/words used in the translated story as keywords. \nLanguage: english\nMood: #{mood}\nCultural Influence: #{culture}\nTheme: any\nLanguage vocabulary complexity level: #{complexity_level}yo local speaker.\nFormat: Valid JSON {title:string,hook:string(en),moral:string(en),paragraphs:string[],keywords:string[10-15 words]} (no markdown script tag & ensure valid JSON object structure!)\n"
+          "content": "Create concise, original fables in English within 250-350 words. Ensure a coherent plot, using #{character} as character. Employ brief, descriptive sentences with clear structures. Involves dialogues. Introduce impressive conflict and climax. Format into paragraphs. Include a succinct English storyline hook with an ending curiosity hook question (max of 3 sentences) for story overview. Add a list of foreign terms/words as keywords for translation.\nLanguage: English\nMood: #{mood}\nCultural Influence: #{culture}\nVocabulary Complexity Level: #{complexity_level}yo local speaker.\nFormat: Valid JSON {title: string, hook: string(en), moral: string(en), paragraphs: string[], keywords: string[10-15 words]} (no markdown script tag & ensure valid JSON object structure!)"
         }
       ],
       "temperature": 1,

@@ -37,7 +37,7 @@
 
   Babba.baseURL = "/baba/"
   Babba.storyURL = "/404.html"
-  Babba.storyID = Babba.storyURL.replace('.html','')
+  Babba.storyID = Babba.storyURL.replace('.html','').substring(1)
   Babba.storyAssetsURL = Babba.storyURL.replace('.html', '.json')
 
 </script>
@@ -63,6 +63,8 @@
     <select id="picker-lang" class="text-3xl font-bold cursor-pointer bg-inherit">
       <option value="id-en">🇬🇧</option>
       <option value="en-pt">🇧🇷</option>
+      <option value="en-de">🇩🇪</option>
+      <option value="en-fr">🇫🇷</option>
     </select>
   </div>
 </div>

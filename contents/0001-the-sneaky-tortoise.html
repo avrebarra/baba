@@ -14,16 +14,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
 
 
-<meta name="description" content="There once lived a busy bee named Bella who spent her days buzzing from flower to flower, collecting nectar and diligently tending to her hive. Across the meadow lived a carefree wanderer named Will, who roamed the fields without a care in the world, enjoying the beauty of nature.
+<meta name="description" content="In the heart of the savannah, there lived a tortoise known for his wit and wisdom. One bright day, he crossed paths with a boastful hare who challenged him to a race. Mocking the tortoise’s slowness, the hare declared confidently that victory was a certainty.
 " />
-<meta property="og:description" content="There once lived a busy bee named Bella who spent her days buzzing from flower to flower, collecting nectar and diligently tending to her hive. Across the meadow lived a carefree wanderer named Will, who roamed the fields without a care in the world, enjoying the beauty of nature.
+<meta property="og:description" content="In the heart of the savannah, there lived a tortoise known for his wit and wisdom. One bright day, he crossed paths with a boastful hare who challenged him to a race. Mocking the tortoise’s slowness, the hare declared confidently that victory was a certainty.
 " />
 
 <meta name="author" content="Avre Barra" />
 
 
-<meta property="og:title" content="The Busy Bee and the Wanderer" />
-<meta property="twitter:title" content="The Busy Bee and the Wanderer" />
+<meta property="og:title" content="The Sneaky Tortoise" />
+<meta property="twitter:title" content="The Sneaky Tortoise" />
 
 
 
@@ -38,8 +38,8 @@
   var Babba = {}
 
   Babba.baseURL = "/baba/"
-  Babba.storyURL = "/contents/0011-the-busy-bee-and-the-wanderer.html"
-  Babba.storyID = Babba.storyURL.replace('.html','')
+  Babba.storyURL = "/contents/0001-the-sneaky-tortoise.html"
+  Babba.storyID = Babba.storyURL.replace('.html','').substring(1)
   Babba.storyAssetsURL = Babba.storyURL.replace('.html', '.json')
 
 </script>
@@ -65,6 +65,8 @@
     <select id="picker-lang" class="text-3xl font-bold cursor-pointer bg-inherit">
       <option value="id-en">🇬🇧</option>
       <option value="en-pt">🇧🇷</option>
+      <option value="en-de">🇩🇪</option>
+      <option value="en-fr">🇫🇷</option>
     </select>
   </div>
 </div>
@@ -87,29 +89,34 @@
 </script>
 
       <div class="mb-4"></div>
-      <title>Baba - The Busy Bee and the Wanderer</title>
+      <title>Baba - The Sneaky Tortoise</title>
+
+<script src="https://unpkg.com/@popperjs/core@2"></script>
 
 <div class="separator mt-10"></div>
 <div class="content flex flex-col">
   <div class="separator mt-2"></div>
   <div id="story-title" class="flex flex-col max-w-md gap-2">
-    <a class="text-md text-lg font-bold text-lime-600 leading-normal" href="">The Busy Bee and the Wanderer</a>
-    <a class="data ba-serif text-4xl font-black leading-normal" href="">The Busy Bee and the Wanderer</a>
+    <a class="text-md text-lg font-bold text-lime-600 leading-normal" href="">The Sneaky Tortoise</a>
+    <a class="data ba-serif text-4xl font-black leading-normal" href="">The Sneaky Tortoise</a>
+    <span id="warning-no-translation" class="text-md text-sm max-w-sm text-gray-500 leading-normal mt-2" href="">
+      Has no translation in your language choice, yet.
+    </span>
   </div>
   <div class="separator mt-3"></div>
   <div id="story-content">
-    <div class="data excerpt text-lg leading-loose flex flex-col gap-y-5 mt-2 text-gray-700"><p>There once lived a busy bee named Bella who spent her days buzzing from flower to flower, collecting nectar and diligently tending to her hive. Across the meadow lived a carefree wanderer named Will, who roamed the fields without a care in the world, enjoying the beauty of nature.</p>
+    <div class="data excerpt text-lg leading-loose flex flex-col gap-y-5 mt-2 text-gray-700"><p>In the heart of the savannah, there lived a tortoise known for his wit and wisdom. One bright day, he crossed paths with a boastful hare who challenged him to a race. Mocking the tortoise’s slowness, the hare declared confidently that victory was a certainty.</p>
 
-<p>One sunny day, their paths crossed when Bella flew into the field where Will was resting. She couldn’t understand how he could waste his time idling when there was so much work to be done. Will, on the other hand, marveled at Bella’s tireless work ethic but found her rigid lifestyle confining.</p>
+<p>Determined to prove the hare wrong, the tortoise accepted the challenge. The race was set to begin at dawn the next day, with the animals of the savannah as witnesses. As the sun peeked over the horizon, the hare shot ahead, leaving the tortoise far behind.</p>
 
-<p>As the days passed, Bella worked tirelessly, while Will continued his leisurely strolls. However, a sudden storm swept through the meadow, destroying both the flowers Bella had diligently tended to and the path Will knew so well. Bella struggled to rebuild her hive, while Will easily adapted to the change, finding new paths and enjoying the different scenery.</p>
+<p>Confident in his lead, the hare decided to take a nap under a shady acacia tree. Meanwhile, the tortoise plodded along steadily, never losing sight of his goal. By the time the hare awoke, it was too late - the tortoise had crossed the finish line.</p>
 
-<p>In the end, Bella realized that sometimes being too focused on work can blind you to new opportunities, while Will learned that a life without purpose can leave you unprepared for challenges. They both found a balance in appreciating each other’s way of life, understanding the value of hard work and leisure.</p>
+<p>The animals cheered for the tortoise, who had taught the hare a valuable lesson in humility. From that day on, the hare kept his boasts in check, while the tortoise continued to be respected for his quiet determination.</p>
 </div>
   </div>
-  <div id="story-moral" class="excerpt text-lg italic leading-loose gap-y-5 mt-6 text-green-800">
+  <div id="story-moral" class="excerpt text-lg italic leading-loose gap-y-3 mt-6 text-green-800">
     <span class="font-semibold">Morals of Story:</span>
-    Hard work and laziness each have their consequences.
+    <div class="data">Pride comes before a fall. It's better to be slow and steady than fast and careless.</div>
   </div>
   <div class="separator mt-6"></div>
 </div>
@@ -122,12 +129,12 @@
     >Read Other Stories</a
   >
 </div>
-
 <div class="separator mt-20"></div>
 
-<script src="/baba/assets/js/useStoryAssets.js"></script>
-<script src="/baba/assets/js/useDictionary.js"></script>
-<script src="https://unpkg.com/@popperjs/core@2"></script>
+<div id="tooltip" class="px-3 py-1 bg-black text-white text-center rounded-md" role="tooltip">
+  <div id="content">Translation Not Found</div>
+  <div id="arrow" data-popper-arrow></div>
+</div>
 
 <style>
   #arrow,
@@ -137,49 +144,37 @@
     height: 8px;
     background: inherit;
   }
-
   #arrow {
     visibility: hidden;
   }
-
   #arrow::before {
     visibility: visible;
     content: "";
     transform: rotate(45deg);
   }
-
   #tooltip {
     display: none;
   }
-
   #tooltip[data-show] {
     display: block;
   }
-
   #tooltip[data-popper-placement^="top"] > #arrow {
     bottom: -4px;
   }
-
   #tooltip[data-popper-placement^="bottom"] > #arrow {
     top: -4px;
   }
-
   #tooltip[data-popper-placement^="left"] > #arrow {
     right: -4px;
   }
-
   #tooltip[data-popper-placement^="right"] > #arrow {
     left: -4px;
   }
 </style>
 
-<div id="tooltip" class="px-3 py-1 bg-black text-white text-center rounded-md" role="tooltip">
-  <div id="content">Translation Not Found</div>
-  <div id="arrow" data-popper-arrow></div>
-</div>
-
-<script src="/baba/assets/js/storifier.js"></script>
-
+<!-- <script src="/baba/assets/js/useDictionary.js"></script> -->
+<script src="/baba/assets/js/useStoryAssets.js"></script>
+<script src="/baba/assets/js/storify.js"></script>
 
       <div class="mb-4"></div>
       <div class="footer mb-4 text-sm text-gray-400">

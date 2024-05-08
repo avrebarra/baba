@@ -13,24 +13,34 @@ const onload = async () => {
   // wait for dictionary loading
   const { get: getLang } = await useLanguageSwitcher();
   const lang = await getLang();
+  const [from, to] = lang.split("-");
 
   const storyAssets = await useStoryAssets(Babba.storyID);
   const story = storyAssets.translations[lang];
+  const hasTranslation = story ? true : false;
 
   // load story content
   const titleEl = document.querySelector("#story-title > .data");
-  titleEl.innerHTML = story.title || storyAssets.title;
+  titleEl.innerHTML = hasTranslation ? story.title : storyAssets.title + "*";
+
+  const warningNoTranslationEl = document.querySelector("#warning-no-translation");
+  hasTranslation ? warningNoTranslationEl.classList.add("hidden") : null;
 
   const contentEl = document.querySelector("#story-content > .data");
-  contentEl.innerHTML = (story.paragraphs || storyAssets.paragraphs).map((text) => tplParagraph(text)).join("\n");
+  contentEl.innerHTML = (hasTranslation && to != "en" ? story.paragraphs : storyAssets.paragraphs).map((text) => tplParagraph(text)).join("\n");
+
+  const moralEl = document.querySelector("#story-moral > .data");
+  moralEl.innerHTML = from != "en" && hasTranslation ? story.moral : storyAssets.moral;
 
   // transform keywords
   if (Object.keys(story.keywords).length > 0) {
     document.querySelectorAll("#story-content > .data").forEach((excerpt) => {
-      Object.keys(story.keywords).forEach((word) => {
-        const regex = new RegExp("\\b" + word + "\\b", "g");
-        excerpt.innerHTML = excerpt.innerHTML.replace(regex, tplKeyword(word));
-      });
+      Object.keys(story.keywords)
+        .sort((a, b) => a.length - b.length)
+        .forEach((word) => {
+          const regex = new RegExp("\\b" + word + "\\b", "ig");
+          excerpt.innerHTML = excerpt.innerHTML.replace(regex, tplKeyword(word));
+        });
     });
   }
 
