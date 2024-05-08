@@ -24,7 +24,7 @@ permalink: /storybank/
   <div class="flex article items-center mb-2 mt-2" series="{{ post.series | downcase }}">
     <div class="flex flex-row gap-2 text-md">
       <span class="text-lime-600">⚉</span>
-      <a href="{{ post.url | relative_url }}" class="title underlined block overflow-hidden whitespace-nowrap overflow-ellipsis">{{ post.title }}</a>
+      <a href="{{ post.url | relative_url }}" class="title underlined">{{ post.title }}</a>
     </div>
   </div>
   {% endfor %}
