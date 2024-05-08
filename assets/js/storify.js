@@ -13,6 +13,7 @@ const onload = async () => {
   // wait for dictionary loading
   const { get: getLang } = await useLanguageSwitcher();
   const lang = await getLang();
+  const [from, to] = lang.split("-");
 
   const storyAssets = await useStoryAssets(Babba.storyID);
   const story = storyAssets.translations[lang];
@@ -25,7 +26,7 @@ const onload = async () => {
   contentEl.innerHTML = (story.paragraphs || storyAssets.paragraphs).map((text) => tplParagraph(text)).join("\n");
 
   const moralEl = document.querySelector("#story-moral > .data");
-  moralEl.innerHTML = story.moral || storyAssets.moral;
+  moralEl.innerHTML = from == "en" ? storyAssets.moral : story.moral || storyAssets.moral;
 
   // transform keywords
   if (Object.keys(story.keywords).length > 0) {
