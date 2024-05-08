@@ -51,12 +51,14 @@ layout: default
     const storyID = "{{ site.contents.last.url }}".replace(".html", "");
     const storyAssets = await useStoryAssets(storyID);
     const story = storyAssets.translations[lang];
+    const hasTranslation = story ? true : false;
 
     const titleEl = document.querySelector("#story-title > .data");
-    titleEl.innerHTML = story.title || storyAssets.title;
+    titleEl.innerHTML = hasTranslation ? story.title : storyAssets.title;
+    titleEl.innerHTML += !hasTranslation ? "*" : "";
 
     const hookEl = document.querySelector("#story-hook > .data");
-    hookEl.innerHTML = from == "en" ? storyAssets.hook : story.hook || storyAssets.hook;
+    hookEl.innerHTML = from == "en" || !hasTranslation ? storyAssets.hook : story.hook;
   };
 
   document.addEventListener("DOMContentLoaded", onload);

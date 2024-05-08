@@ -17,16 +17,20 @@ const onload = async () => {
 
   const storyAssets = await useStoryAssets(Babba.storyID);
   const story = storyAssets.translations[lang];
+  const hasTranslation = story ? true : false;
 
   // load story content
   const titleEl = document.querySelector("#story-title > .data");
-  titleEl.innerHTML = story.title || storyAssets.title;
+  titleEl.innerHTML = hasTranslation ? story.title : storyAssets.title + "*";
+
+  const warningNoTranslationEl = document.querySelector("#warning-no-translation");
+  hasTranslation ? warningNoTranslationEl.classList.add("hidden") : null;
 
   const contentEl = document.querySelector("#story-content > .data");
-  contentEl.innerHTML = (story.paragraphs || storyAssets.paragraphs).map((text) => tplParagraph(text)).join("\n");
+  contentEl.innerHTML = (hasTranslation ? story.paragraphs : storyAssets.paragraphs).map((text) => tplParagraph(text)).join("\n");
 
   const moralEl = document.querySelector("#story-moral > .data");
-  moralEl.innerHTML = from == "en" ? storyAssets.moral : story.moral || storyAssets.moral;
+  moralEl.innerHTML = from == "en" || !hasTranslation ? storyAssets.moral : story.moral;
 
   // transform keywords
   if (Object.keys(story.keywords).length > 0) {

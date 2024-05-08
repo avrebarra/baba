@@ -12,6 +12,9 @@ layout: default
   <div id="story-title" class="flex flex-col max-w-md gap-2">
     <a class="text-md text-lg font-bold text-lime-600 leading-normal" href="{{ post.url | relative_url}}">{{ page.title }}</a>
     <a class="data ba-serif text-4xl font-black leading-normal" href="{{ post.url | relative_url}}">{{ page.title }}</a>
+    <span id="warning-no-translation" class="text-md text-sm max-w-sm text-gray-400 leading-normal mt-2" href="{{ post.url | relative_url}}"
+      >*) Hasn't been translated to your language choice yet
+    </span>
   </div>
   <div class="separator mt-3"></div>
   <div id="story-content">
