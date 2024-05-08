@@ -47,7 +47,7 @@ permalink: /storybank/
     titleEl.innerHTML += !hasTranslation ? "*" : "";
 
     const hookEl = document.querySelector("#story-hook > .data");
-    hookEl.innerHTML = from == "en" || !hasTranslation ? storyAssets.hook : story.hook;
+    hookEl.innerHTML = hasTranslation && from != "en" ? story.hook : storyAssets.hook;
   };
 
   document.addEventListener("DOMContentLoaded", onload);

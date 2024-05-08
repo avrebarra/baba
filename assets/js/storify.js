@@ -27,10 +27,10 @@ const onload = async () => {
   hasTranslation ? warningNoTranslationEl.classList.add("hidden") : null;
 
   const contentEl = document.querySelector("#story-content > .data");
-  contentEl.innerHTML = (hasTranslation ? story.paragraphs : storyAssets.paragraphs).map((text) => tplParagraph(text)).join("\n");
+  contentEl.innerHTML = (hasTranslation && to != "en" ? story.paragraphs : storyAssets.paragraphs).map((text) => tplParagraph(text)).join("\n");
 
   const moralEl = document.querySelector("#story-moral > .data");
-  moralEl.innerHTML = from == "en" || !hasTranslation ? storyAssets.moral : story.moral;
+  moralEl.innerHTML = from != "en" && hasTranslation ? story.moral : storyAssets.moral;
 
   // transform keywords
   if (Object.keys(story.keywords).length > 0) {
