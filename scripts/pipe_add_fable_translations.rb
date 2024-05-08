@@ -9,6 +9,7 @@ LANG_CODE = {
     "en" => "english",
     "pt" => "portuguese/brazilian",
     "fr" => "french",
+    "de" => "deutsch",
 }
 
 def clean_json(txt)
@@ -156,56 +157,78 @@ def generate_paragraph_translations(language, complexity, paragraphs)
     end
 end
 
-options = {}
-OptionParser.new do |opts|
-  opts.on("-f", "--from FROM", "Language to translate from") { |f| options[:from] = f }
-  opts.on("-t", "--to TO", "Language to translate to") { |t| options[:to] = t }
-  opts.on("-c", "--to COMPLEXITY", "Language complexity level to translate to") { |t| options[:complexity] = t }
-end.parse!
+def exec(parsed_input, from_language, to_language, complexity)
+    # extract data from parsed input
+    title = parsed_input['title']
+    hook = parsed_input['hook']
+    moral = parsed_input['moral']
+    paragraphs = parsed_input['paragraphs']
+    keywords = parsed_input['keywords']
+    
+    # prepare metadata strings for translation
+    strmetadatas = <<~MD
+    ---
+    title: #{title}
+    hook: #{hook}
+    moral: #{moral}
+    MD
 
-from_language = options[:from]
-to_language = options[:to]
-complexity = Integer(options[:complexity])
+    # prepare paragraph strings for translation
+    strparagraphs = <<~MD
+    ---
+    #{paragraphs.join("\n\n")}
+    MD
 
-if from_language.nil? || to_language.nil? || complexity == 0
-  puts "Error: Incomplete required parameters. See --help for more information."
-  exit
+    # translate metadata
+    translated_metadata = JSON.parse(clean_json generate_metadata_translations(LANG_CODE[from_language], LANG_CODE[to_language], complexity, strmetadatas))
+    
+    # translate paragraphs
+    translated_paragraphs = {'paragraphs' => paragraphs, 'keywords' => keywords}
+    if to_language != 'en'
+        translated_paragraphs = JSON.parse(clean_json generate_paragraph_translations(LANG_CODE[to_language], 3, strparagraphs))
+    end
+    
+    # translate keywords
+    keywords_translations = JSON.parse(clean_json generate_keywords_translations(translated_paragraphs['keywords'], LANG_CODE[to_language], LANG_CODE[from_language]))
+    
+    # merge translations
+    translation = translated_metadata.merge(translated_paragraphs)
+    translation['keywords'] = keywords_translations
+    
+    # adjust if target language is english
+    if to_language == 'en'
+        translation['title'] = title
+        translation['paragraphs'] = ''
+    end
+    
+    # output final json
+    return translation
 end
 
-parsed_input = JSON.parse(ARGF.read)
+parsed_input = JSON.parse($stdin.read)
+input_data = ARGV
 
-title = parsed_input['title']
-hook = parsed_input['hook']
-moral = parsed_input['moral']
-paragraphs = parsed_input['paragraphs']
-keywords = parsed_input['keywords']
+language_pairs = input_data.map { |pair| pair.split('@') }
 
-strmetadatas = <<~MD
----
-title: #{title}
-hook: #{hook}
-moral: #{moral}
-MD
+results = {}
+threads = []
 
-strparagraphs = <<~MD
----
-#{paragraphs.join("\n\n")}
-MD
+# Process each language pair and complexity
+language_pairs.each do |pair, complexity|
+  from_language, to_language = pair.split('-')
 
-translated_metadata = JSON.parse(clean_json generate_metadata_translations(LANG_CODE[from_language], LANG_CODE[to_language], complexity, strmetadatas))
-translated_paragraphs = {'paragraphs' => paragraphs, 'keywords' => keywords}
-if to_language != 'en'
-    translated_paragraphs = JSON.parse(clean_json generate_paragraph_translations(LANG_CODE[to_language], 3, strparagraphs))
-end
-keywords_translations = JSON.parse(clean_json generate_keywords_translations(translated_paragraphs['keywords'], LANG_CODE[to_language], LANG_CODE[from_language]))
-
-translation = translated_metadata.merge(translated_paragraphs)
-translation['keywords'] = keywords_translations
-if to_language == 'en'
-    translation['title'] = title
-    translation['paragraphs'] = ''
+  # Spawn a new thread for each execution
+  threads << Thread.new {
+    result = exec(parsed_input, from_language, to_language, complexity.to_i)
+    results[pair] = result
+  }
 end
 
-parsed_input['translations']["#{from_language}-#{to_language}"] = translation
+# Wait for all threads to finish
+threads.each(&:join)
 
+# assign the results
+parsed_input['translations'] = parsed_input['translations'].merge(results)
+
+# Output the results
 puts parsed_input.to_json
