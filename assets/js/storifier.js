@@ -31,7 +31,7 @@ const onload = async () => {
   if (Object.keys(story.keywords).length > 0) {
     document.querySelectorAll("#story-content > .data").forEach((excerpt) => {
       Object.keys(story.keywords).forEach((word) => {
-        const regex = new RegExp("\\b" + word + "\\b", "g");
+        const regex = new RegExp("\\b" + word + "\\b", "ig");
         excerpt.innerHTML = excerpt.innerHTML.replace(regex, tplKeyword(word));
       });
     });

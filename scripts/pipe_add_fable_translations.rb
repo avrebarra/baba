@@ -9,6 +9,7 @@ LANG_CODE = {
     "en" => "english",
     "pt" => "portuguese/brazilian",
     "fr" => "french",
+    "de" => "deutsch",
 }
 
 def clean_json(txt)

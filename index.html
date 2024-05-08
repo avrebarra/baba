@@ -6,10 +6,17 @@ layout: default
 
 <div class="separator mt-10"></div>
 <div class="content">
-  <div class="font-semibold text-gray-500">Today's Story:</div>
   <div class="separator mt-2"></div>
+  <!-- <span class="font-semibold text-gray-500">Today's Story:</span> -->
   <a href="{{ site.contents.last.url | relative_url }}" id="bt-read">
-    <div class="ba-serif max-w-md text-4xl font-black leading-normal mb-2">{{ site.contents.last.title }}</div>
+    <div id="story-title" class="flex flex-col max-w-md mb-2">
+      <span class="text-md text-md font-bold text-gray-800"> Today's Addition!</span>
+      <span class="data ba-serif text-4xl font-black leading-normal">{{ site.contents.last.title }}</span>
+      <span class="text-md text-lg font-bold text-lime-600 leading-normal mt-1">
+        <span class="text-gray-600">from</span> {{ site.contents.last.title }}</span
+      >
+    </div>
+    <!-- <div class="ba-serif max-w-md text-4xl font-black leading-normal mb-2">{{ site.contents.last.title }}</div> -->
     <div id="story-hook">
       <div class="data excerpt text-lg leading-loose flex flex-col gap-y-3 text-gray-700">{{ site.contents.last.hook }}</div>
     </div>
@@ -21,7 +28,7 @@ layout: default
   <a
     href="{{ site.contents.last.url | relative_url }}"
     id="bt-read"
-    class="bg-lime-600 px-4 py-4 text-white font-bold hover:bg-lime-700 focus:bg-lime-700 focus:outline-none focus:shadow-outline"
+    class="bg-lime-600 px-4 py-4 text-white font-black hover:bg-lime-700 focus:bg-lime-700 focus:outline-none focus:shadow-outline"
     >Read Today's Tale
   </a>
   <a
@@ -39,13 +46,17 @@ layout: default
   const onload = async () => {
     const { get: getLang } = await useLanguageSwitcher();
     const lang = await getLang();
+    const [from, to] = lang.split("-");
 
     const storyID = "{{ site.contents.last.url }}".replace(".html", "");
     const storyAssets = await useStoryAssets(storyID);
     const story = storyAssets.translations[lang];
 
+    const titleEl = document.querySelector("#story-title > .data");
+    titleEl.innerHTML = story.title || storyAssets.title;
+
     const hookEl = document.querySelector("#story-hook > .data");
-    hookEl.innerHTML = story.hook || storyAssets.hook;
+    hookEl.innerHTML = from == "en" ? storyAssets.hook : story.hook || storyAssets.hook;
   };
 
   document.addEventListener("DOMContentLoaded", onload);

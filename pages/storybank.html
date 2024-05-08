@@ -36,13 +36,14 @@ permalink: /storybank/
   const onload = async () => {
     const { get: getLang } = await useLanguageSwitcher();
     const lang = await getLang();
+    const [from, to] = lang.split("-");
 
     const storyID = "{{ site.contents.last.url }}".replace(".html", "");
     const storyAssets = await useStoryAssets(storyID);
     const story = storyAssets.translations[lang];
 
     const hookEl = document.querySelector("#story-hook > .data");
-    hookEl.innerHTML = story.hook || storyAssets.hook;
+    hookEl.innerHTML = from == "en" ? storyAssets.hook : story.hook || storyAssets.hook;
   };
 
   document.addEventListener("DOMContentLoaded", onload);
