@@ -24,6 +24,9 @@ const onload = async () => {
   const contentEl = document.querySelector("#story-content > .data");
   contentEl.innerHTML = (story.paragraphs || storyAssets.paragraphs).map((text) => tplParagraph(text)).join("\n");
 
+  const moralEl = document.querySelector("#story-moral > .data");
+  moralEl.innerHTML = story.moral || storyAssets.moral;
+
   // transform keywords
   if (Object.keys(story.keywords).length > 0) {
     document.querySelectorAll("#story-content > .data").forEach((excerpt) => {
