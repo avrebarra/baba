@@ -4,6 +4,8 @@ layout: default
 
 <title>Baba - {{ page.title }}</title>
 
+<script src="https://unpkg.com/@popperjs/core@2"></script>
+
 <div class="separator mt-10"></div>
 <div class="content flex flex-col">
   <div class="separator mt-2"></div>
@@ -30,9 +32,49 @@ layout: default
     >Read Other Stories</a
   >
 </div>
-
 <div class="separator mt-20"></div>
 
+<div id="tooltip" class="px-3 py-1 bg-black text-white text-center rounded-md" role="tooltip">
+  <div id="content">Translation Not Found</div>
+  <div id="arrow" data-popper-arrow></div>
+</div>
+
+<style>
+  #arrow,
+  #arrow::before {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: inherit;
+  }
+  #arrow {
+    visibility: hidden;
+  }
+  #arrow::before {
+    visibility: visible;
+    content: "";
+    transform: rotate(45deg);
+  }
+  #tooltip {
+    display: none;
+  }
+  #tooltip[data-show] {
+    display: block;
+  }
+  #tooltip[data-popper-placement^="top"] > #arrow {
+    bottom: -4px;
+  }
+  #tooltip[data-popper-placement^="bottom"] > #arrow {
+    top: -4px;
+  }
+  #tooltip[data-popper-placement^="left"] > #arrow {
+    right: -4px;
+  }
+  #tooltip[data-popper-placement^="right"] > #arrow {
+    left: -4px;
+  }
+</style>
+
+<!-- <script src="{{'/assets/js/useDictionary.js' | relative_url}}"></script> -->
 <script src="{{'/assets/js/useStoryAssets.js' | relative_url}}"></script>
-<script src="{{'/assets/js/useDictionary.js' | relative_url}}"></script>
-{% include storify.html %}
+<script src="{{'/assets/js/storify.js' | relative_url}}"></script>
