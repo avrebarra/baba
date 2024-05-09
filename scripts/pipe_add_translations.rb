@@ -8,22 +8,6 @@ api_key = ENV["OPENAI_API_KEY"] || raise("No OPENAI_API_KEY in env vars")
 def raise_missing(msg) = raise(OptionParser::MissingArgument, msg)
 def lang_name(code) = LANG_CODE[code]
 
-def make_metadata_translation(api_key:, words:, from: "en", to:)
-  from = lang_name(from)
-  to = lang_name(to)
-
-  OpenAI.prompt(
-    api_key,
-    "You work on company generating fables to learn foreign language. Compact answer in requested format.",
-    <<~PROMPT
-        Generate translations map of these words #{"from #{from}" if from} for #{to} languages.
-        Can be multiple words for common synonyms of each words.
-        Words: ['#{words.join("','")}']
-        Output Format: JSON Map<string, string[]> (word to translations)
-      PROMPT
-  )
-end
-
 def make_translation(
   api_key:,
   storybase:,
@@ -86,7 +70,8 @@ def make_translation(
           text: v,
           to_lang: lang_name(to),
           use_linguafranca: true,
-          extract_keyterms: 3
+          extract_keyterms: 3,
+          notes: "Escape all quotemarks in string."
         )
       paragraphs_itv[i] = out["translated"]
       keywords = keywords | out["keywords"]
@@ -96,7 +81,7 @@ def make_translation(
   threads.each(&:join)
 
   # make keywords translation
-  translation["keywords"] = make_metadata_translation(
+  translation["keywords"] = Babba.translate_keywords(
     api_key: api_key,
     words: keywords,
     to: from

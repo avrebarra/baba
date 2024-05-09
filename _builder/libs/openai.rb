@@ -7,8 +7,10 @@ require 'securerandom'
 require 'optparse'
 
 module OpenAI # rubocop:disable Style/Documentation
-  def self.clean_json(txt)
+  def self.clean_resp(txt)
     txt.gsub!('```json', '')
+    txt.gsub!('```yaml', '')
+    txt.gsub!('```yml', '')
     txt.gsub!('```', '')
     txt.gsub!(/,\s+\]/, ']')
     txt
@@ -44,6 +46,6 @@ module OpenAI # rubocop:disable Style/Documentation
     return nil unless response.is_a?(Net::HTTPSuccess)
 
     result = JSON.parse response.body
-    JSON.parse clean_json result.dig('choices', 0, 'message', 'content')
+    clean_resp result.dig('choices', 0, 'message', 'content')
   end
 end
