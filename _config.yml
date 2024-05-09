@@ -22,6 +22,7 @@ gems:
   - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
 
 exclude:
+  - scripts
   - package.json
   - postcss.config.js
   - tailwind.config.js

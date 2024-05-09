@@ -1,7 +1,9 @@
-source 'https://rubygems.org'
+source "https://rubygems.org"
 
-gem 'jekyll'
-gem 'webrick'
-gem 'jekyll-postcss'
-gem 'jekyll-sitemap'
-gem 'jekyll-feed'
+gem "jekyll-feed"
+gem "jekyll-postcss"
+gem "jekyll-sitemap"
+gem "jekyll"
+gem "ruby-lsp"
+gem "syntax_tree"
+gem "webrick"
