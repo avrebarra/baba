@@ -90,10 +90,10 @@
 <div class="content flex flex-col">
   <div class="font-semibold text-gray-500">Today's Story:</div>
   <div class="separator mt-2"></div>
-  <a id="story-title" href="/baba/contents/0025-juha's-special-garden.html">
-    <div class="data ba-serif max-w-md text-4xl font-black leading-normal mb-2">Juha's Special Garden</div>
+  <a id="story-title" href="/baba/contents/0046-the-busy-bee.html">
+    <div class="data ba-serif max-w-md text-4xl font-black leading-normal mb-2">The Busy Bee</div>
     <div id="story-hook">
-      <div class="data excerpt text-lg leading-loose flex flex-col gap-y-5 text-gray-700">One sunny morning, Juha discovered a mysterious seed in her backyard. What will grow from this magical seed?</div>
+      <div class="data excerpt text-lg leading-loose flex flex-col gap-y-5 text-gray-700">Can a little bee save the day with its hard work and determination?</div>
     </div>
   </a>
   <div class="separator mt-4"></div>
@@ -101,6 +101,27 @@
 
 <div class="table-of-content mt-3">
   <div class="font-semibold text-gray-500">All Stories:</div>
+  
+  <div class="flex article items-center mb-2 mt-2" series="">
+    <div class="flex flex-row gap-2 text-md">
+      <span class="text-lime-600">⚉</span>
+      <a href="/baba/contents/0046-the-busy-bee.html" class="title underlined">The Busy Bee</a>
+    </div>
+  </div>
+  
+  <div class="flex article items-center mb-2 mt-2" series="">
+    <div class="flex flex-row gap-2 text-md">
+      <span class="text-lime-600">⚉</span>
+      <a href="/baba/contents/0045-granny-trio's-cow-conundrum.html" class="title underlined">Granny Trio's Cow Conundrum</a>
+    </div>
+  </div>
+  
+  <div class="flex article items-center mb-2 mt-2" series="">
+    <div class="flex flex-row gap-2 text-md">
+      <span class="text-lime-600">⚉</span>
+      <a href="/baba/contents/0038-baba's-big-surprise.html" class="title underlined">Baba's Big Surprise</a>
+    </div>
+  </div>
   
   <div class="flex article items-center mb-2 mt-2" series="">
     <div class="flex flex-row gap-2 text-md">
@@ -113,20 +134,6 @@
     <div class="flex flex-row gap-2 text-md">
       <span class="text-lime-600">⚉</span>
       <a href="/baba/contents/0022-the-oasis-of-harmony.html" class="title underlined">The Oasis of Harmony</a>
-    </div>
-  </div>
-  
-  <div class="flex article items-center mb-2 mt-2" series="">
-    <div class="flex flex-row gap-2 text-md">
-      <span class="text-lime-600">⚉</span>
-      <a href="/baba/contents/0020-the-wise-owl-and-the-curious-squirrel.html" class="title underlined">The Wise Owl and the Curious Squirrel</a>
-    </div>
-  </div>
-  
-  <div class="flex article items-center mb-2 mt-2" series="">
-    <div class="flex flex-row gap-2 text-md">
-      <span class="text-lime-600">⚉</span>
-      <a href="/baba/contents/0018-the-forbidden-lotus-dance.html" class="title underlined">The Forbidden Lotus Dance</a>
     </div>
   </div>
   
@@ -147,42 +154,7 @@
   <div class="flex article items-center mb-2 mt-2" series="">
     <div class="flex flex-row gap-2 text-md">
       <span class="text-lime-600">⚉</span>
-      <a href="/baba/contents/0010-the-starlit-quest.html" class="title underlined">The Starlit Quest</a>
-    </div>
-  </div>
-  
-  <div class="flex article items-center mb-2 mt-2" series="">
-    <div class="flex flex-row gap-2 text-md">
-      <span class="text-lime-600">⚉</span>
-      <a href="/baba/contents/0009-the-fox-and-the-golden-palm.html" class="title underlined">The Fox and the Golden Palm</a>
-    </div>
-  </div>
-  
-  <div class="flex article items-center mb-2 mt-2" series="">
-    <div class="flex flex-row gap-2 text-md">
-      <span class="text-lime-600">⚉</span>
       <a href="/baba/contents/0007-the-bravery-of-kofi.html" class="title underlined">The Bravery of Kofi</a>
-    </div>
-  </div>
-  
-  <div class="flex article items-center mb-2 mt-2" series="">
-    <div class="flex flex-row gap-2 text-md">
-      <span class="text-lime-600">⚉</span>
-      <a href="/baba/contents/0006-the-wise-lantern-and-the-lost-path.html" class="title underlined">The Wise Lantern and the Lost Path</a>
-    </div>
-  </div>
-  
-  <div class="flex article items-center mb-2 mt-2" series="">
-    <div class="flex flex-row gap-2 text-md">
-      <span class="text-lime-600">⚉</span>
-      <a href="/baba/contents/0003-the-brave-stallion.html" class="title underlined">The Brave Stallion</a>
-    </div>
-  </div>
-  
-  <div class="flex article items-center mb-2 mt-2" series="">
-    <div class="flex flex-row gap-2 text-md">
-      <span class="text-lime-600">⚉</span>
-      <a href="/baba/contents/0002-the-wise-owl-and-the-curious-squirrel.html" class="title underlined">The Wise Owl and the Curious Squirrel</a>
     </div>
   </div>
   
@@ -203,7 +175,7 @@
     const lang = await getLang();
     const [from, to] = lang.split("-");
 
-    const storyID = "/contents/0025-juha's-special-garden.html".replace(".html", "");
+    const storyID = "/contents/0046-the-busy-bee.html".replace(".html", "");
     const storyAssets = await useStoryAssets(storyID);
     const story = storyAssets.translations[lang];
     const hasTranslation = story ? true : false;
