@@ -34,7 +34,7 @@ jobs:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: |
           ruby ./scripts/generate_fable_base.rb -i $CULTURE_INFLUENCE -m '$MOOD&$GENRE' -c $MAIN_CHARACTER -l 3 \
-          | ruby scripts/pipe_add_fable_translations.rb 'en-pt@3' 'id-en@3' 'en-de@3' 'en-fr@3' \
+          | ruby scripts/pipe_add_translations.rb 'en-pt@3' 'id-en@3' 'en-de@3' 'en-fr@3' \
           | ruby scripts/funnel_register_story.rb \
           | ruby scripts/funnel_register_translations.rb \
           > /dev/null
