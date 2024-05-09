@@ -24,7 +24,13 @@ def make_metadata_translation(api_key:, words:, from: "en", to:)
   )
 end
 
-def make_translation(api_key:, storybase:, from: "en", to:)
+def make_translation(
+  api_key:,
+  storybase:,
+  to:,
+  language_complexity:,
+  from: "en"
+)
   # perform translations
   translation = {}
   threads = []
@@ -36,6 +42,7 @@ def make_translation(api_key:, storybase:, from: "en", to:)
           openai_api_key: api_key,
           text: text,
           notes: notes,
+          language_complexity: language_complexity,
           to_lang: lang_name(to)
         )
       out["translated"]
@@ -86,9 +93,16 @@ language_pairs = ARGV.map { |pair| pair.split("@") }
 results = {}
 threads = []
 language_pairs.each do |pair, complexity|
-  _, to_language = pair.split("-")
+  from_language, to_language = pair.split("-")
   threads << Thread.new do
-    t = make_translation(api_key: api_key, storybase: input, to: to_language)
+    t =
+      make_translation(
+        api_key: api_key,
+        storybase: input,
+        from: from_language,
+        to: to_language,
+        language_complexity: complexity
+      )
     results[pair] = t
   end
 end
