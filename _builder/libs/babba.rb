@@ -42,9 +42,11 @@ module Babba
     text:,
     to_lang:,
     from_lang: nil,
+    notes: nil,
     language_complexity: 3,
     use_literal: false,
-    use_linguafranca: true
+    use_linguafranca: true,
+    extract_keyterms: 0
   )
     OpenAI.prompt(
       openai_api_key,
@@ -52,8 +54,10 @@ module Babba
       <<~PROMPT
         Translate text #{"from #{from_lang}" if from_lang} to #{to_lang}. #{"Literal word-by-word translations." if use_literal}
         Use vocabulary & sentence structure suitable for #{language_complexity}yo #{to_lang} people.
-         #{"Adjust text to prioritize comprehensibility for age. Use lingua-francas." if use_linguafranca}
-        Output Format: JSON {translated: string} (ENSURE valid JSON object structure!)
+        #{"Generate a list of #{to_lang} keywords (#{extract_keyterms}) used in translation to enrich vocabulary." if extract_keyterms > 0}
+        #{"Adjust text to prioritize comprehensibility for age. Use lingua-francas." if use_linguafranca}
+        #{"Notes: #{notes}" unless notes.nil?}
+        Output Format: JSON {translated: string#{", keywords: string[#{extract_keyterms}]" if extract_keyterms > 0}} (ENSURE valid JSON object structure!)
         Text to translate: #{text}
       PROMPT
     )
