@@ -25,7 +25,7 @@ module Babba
       <<~PROMPT
         Create original fable paragraphs in English within #{words_length_range} words.
         Write in vocabulary complexity suitable for #{language_complexity}yo local speaker.
-        Use basic, descriptive, clear sentence structures. Give dialogues. Give conflicts. Structure into paragraphs.
+        Use basic, descriptive, clear sentence structures. Give dialogues. Give spectacular conflict, climax, resolution. Structure into paragraphs.
         Also generate story hook with curiosity hooking question (max 3 sentences) for story overview.
         Also generate list of keywords for good vocabulary enriching.
         #{"Use #{hint_character} as character." unless hint_character.nil?}

@@ -48,10 +48,32 @@ def make_translation(
       out["translated"]
     end
 
-  threads << Thread.new { translation["hook"] = t.call storybase["hook"] }
-  threads << Thread.new { translation["moral"] = t.call storybase["moral"] }
   threads << Thread.new do
-    translation["title"] = t.call storybase["title"], "it's a title text"
+    translation["hook"] = (
+      if to != "en"
+        t.call(storybase["hook"])
+      else
+        storybase["hook"]
+      end
+    )
+  end
+  threads << Thread.new do
+    translation["moral"] = (
+      if to != "en"
+        t.call(storybase["moral"])
+      else
+        storybase["moral"]
+      end
+    )
+  end
+  threads << Thread.new do
+    translation["title"] = (
+      if to != "en"
+        t.call(storybase["title"], "it's a title text")
+      else
+        storybase["title"]
+      end
+    )
   end
 
   paragraphs_itv = {}
