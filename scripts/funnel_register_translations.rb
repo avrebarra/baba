@@ -16,7 +16,6 @@ end
 parsed_input = JSON.parse(ARGF.read)
 translations = parsed_input["translations"]
 translations.each_key do |key|
-  from, to = key.split("-")
   file_path = File.expand_path("../assets/data/#{key}.dict.json", __dir__)
 
   dict = load_json(file_path)
