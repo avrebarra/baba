@@ -1,6 +1,7 @@
 url: "https://avrebarra.github.io"
 baseurl: "/baba"
 title: "Jekyllwind"
+google_analytics: G-6ZHVK1RRQ0
 
 plugins:
   - jekyll-postcss
