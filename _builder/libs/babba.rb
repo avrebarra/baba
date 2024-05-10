@@ -34,7 +34,7 @@ module Babba
           #{"Use #{hint_character} as character." unless hint_character.nil?}
           #{"Use #{hint_mood} as story mood." unless hint_mood.nil?}
           #{"Use #{hint_cultural_influence} as cultural influence." unless hint_cultural_influence.nil?}
-          Output Format: YAML {title: string, hook: string, moral: string, paragraphs: string[], keywords: string[10-15 words]} (MUST ensure valid JSON object structure!)
+          Output Format: YAML {title: string, hook: string, moral: string, paragraphs: string[], keywords: string[10-15 words]} (MUST ensure valid YAML object structure!)
         PROMPT
       )
     )
@@ -146,7 +146,7 @@ module Babba
                   #{"Generate a list of #{to_lang} keywords (#{extract_keyterms}) used in translation to enrich vocabulary." if extract_keyterms > 0}
                   #{"Adjust text to prioritize comprehensibility for age. Use lingua-francas." if use_linguafranca}
                   #{"Notes: #{notes}" unless notes.nil?}
-                  Output Format: YAML {translated: string#{", keywords: string[#{extract_keyterms}]" if extract_keyterms > 0}} (ENSURE valid JSON object structure!)
+                  Output Format: YAML {translated: string#{", keywords: string[#{extract_keyterms}]" if extract_keyterms > 0}} (ENSURE valid YAML object structure!)
                   MUST Use YAML literal block scalar syntax.
                   Text to translate: #{text}
                 PROMPT
