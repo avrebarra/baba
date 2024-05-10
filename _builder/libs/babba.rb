@@ -143,10 +143,11 @@ module Babba
                 <<~PROMPT
                   Translate text #{"from #{from_lang}" if from_lang} to #{to_lang}. #{"Literal word-by-word translations." if use_literal}
                   Use vocabulary & sentence structure suitable for #{language_complexity}yo #{to_lang} people.
+                  Never change/translate character's names.
                   #{"Generate a list of #{to_lang} keywords (#{extract_keyterms}) used in translation to enrich vocabulary." if extract_keyterms > 0}
                   #{"Adjust text to prioritize comprehensibility for age. Use lingua-francas." if use_linguafranca}
                   #{"Notes: #{notes}" unless notes.nil?}
-                  Output Format: YAML {translated: string#{", keywords: string[#{extract_keyterms}]" if extract_keyterms > 0}} (ENSURE valid YAML object structure!)
+                  Output Format: YAML {translated: string#{", keywords: string[#{extract_keyterms}]" if extract_keyterms > 0}}
                   MUST Use YAML literal block scalar syntax.
                   Text to translate: #{text}
                 PROMPT
