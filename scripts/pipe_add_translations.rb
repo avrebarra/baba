@@ -8,7 +8,7 @@ api_key = ENV["OPENAI_API_KEY"] || raise("No OPENAI_API_KEY in env vars")
 def raise_missing(msg) = raise(OptionParser::MissingArgument, msg)
 
 fable = JSON.parse $stdin.read
-language_pairs = ARGV.map { |translation_code| pair.split("@") }
+language_pairs = ARGV.map { |translation_code| translation_code.split("@") }
 
 translations = {}
 threads = []
