@@ -38,12 +38,11 @@
     href="href"="/baba/feed.xml" />
 
   <script>
-  const Babba = {
-    baseURL: "/baba/",
-    storyURL: "/storybank/",
-    storyID: Babba.storyURL.replace('.html','').substring(1),
-    storyAssetsURL: Babba.storyURL.replace('.html', '.json')
-  }
+  var Babba = {}
+  Babba.baseURL = "/baba/"
+  Babba.storyURL = "/storybank/"
+  Babba.storyID = Babba.storyURL.replace('.html','').substring(1)
+  Babba.storyAssetsURL = Babba.storyURL.replace('.html', '.json')
 </script>
 
   <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
