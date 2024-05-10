@@ -96,10 +96,10 @@
 <div class="content flex flex-col">
   <div class="font-semibold text-gray-500">Today's Story:</div>
   <div class="separator mt-2"></div>
-  <a id="story-title" href="/baba/contents/0048-the-curious-caterpillar.html">
-    <div class="data ba-serif max-w-md text-4xl font-black leading-normal mb-2">The Curious Caterpillar</div>
+  <a id="story-title" href="/baba/contents/0049-the-curious-acorn.html">
+    <div class="data ba-serif max-w-md text-4xl font-black leading-normal mb-2">The Curious Acorn</div>
     <div id="story-hook">
-      <div class="data excerpt text-lg leading-loose flex flex-col gap-y-5 text-gray-700">What happened when a tiny caterpillar wanted to solve the mystery of the glowing garden at night?</div>
+      <div class="data excerpt text-lg leading-loose flex flex-col gap-y-5 text-gray-700">What happens when a tiny acorn has big dreams in a vast forest?</div>
     </div>
   </a>
   <div class="separator mt-4"></div>
@@ -107,6 +107,13 @@
 
 <div class="table-of-content mt-3">
   <div class="font-semibold text-gray-500">All Stories:</div>
+  
+  <div class="flex article items-center mb-2 mt-2" series="">
+    <div class="flex flex-row gap-2 text-md">
+      <span class="text-lime-600">⚉</span>
+      <a href="/baba/contents/0049-the-curious-acorn.html" class="title underlined">The Curious Acorn</a>
+    </div>
+  </div>
   
   <div class="flex article items-center mb-2 mt-2" series="">
     <div class="flex flex-row gap-2 text-md">
@@ -195,7 +202,7 @@
     const lang = await getLang();
     const [from, to] = lang.split("-");
 
-    const storyID = "/contents/0048-the-curious-caterpillar.html".replace(".html", "");
+    const storyID = "/contents/0049-the-curious-acorn.html".replace(".html", "");
     const storyAssets = await useStoryAssets(storyID);
     const story = storyAssets.translations[lang];
     const hasTranslation = story ? true : false;
