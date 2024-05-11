@@ -1,0 +1,225 @@
+{
+  "title": "Kai, the Mysterious Imp of Fora",
+  "hook": "Who is Kai, the timid shadow-dwelling imp of Fora? Can anyone uncover the secret behind its shyness?",
+  "moral": "True courage is found in facing our fears and embracing our unique qualities.",
+  "paragraphs": [
+    "Once upon a time in the great jungle of Fora, there lived a mysterious imp named Kai. Kai was known for its timid nature and for always hiding in the shadows.",
+    "One sunny day, while playing hide-and-seek, a brave little fox named Mia stumbled upon Kai's hiding spot. \"Hello, mysterious friend! Why do you hide in the shadows?\" Mia asked with curiosity.",
+    "Kai hesitated but eventually whispered, \"I'm afraid of the sunlight. It's too bright for my sensitive eyes.\" Mia realized Kai's unique struggle and invited it to play in the shade instead.",
+    "As they played together, Kai started to feel more comfortable stepping out of the shadows. With Mia's friendship and understanding, Kai learned that it's okay to be different and that true friends accept you for who you are."
+  ],
+  "keywords": [
+    "imp",
+    "timid",
+    "shadows",
+    "jungle",
+    "courage",
+    "unique",
+    "friendship",
+    "acceptance"
+  ],
+  "characters": [
+    "Kai"
+  ],
+  "translations": {
+    "id-en": {
+      "hook": "Who is Kai, the timid shadow-dwelling imp of Fora? Can anyone uncover the secret behind its shyness?",
+      "moral": "True courage is found in facing our fears and embracing our unique qualities.",
+      "title": "Kai, the Mysterious Imp of Fora",
+      "keywords": {
+        "jungle": [
+          "hutan belantara"
+        ],
+        "imp": [
+          "setan kecil",
+          "pengganggu"
+        ],
+        "shy": [
+          "malu",
+          "pendiam"
+        ],
+        "comfort": [
+          "kenyamanan",
+          "kedamaian"
+        ],
+        "shadows": [
+          "bayangan",
+          "kegelapan"
+        ],
+        "friendship": [
+          "persahabatan",
+          "pertemanan"
+        ],
+        "fox": [
+          "rubah"
+        ],
+        "hide-and-seek": [
+          "petak umpet"
+        ],
+        "curiosity": [
+          "rasa ingin tahu",
+          "keingintahuan"
+        ],
+        "sunshine": [
+          "sinar matahari",
+          "cahaya matahari"
+        ],
+        "shiny": [
+          "bersinar",
+          "kilauan"
+        ]
+      },
+      "paragraphs": [
+        "Long long ago in the big jungle of Fora, there was a secret creature called Kai. Kai was very shy and liked to hide in the dark.\n",
+        "One bright day, as they played a fun game of hide-and-seek, a brave small fox called Mia found Kai's secret hiding place. \"Hi, secret friend! Why do you hide in the darkness?\" Mia asked, very curious.\n",
+        "Kai stopped for a moment. Then quietly said, \"I'm scared of the sunshine. It's too shiny for my delicate eyes.\" Mia understood Kai's special challenge and asked to play in the shadows instead.\n",
+        "While they were having fun, Kai felt better when he came out from hiding.  Mia's love and kindness helped Kai know that it's fine to be unique and that real friends like you just the way you are.\n"
+      ]
+    },
+    "en-de": {
+      "title": "Kai, der geheimnisvolle Wichtel von Fora",
+      "hook": "Wer ist Kai, der ängstliche Schatten-Bewohner-Kobold von Fora? Kann jemand das Geheimnis hinter seiner Schüchternheit aufdecken?",
+      "moral": "Echter Mut zeigt sich, wenn wir uns unseren Ängsten stellen und unsere besonderen Eigenschaften annehmen.",
+      "keywords": {
+        "Kobold": [
+          "Goblin"
+        ],
+        "Natur": [
+          "Nature"
+        ],
+        "Schatten": [
+          "Shadow"
+        ],
+        "Kai": [
+
+        ],
+        "Sonnenlicht": [
+          "Sunlight"
+        ],
+        "Mia": [
+
+        ],
+        "Freundschaft": [
+          "Friendship"
+        ],
+        "fox": [
+          "Fuchs"
+        ],
+        "sunny day": [
+          "sonniger Tag"
+        ],
+        "hide-and-seek": [
+          "Verstecken spielen"
+        ]
+      },
+      "paragraphs": [
+        "Vor langer Zeit im großen Dschungel von Fora lebte ein geheimnisvoller Kobold namens Kai. Kai war bekannt für seine schüchterne Natur und dass er immer in den Schatten versteckte.\n",
+        "An einem sonnigen Tag, während sie Verstecken spielten, stolperte ein tapferes kleines Fuchs namens Mia über Kais Versteck. \"Hallo, geheimnisvoller Freund! Warum versteckst du dich im Dunkeln?\" fragte Mia neugierig.\n",
+        "Kai zögerte, aber flüsterte schließlich: \"Ich habe Angst vor dem Sonnenlicht. Es ist zu hell für meine empfindlichen Augen.\" Mia erkannte Kais einzigartigen Kampf und lud ihn stattdessen ein, im Schatten zu spielen.\n",
+        "Als sie zusammen spielten, begann Kai sich wohler zu fühlen, aus dem Schatten herauszutreten. Mit Mias Freundschaft und Verständnis lernte Kai, dass es in Ordnung ist, anders zu sein und dass wahre Freunde dich akzeptieren, wie du bist.\n"
+      ]
+    },
+    "en-pt": {
+      "title": "Kai, o Duende Misterioso de Fora",
+      "moral": "Verdadeira coragem está em enfrentar nossos medos e abraçar nossas qualidades especiais.",
+      "hook": "Quem é Kai, o tímido duende que mora nas sombras de Fora? Será que alguém consegue descobrir o segredo por trás da sua timidez?",
+      "keywords": {
+        "duende": [
+          "sprite",
+          "goblin"
+        ],
+        "natureza tímida": [
+          "shy nature"
+        ],
+        "sombras": [
+          "shadows"
+        ],
+        "sunny day": [
+          "bright day"
+        ],
+        "hide-and-seek": [
+          "hide and seek"
+        ],
+        "curious": [
+          "inquisitive",
+          "interested"
+        ],
+        "Comfortable": [
+          "cozy",
+          "snug"
+        ],
+        "Shadows": [
+          "darkness",
+          "shadiness"
+        ],
+        "Different": [
+          "unique",
+          "distinct"
+        ],
+        "sunlight": [
+          "sunshine",
+          "daylight"
+        ],
+        "sensitive eyes": [
+          "delicate eyes"
+        ],
+        "shade": [
+          "shelter",
+          "cover"
+        ]
+      },
+      "paragraphs": [
+        "Era uma vez na grande floresta de Fora, vivia um duende misterioso chamado Kai. Kai era conhecido por sua natureza tímida e por sempre se esconder nas sombras.\n",
+        "Certo dia ensolarado, enquanto brincava de esconde-esconde, uma corajosa raposinha chamada Mia encontrou o esconderijo de Kai. \"Olá, amigo misterioso! Por que você se esconde nas sombras?\" Mia perguntou, curiosa.\n",
+        "Kai hesitou, mas eventualmente sussurrou, \"Eu tenho medo do sol. É muito brilhante para os meus olhos sensíveis.\" Mia percebeu a luta única de Kai e o convidou para brincar na sombra em vez disso.\n",
+        "Enquanto brincavam juntos, Kai começou a se sentir mais confortável saindo das sombras. Com a amizade e compreensão de Mia, Kai aprendeu que está tudo bem ser diferente e que amigos de verdade te aceitam do jeito que você é.\n"
+      ]
+    },
+    "en-fr": {
+      "title": "Kai, le lutin mystérieux de Fora",
+      "moral": "Le vrai courage se trouve en affrontant nos peurs et en embrassant nos qualités uniques.\n",
+      "hook": "Qui est Kai, l'imp timide habitant l'ombre de Fora? Est-ce que quelqu'un peut découvrir le secret derrière sa timidité?",
+      "keywords": {
+        "jungle": [
+          "jungle",
+          "forest"
+        ],
+        "mystérieux": [
+          "mysterious"
+        ],
+        "timide": [
+          "shy"
+        ],
+        "Kai": [
+          "Kai"
+        ],
+        "Mia": [
+          "Mia"
+        ],
+        "amitié": [
+          "friendship"
+        ],
+        "sunlight": [
+          "sunlight"
+        ],
+        "shade": [
+          "shade"
+        ],
+        "renard": [
+          "fox"
+        ],
+        "courageux": [
+          "brave",
+          "courageous"
+        ]
+      },
+      "paragraphs": [
+        "Il était une fois dans la grande jungle de Fora, habitait un mystérieux lutin nommé Kai. Kai était connu pour sa nature timide et pour toujours se cacher dans les ombres.\n",
+        "Un jour ensoleillé, en jouant à cache-cache, un courageux petit renard nommé Mia découvrit par hasard l'endroit où se cachait Kai. \"Bonjour, mystérieux ami! Pourquoi te caches-tu dans l'ombre?\" demanda Mia avec curiosité.\n",
+        "Kai hésita mais finalement chuchota, \"J'ai peur du soleil. Il est trop brillant pour mes yeux sensibles.\" Mia comprit la lutte unique de Kai et l'invita à jouer à l'ombre à la place.\n",
+        "Alors qu'ils jouaient ensemble, Kai a commencé à se sentir plus à l'aise en sortant de l'ombre. Avec l'amitié et la compréhension de Mia, Kai a appris qu'il est ok d'être différent et que de vrais amis t'acceptent tel que tu es.\n"
+      ]
+    }
+  },
+  "series": "fables-of-fora-forests"
+}

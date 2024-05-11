@@ -1,0 +1,216 @@
+{
+  "title": "Asha the Healing Dragoness",
+  "hook": "Join Asha the compassionate dragoness as she helps a lost friend in the Great Jungle of Fora.",
+  "moral": "Kindness and help are always rewarded, even when things seem difficult.",
+  "paragraphs": [
+    "Once upon a time in the Great Jungle of Fora, there lived Asha, a kind and caring dragoness known far and wide for her healing powers. She was respected by all the animals for her gentle nature and willingness to help those in need.",
+    "One sunny morning, Asha heard a distressed cry echoing through the jungle. Following the sound, she found Lumi the lost firefly, surrounded by tangled vines. Lumi was trembling with fear, unable to find her way home.",
+    "\"Oh dear Lumi, don't worry,\" reassured Asha, using her fiery breath to clear the vines. \"I will guide you back home safely.\" With Asha's light glowing brightly, they journeyed through the jungle until Lumi's friends saw them and rejoiced.",
+    "As a token of gratitude, Lumi's friends gifted Asha with a special crystal that glowed with magical energy. The crystal would always guide Asha back whenever she needed help. The animals in the jungle cheered for Asha's kindness and friendship."
+  ],
+  "keywords": [
+    "Asha",
+    "dragoness",
+    "compassionate",
+    "jungle",
+    "Fora",
+    "healing",
+    "lost",
+    "kind",
+    "help",
+    "gratitude"
+  ],
+  "characters": [
+    "Asha"
+  ],
+  "translations": {
+    "en-fr": {
+      "title": "Asha la Dragonne Guérisseuse",
+      "hook": "Viens avec Aïsha la dragonne pleine de compassion alors qu'elle aide un ami perdu dans la Grande Jungle de Fora.",
+      "moral": "Être gentil et aider sont toujours récompensés, même quand les choses semblent difficiles.",
+      "keywords": {
+        "fois": [
+          "time",
+          "instance"
+        ],
+        "dragonne": [
+          "leash",
+          "strap"
+        ],
+        "guérison": [
+          "healing",
+          "cure",
+          "recovery"
+        ],
+        "Lumi": [
+          "light",
+          "brightness"
+        ],
+        "cristal": [
+          "crystal"
+        ],
+        "jungle": [
+          "jungle",
+          "forest"
+        ],
+        "Asha": [
+          "Asha"
+        ],
+        "luciole": [
+          "firefly"
+        ]
+      },
+      "paragraphs": [
+        "Il était une fois, dans la Grande Jungle de Fora, vivait Asha, une dragonne gentille et attentionnée, connue de tous pour ses pouvoirs de guérison. Les animaux la respectaient pour sa nature douce et sa volonté d'aider ceux qui en avaient besoin.\n",
+        "Un matin ensoleillé, Asha a entendu un cri de détresse résonnant dans la jungle. En suivant le son, elle a trouvé Lumi la luciole perdue, entourée de vignes emmêlées. Lumi tremblait de peur, incapable de retrouver son chemin vers la maison.\n",
+        "\"Oh cher Lumi, ne t'inquiète pas,\" rassura Asha, utilisant son souffle enflammé pour nettoyer les vignes. \"Je vais te ramener à la maison en toute sécurité.\" Avec la lumière d'Asha brillant vivement, ils ont voyagé à travers la jungle jusqu'à ce que les amis de Lumi les voient et se réjouissent.\n",
+        "En signe de reconnaissance, les amis de Lumi ont offert à Asha un cristal spécial qui brillait avec de l'énergie magique. Le cristal guiderait toujours Asha quand elle aurait besoin d'aide. Les animaux de la jungle ont applaudi la gentillesse et l'amitié d'Asha.\n"
+      ]
+    },
+    "en-pt": {
+      "title": "A Curandeira Asha, a Dragãozinha",
+      "hook": "Acompanhe a doce dragonesa Asha enquanto ela ajuda um amigo perdido na Grande Floresta de Fora.",
+      "moral": "Ser amável e ajudar sempre é recompensado, mesmo quando as coisas parecem difíceis.",
+      "keywords": {
+        "Once upon a time": [
+          "Era uma vez"
+        ],
+        "caring dragoness": [
+          "dragão carinhoso"
+        ],
+        "healing powers": [
+          "poderes de cura"
+        ],
+        "agradecimento": [
+          "gratitude",
+          "thankfulness"
+        ],
+        "cristal": [
+          "crystal"
+        ],
+        "energia mágica": [
+          "magic energy"
+        ],
+        "Lumi": [
+          "Lumi"
+        ],
+        "Asha": [
+          "Asha"
+        ],
+        "amigos": [
+          "friends"
+        ],
+        "manhã ensolarada": [
+          "sunny morning"
+        ],
+        "choro de aflição": [
+          "sorrowful cry"
+        ],
+        "vaga-lume perdida": [
+          "lost firefly"
+        ]
+      },
+      "paragraphs": [
+        "Era uma vez, na Grande Selva de Fora, vivia Asha, uma dragonesa bondosa e cuidadosa, famosa por seus poderes de cura. Era respeitada por todos os animais por sua natureza gentil e vontade de ajudar quem precisasse.\n",
+        "Certa manhã ensolarada, Asha ouviu um choro de aflição ecoando pela selva. Seguindo o som, ela encontrou Lumi, a vaga-lume perdida, cercada por cipós emaranhados. Lumi tremia de medo, incapaz de encontrar o caminho de volta para casa.\n",
+        "\"Oh querida Lumi, não se preocupe,\" tranquilizou Asha, usando seu sopro flamejante para limpar as vinhas. \"Eu vou te guiar de volta para casa em segurança.\" Com a luz de Asha brilhando intensamente, eles caminharam pela selva até que os amigos de Lumi os viram e se alegraram.\n",
+        "Como um presente de agradecimento, os amigos de Lumi deram a Asha um cristal especial que brilhava com energia mágica. O cristal sempre guiaria Asha de volta sempre que ela precisasse de ajuda. Os animais na selva aplaudiram a bondade e amizade de Asha.\n"
+      ]
+    },
+    "id-en": {
+      "hook": "Join Asha the compassionate dragoness as she helps a lost friend in the Great Jungle of Fora.",
+      "moral": "Kindness and help are always rewarded, even when things seem difficult.",
+      "title": "Asha the Healing Dragoness",
+      "keywords": {
+        "crystal": [
+          "batu kristal"
+        ],
+        "magical": [
+          "ajaib",
+          "sakti"
+        ],
+        "friendship": [
+          "persahabatan"
+        ],
+        "Lumi": [
+          "Lumi"
+        ],
+        "Asha": [
+          "Asha"
+        ],
+        "jungle": [
+          "hutan",
+          "rimba"
+        ],
+        "firefly": [
+          "kunang-kunang",
+          "kutu api"
+        ],
+        "dragoness": [
+          "naga betina"
+        ],
+        "healing powers": [
+          "kekuatan penyembuhan"
+        ]
+      },
+      "paragraphs": [
+        "Long, long ago in the Big Forest of Fora, there was Asha, a friendly and loving female dragon famous everywhere for her magic that made sick animals feel better. Every animal admired her because she was gentle and always ready to assist those who required help.\n",
+        "One day, on a very bright morning, Asha heard a sad call that sounded far away in the forest. She followed the sound and saw Lumi, a little firefly who got lost, all tied up in strong, twisted plants. Lumi was shaking and feeling very scared because she couldn't find her way back home.\n",
+        "\"Oh dear Lumi, don't worry,\" reassured Asha, using her fiery breath to clear the vines. \"I will guide you back home safely.\" With Asha's light glowing brightly, they journeyed through the jungle until Lumi's friends saw them and rejoiced.\n",
+        "Lumi's friends gave Asha a shiny crystal as a special thank you gift. The crystal was full of magic and glowed brightly. It would show Asha the way whenever she felt lost. The jungle animals were happy for Asha's kind heart and friendship.\n"
+      ]
+    },
+    "en-de": {
+      "title": "Asha die Heilende Drachin",
+      "moral": "Güte und Hilfe werden immer belohnt, auch wenn Dinge schwierig erscheinen.",
+      "hook": "Komm mit Asha, der mitfühlenden Drachendame, während sie einem verlorenen Freund im Großen Dschungel von Fora hilft.",
+      "keywords": {
+        "Dankeschön": [
+          "Thank you",
+          "Thanks"
+        ],
+        "magische Energie": [
+          "Magic energy",
+          "Magical energy"
+        ],
+        "Freundlichkeit": [
+          "Kindness",
+          "Friendliness"
+        ],
+        "Lumi": [
+          "Lumi"
+        ],
+        "Ranken": [
+          "Vines",
+          "Creeper"
+        ],
+        "Dschungel": [
+          "Jungle",
+          "Rainforest"
+        ],
+        "Drachenfrau": [
+          "Dragon lady",
+          "Dragon woman"
+        ],
+        "heilend": [
+          "Healing",
+          "Curative"
+        ],
+        "Asha": [
+          "Asha"
+        ],
+        "Glühwürmchen": [
+          "Firefly",
+          "Glowworm"
+        ]
+      },
+      "paragraphs": [
+        "Es war einmal im Großen Dschungel von Fora, wo Asha, eine nette und fürsorgliche Drachenfrau mit heilenden Kräften, lebte. Sie war von allen Tieren respektiert für ihre sanfte Art und ihren Willen, denen in Not zu helfen.\n",
+        "Eines sonnigen Morgens hörte Asha einen aufgeregten Ruf, der durch den Dschungel hallte. Als sie dem Klang folgte, fand sie Lumi die verlorene Glühwürmchen, umgeben von verworrenen Ranken. Lumi zitterte vor Angst, konnte ihren Weg nach Hause nicht finden.\n",
+        "\"Oh liebes Lumi, keine Sorge\", beruhigte Asha, während sie mit ihrem feurigen Atem die Ranken beseitigte. \"Ich werde dich sicher nach Hause führen.\" Mit Ashas strahlendem Licht machten sie sich auf den Weg durch den Dschungel, bis Lumis Freunde sie sahen und sich freuten.\n",
+        "Als Dankeschön schenkten Lumis Freunde Asha einen besonderen Kristall, der mit magischer Energie leuchtete. Der Kristall würde Asha immer den Weg zurück zeigen, wenn sie Hilfe brauchte. Die Tiere im Dschungel jubelten über Ashas Freundlichkeit und Freundschaft.\n"
+      ]
+    }
+  },
+  "series": "fables-of-fora-forests"
+}

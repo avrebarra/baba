@@ -1,0 +1,203 @@
+{
+  "title": "The Shining Star",
+  "hook": "In the Great Fora Jungle, Ravi, the mapmaker, and Luna, the wise young owl, set out on a mysterious adventure. But will they discover the secret of the shining star?",
+  "moral": "Curiosity leads to wonderful discoveries.",
+  "paragraphs": [
+    "One night, Ravi was busy mapping the jungle under the silvery moonlight when Luna fluttered down from the treetops, her eyes gleaming with curiosity. \"What are you searching for, Ravi?\" she asked, her wings rustling softly.",
+    "Ravi showed Luna his map, pointing to a spot where a bright star had fallen from the sky, leaving a trail of shimmering light. Luna's wise eyes widened with wonder, and she suggested they follow the star's path to uncover its mystery.",
+    "As they journeyed deep into the jungle, they encountered obstacles like a rushing river and a steep cliff. Ravi used his mapmaking skills to find safe paths, while Luna's keen eyes spotted hidden dangers, guiding them through safely.",
+    "Finally, they reached a clearing where the shining star lay nestled among colorful flowers. Its light danced playfully around them, filling their hearts with joy and wonder. Ravi and Luna realized that the star had brought them together on a magical adventure of friendship and discovery."
+  ],
+  "keywords": [
+    "adventure",
+    "mapmaker",
+    "owl",
+    "jungle",
+    "discovery",
+    "curiosity",
+    "mystery",
+    "friendship",
+    "wonder"
+  ],
+  "characters": [
+    "Ravi",
+    "Luna"
+  ],
+  "translations": {
+    "id-en": {
+      "hook": "In the Great Fora Jungle, Ravi, the mapmaker, and Luna, the wise young owl, set out on a mysterious adventure. But will they discover the secret of the shining star?",
+      "moral": "Curiosity leads to wonderful discoveries.",
+      "title": "The Shining Star",
+      "keywords": {
+        "forest": [
+          "hutan",
+          "rimba"
+        ],
+        "river": [
+          "sungai"
+        ],
+        "maps": [
+          "peta"
+        ],
+        "night": [
+          "malam"
+        ],
+        "jungle": [
+          "hutan belantara"
+        ],
+        "moon": [
+          "bulan"
+        ],
+        "Ravi": [
+          "Ravi"
+        ],
+        "Luna": [
+          "bulan"
+        ],
+        "star": [
+          "bintang"
+        ],
+        "flowers": [
+          "bunga"
+        ],
+        "friendship": [
+          "persahabatan"
+        ]
+      },
+      "paragraphs": [
+        "One night, Ravi was busy mapping the jungle under the shiny moon when Luna came down from the trees, her eyes sparkling with interest. \"What are you looking for, Ravi?\" she asked, her wings making a soft noise.\n",
+        "Ravi showed Luna his map, pointing to a spot where a bright star had fallen from the sky, leaving a trail of shimmering light. Luna's wise eyes widened with wonder, and she suggested they follow the star's path to uncover its mystery.\n",
+        "As they walked far into the forest, they found big problems like a fast river and a tall rock wall. Ravi made maps to show safe ways, and Luna's sharp eyes saw secret scary things, leading them safely.\n",
+        "Finally, they got to a big open space where a bright star was resting among pretty flowers. Its light moved around in a fun way, making them feel really happy and amazed. Ravi and Luna understood that the star had brought them on a special journey of friendship and finding things out.\n"
+      ]
+    },
+    "en-pt": {
+      "title": "A Estrela Brilhante",
+      "moral": "A curiosidade leva a descobertas maravilhosas.",
+      "hook": "Na Grande Floresta da Forja, Ravi, o fazedor de mapas, e Luna, a sábia corujinha jovem, partiram em uma aventura misteriosa. Mas será que eles irão descobrir o segredo da estrela brilhante?",
+      "keywords": {
+        "jungle": [
+          "selva"
+        ],
+        "river": [
+          "Ravi"
+        ],
+        "mapmaking": [
+          "mapmaking"
+        ],
+        "Ravi": [
+          "river"
+        ],
+        "Luna": [
+          "Luna"
+        ],
+        "selva": [
+          "jungle"
+        ],
+        "estrela": [
+          "estrela"
+        ],
+        "cores": [
+          "cores"
+        ],
+        "amizade": [
+          "amizade"
+        ]
+      },
+      "paragraphs": [
+        "Certa noite, Ravi estava ocupado mapeando a selva sob a luz prateada da lua quando Luna flutuou para baixo das copas das árvores, seus olhos brilhando de curiosidade. \"O que você está procurando, Ravi?\" ela perguntou, suas asas farfalhando suavemente.\n",
+        "Ravi mostrou seu mapa para Luna, apontando para um lugar onde uma estrela brilhante havia caído do céu, deixando um rastro de luz brilhante. Os olhos sábios de Luna se abriram com espanto, e ela sugeriu que seguissem o caminho da estrela para descobrir seu mistério.\n",
+        "Enquanto caminhavam fundo na selva, eles encontraram obstáculos como um rio rápido e um penhasco íngreme. Ravi usou suas habilidades de fazer mapas para encontrar caminhos seguros, enquanto os olhos atentos de Luna detectaram perigos escondidos, guiando-os com segurança.\n",
+        "Finalmente, eles chegaram a um campo aberto onde a estrela brilhante estava aninhada entre flores coloridas. Sua luz dançava de forma divertida ao redor deles, preenchendo seus corações com alegria e admiração. Ravi e Luna perceberam que a estrela os havia unido em uma aventura mágica de amizade e descoberta.\n"
+      ]
+    },
+    "en-de": {
+      "title": "Der Glänzende Stern",
+      "moral": "Neugierde führt zu tollen Entdeckungen.",
+      "hook": "In dem Großen Fora Dschungel, Ravi, der Kartenmacher, und Luna, die kluge junge Eule, machen sich auf ein geheimnisvolles Abenteuer. Aber werden sie das Geheimnis des leuchtenden Sterns entdecken?",
+      "keywords": {
+        "Ravi": [
+          "Sunshine",
+          "Radiance"
+        ],
+        "Luna": [
+          "Moon"
+        ],
+        "Stern": [
+          "Star"
+        ],
+        "Dschungel": [
+          "Jungle"
+        ],
+        "Fluss": [
+          "River"
+        ],
+        "Gefahren": [
+          "Dangers",
+          "Hazards"
+        ],
+        "Lichtung": [
+          "Clearing",
+          "Glade"
+        ],
+        "Freundschaft": [
+          "Friendship"
+        ],
+        "Nacht": [
+          "Night"
+        ],
+        "Mondschein": [
+          "Moonlight"
+        ],
+        "Neugierde": [
+          "Curiosity"
+        ]
+      },
+      "paragraphs": [
+        "Eine Nacht, Ravi war damit beschäftigt, den Dschungel unter dem silbernen Mondschein zu kartieren, als Luna von den Baumwipfeln herabflatterte, ihre Augen glänzten vor Neugierde. \"Was suchst du, Ravi?\" fragte sie, während ihre Flügel leise raschelten.\n",
+        "Ravi zeigte Luna seine Karte und zeigte auf eine Stelle, an der ein heller Stern vom Himmel gefallen war und eine Spur aus schimmerndem Licht hinterließ. Lunas weise Augen weiteten sich vor Staunen, und sie schlug vor, dem Pfad des Sterns zu folgen, um sein Geheimnis zu entdecken.\n",
+        "Als sie tief in den Dschungel reisten, trafen sie auf Hindernisse wie einen reißenden Fluss und einen steilen Abhang. Ravi nutzte seine Kartographie-Fähigkeiten, um sichere Wege zu finden, während Lunas scharfe Augen verborgene Gefahren entdeckten und sie sicher hindurchführten.\n",
+        "Schließlich erreichten sie eine Lichtung, wo der leuchtende Stern zwischen bunten Blumen eingebettet lag. Sein Licht tanzte verspielt um sie herum und füllte ihre Herzen mit Freude und Staunen. Ravi und Luna erkannten, dass der Stern sie auf ein magisches Abenteuer der Freundschaft und Entdeckung zusammengebracht hatte.\n"
+      ]
+    },
+    "en-fr": {
+      "title": "L'Étoile Brillante",
+      "moral": "La curiosité mène à des découvertes merveilleuses.",
+      "hook": "Dans la Grande Jungle de Fora, Ravi, le dessinateur de carte, et Luna, la jeune chouette sage, partent pour une aventure mystérieuse. Vont-ils découvrir le secret de l'étoile brillante ?",
+      "keywords": {
+        "jungle": [
+          "jungle"
+        ],
+        "river": [
+          "river"
+        ],
+        "cliff": [
+          "cliff"
+        ],
+        "Ravi": [
+          "Ravi"
+        ],
+        "Luna": [
+          "Luna"
+        ],
+        "étoile": [
+          "star"
+        ],
+        "clairière": [
+          "glade",
+          "clearing"
+        ],
+        "amitié": [
+          "friendship"
+        ]
+      },
+      "paragraphs": [
+        "Une nuit, Ravi était occupé à cartographier la jungle sous la lumière argentée de la lune quand Luna est descendue des cimes des arbres, ses yeux étincelants de curiosité. \"Que cherches-tu, Ravi?\" demanda-t-elle, ses ailes bruissant doucement.\n",
+        "Ravi a montré à Luna sa carte, en indiquant un endroit où une étoile brillante était tombée du ciel, laissant une traînée de lumière scintillante. Les yeux sages de Luna se sont élargis d'émerveillement, et elle a suggéré qu'ils suivent le chemin de l'étoile pour découvrir son mystère.\n",
+        "En avançant dans la jungle, Ravi dessina des chemins sûrs sur sa carte et Luna repéra les dangers cachés avec ses yeux perçants, les guidant en sécurité.\n",
+        "Enfin, ils atteignirent une clairière où l'étoile brillante était nichée parmi des fleurs colorées. Sa lumière dansait joyeusement autour d'eux, remplissant leurs cœurs de joie et d'émerveillement. Ravi et Luna réalisèrent que l'étoile les avait réunis pour une aventure magique d'amitié et de découverte.\n"
+      ]
+    }
+  },
+  "series": "fables-of-fora-forests"
+}

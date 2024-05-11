@@ -1,0 +1,254 @@
+{
+  "title": "Maila, the Helpful Garden Fairy",
+  "hook": "What kind of adventure will Maila, the garden fairy, have today in the magical jungle of Fora?",
+  "moral": "Kindness and patience can help us overcome obstacles and make new friends.",
+  "paragraphs": [
+    "Once upon a time, in the great jungle of Fora, there lived Maila, the helpful garden fairy. She was known for her kindness towards all creatures, big and small.",
+    "One sunny morning, Maila heard a soft cry coming from the edge of the enchanted garden. Curious, she fluttered over to find a lost baby turtle named Terry. Terry was trying to find his way back to the pond but couldn't remember the path.",
+    "\"Hello, little one! I'm Maila. Can I help you find your way home?\" asked Maila with a warm smile. Terry was relieved and shared his worry about finding his family.",
+    "Maila decided to guide Terry through the winding paths of the jungle, using her knowledge of the plants and creatures around them. Along the way, they encountered a playful squirrel who offered to show them a shortcut.",
+    "With patience and teamwork, Maila, Terry, and the squirrel reached the pond where Terry's family was waiting anxiously. They were overjoyed to see Terry safe and thanked Maila for her kindness."
+  ],
+  "keywords": [
+    "garden fairy",
+    "enchanted jungle",
+    "kindness",
+    "teamwork",
+    "patience",
+    "cooperation",
+    "lost turtle",
+    "magical creatures"
+  ],
+  "characters": [
+    "Maila"
+  ],
+  "translations": {
+    "en-fr": {
+      "title": "Maila, la Fée du Jardin Serviable",
+      "moral": "Gentillesse et patience peuvent nous aider à surmonter les obstacles et à se faire de nouveaux amis.",
+      "hook": "Quelle aventure amusante Maila, la fée du jardin, aura-t-elle aujourd'hui dans la jungle magique de Fora?",
+      "keywords": {
+        "Maila": [
+          "Girl"
+        ],
+        "jungle": [
+          "jungle"
+        ],
+        "fée": [
+          "fairy"
+        ],
+        "patience": [
+          "patience"
+        ],
+        "travail d'équipe": [
+          "teamwork"
+        ],
+        "gentillesse": [
+          "kindness"
+        ],
+        "sourire chaleureux": [
+          "warm smile"
+        ],
+        "famille": [
+          "family"
+        ],
+        "bébé tortue": [
+          "baby turtle"
+        ],
+        "jardin enchanté": [
+          "enchanted garden"
+        ],
+        "écureuil": [
+          "squirrel"
+        ]
+      },
+      "paragraphs": [
+        "Il était une fois, dans la grande jungle de Fora, habitait Maila, la gentille fée du jardin. Elle était connue pour sa bonté envers toutes les créatures, grandes et petites.\n",
+        "Il était une fois, un matin ensoleillé, Maila entendit un doux pleur venant du bord du jardin enchanté. Curieuse, elle vola pour trouver une petite tortue perdue nommée Terry. Terry essayait de retrouver son chemin vers l'étang mais ne se souvenait plus du chemin.\n",
+        "\"Bonjour, petit(e) ! Je suis Maila. Puis-je t'aider à trouver ton chemin vers la maison?\" demanda Maila avec un sourire chaleureux. Terry était soulagé et partagea ses inquiétudes pour retrouver sa famille.\n",
+        "Maila a décidé de guider Terry à travers les chemins sinueux de la jungle, en utilisant ses connaissances des plantes et des créatures autour d'eux. En chemin, ils ont rencontré un écureuil joueur qui a offert de leur montrer un raccourci.\n",
+        "Avec patience et travailler ensemble, Maila, Terry, et l'écureuil sont arrivés à l'étang où la famille de Terry attendait avec anxiété. Ils étaient ravis de voir que Terry était en sécurité et ont remercié Maila pour sa gentillesse.\n"
+      ]
+    },
+    "id-en": {
+      "hook": "What kind of adventure will Maila, the garden fairy, have today in the magical jungle of Fora?",
+      "moral": "Kindness and patience can help us overcome obstacles and make new friends.",
+      "title": "Maila, the Helpful Garden Fairy",
+      "keywords": {
+        "Maila": [
+          "Maila"
+        ],
+        "jungle": [
+          "hutan"
+        ],
+        "squirrel": [
+          "tupai"
+        ],
+        "fairy": [
+          "peri",
+          "bidadari"
+        ],
+        "kindness": [
+          "kebaikan",
+          "kasih sayang"
+        ],
+        "Hello": [
+          "Halo",
+          "Hai"
+        ],
+        "little one": [
+          "anak kecil",
+          "si kecil"
+        ],
+        "find your way": [
+          "temukan jalanmu",
+          "cari jalanmu"
+        ],
+        "patience": [
+          "kesabaran",
+          "ketabahan"
+        ],
+        "teamwork": [
+          "kerja sama",
+          "kolaborasi"
+        ],
+        "morning": [
+          "pagi",
+          "subuh"
+        ],
+        "garden": [
+          "kebun",
+          "taman"
+        ],
+        "turtle": [
+          "kura-kura",
+          "penyu"
+        ]
+      },
+      "paragraphs": [
+        "Once upon a time, in a big jungle named Fora, there was Maila, the friendly fairy who takes care of the plants. She was famous for being nice to every little and big animal.\n",
+        "One bright morning, Maila heard a gentle sound from the boundary of the magic garden. Interested, she flew to the spot and saw a little turtle named Terry. Terry was lost and was looking for the way to the pond but he couldn't remember the way.\n",
+        "\"Hello, little one! I'm Maila. Can I help you find your way home?\" asked Maila with a warm smile. Terry was relieved and shared his worry about finding his family.\n",
+        "Maila had a plan to help Terry find the way in the twisty jungle using what she knows about the green things and animals there. Soon, they met a funny squirrel who said he could lead them on a quick path.\n",
+        "With patience and working together, Maila, Terry, and the squirrel went to a big water place where Terry's family were very worried. Terry's family were happy to see Terry safe and said thank you to Maila for being kind.\n"
+      ]
+    },
+    "en-de": {
+      "title": "Maila, die hilfreiche Gartelfee",
+      "moral": "Freundlichkeit und Geduld können uns helfen, Hindernisse zu überwinden und neue Freunde zu finden.",
+      "hook": "Welches Abenteuer wird Maila, die Gatenfee, heute im zauberhaften Dschungel von Fora haben?",
+      "keywords": {
+        "Dschungel": [
+          "jungle"
+        ],
+        "Gartelfe": [
+          "garden fairy"
+        ],
+        "Freundlichkeit": [
+          "kindness"
+        ],
+        "Maila": [
+          "tulip"
+        ],
+        "Hilfe": [
+          "help",
+          "aid"
+        ],
+        "Familie": [
+          "family"
+        ],
+        "Geduld": [
+          "patience"
+        ],
+        "Teamarbeit": [
+          "teamwork"
+        ],
+        "Eichhörnchen": [
+          "squirrel"
+        ],
+        "Terry": [
+
+        ],
+        "sonnig": [
+          "sunny"
+        ],
+        "Weinen": [
+          "cry",
+          "weep"
+        ],
+        "neugierig": [
+          "curious"
+        ]
+      },
+      "paragraphs": [
+        "Es war einmal, im großen Dschungel von Fora, lebte Maila, die hilfsbereite Gartelfe. Sie war bekannt für ihre Freundlichkeit gegenüber allen Lebewesen, groß und klein.\n",
+        "Eines sonnigen Morgens hörte Maila ein leises Weinen am Rande des verzauberten Gartens. Neugierig flatterte sie hinüber, um eine verlorene Baby-Schildkröte namens Terry zu finden. Terry versuchte seinen Weg zurück zum Teich zu finden, konnte aber den Pfad nicht erinnern.\n",
+        "\"Hallo, kleiner! Ich bin Maila. Kann ich dir helfen, den Weg nach Hause zu finden?\", fragte Maila mit einem warmen Lächeln. Terry war erleichtert und teilte seine Sorge darüber, seine Familie zu finden.\n",
+        "Maila beschloss, Terry durch die kurvigen Wege des Dschungels zu führen, indem sie ihr Wissen über die Pflanzen und Kreaturen um sie herum nutzte. Unterwegs trafen sie auf ein verspieltes Eichhörnchen, das ihnen anbot, ihnen einen Abkürzungsweg zu zeigen.\n",
+        "Mit Geduld und Teamarbeit erreichten Maila, Terry und das Eichhörnchen den Teich, wo Terrys Familie voller Sorge wartete. Sie waren überglücklich, Terry sicher zu sehen und bedankten sich bei Maila für ihre Freundlichkeit.\n"
+      ]
+    },
+    "en-pt": {
+      "title": "Maila, a Fadinha Prestativa do Jardim",
+      "moral": "Bondade e paciência podem nos ajudar a superar desafios e fazer novos amigos.",
+      "hook": "Que tipo de aventura a Maila, a fada do jardim, terá hoje na floresta mágica de Fora?",
+      "keywords": {
+        "fada": [
+          "fairy"
+        ],
+        "jardineira": [
+          "gardener",
+          "overalls"
+        ],
+        "bondade": [
+          "kindness",
+          "goodness"
+        ],
+        "teamwork": [
+          "collaboration",
+          "cooperation"
+        ],
+        "patience": [
+          "tolerance",
+          "endurance"
+        ],
+        "kindness": [
+          "goodwill",
+          "benevolence"
+        ],
+        "Maila": [
+          "Maila"
+        ],
+        "pequenino": [
+          "tiny",
+          "small"
+        ],
+        "caminho de casa": [
+          "way home",
+          "homeward path"
+        ],
+        "Terry": [
+          "Terry"
+        ],
+        "esquilo": [
+          "squirrel"
+        ],
+        "jardim encantado": [
+          "enchanted garden",
+          "magic garden"
+        ],
+        "tartaruga": [
+          "turtle"
+        ]
+      },
+      "paragraphs": [
+        "Era uma vez, na grande floresta de Fora, vivia Maila, a fada jardineira que ajudava muito. Ela era conhecida pela sua bondade com todas as criaturas, grandes e pequenas.\n",
+        "Certa manhã ensolarada, Maila ouviu um choro suave vindo da beira do jardim encantado. Curiosa, ela voou até encontrar um filhote de tartaruga perdido chamado Terry. Terry estava tentando achar o caminho de volta ao lago, mas não conseguia lembrar o trajeto.\n",
+        "\"Olá, pequenino! Eu sou a Maila. Posso te ajudar a encontrar o caminho de casa?\" perguntou Maila com um sorriso caloroso. Terry se sentiu aliviado e compartilhou sua preocupação em encontrar sua família.\n",
+        "A Maila decidiu ajudar o Terry a atravessar os caminhos sinuosos da floresta, usando o seu conhecimento sobre as plantas e criaturas ao redor deles. Durante a jornada, encontraram um esquilo brincalhão que ofereceu para mostrar um atalho.\n",
+        "Com paciência e trabalho em equipe, Maila, Terry e o esquilo chegaram ao lago, onde a família de Terry esperava ansiosamente. Eles ficaram muito felizes em ver Terry em segurança e agradeceram a Maila por sua bondade.\n"
+      ]
+    }
+  },
+  "series": "fables-of-fora-forests"
+}

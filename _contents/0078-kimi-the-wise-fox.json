@@ -1,0 +1,186 @@
+{
+  "title": "Kimi the Wise Fox",
+  "hook": "Have you ever heard of Kimi, the wise old fox with a thousand stories to tell? Let's follow Kimi in the magical jungle of Fora!",
+  "moral": "Listening to those wiser than us can help solve our problems and teach us valuable lessons.",
+  "paragraphs": [
+    "\"In the heart of the great jungle of Fora lived Kimi, a fox known far and wide for their wisdom. Kimi's den was nestled under the tallest oak tree, where animals from all over came to seek advice and hear tales of the past.\"",
+    "\"One sunny day, a young monkey named Milo was in a pickle. He had lost his favorite banana in the dense jungle and didn't know where to find it. Distressed, Milo ran to Kimi for help.\"",
+    "\"Kimi listened carefully to Milo's plight and shared a story of an old oak tree near the river, where bananas often fell. Milo's eyes lit up with hope as he embarked on his journey.\"",
+    "\"Following Kimi's advice, Milo found his lost banana near the old oak tree, just as the sun began to set. Grateful, Milo thanked Kimi for the wise guidance and vowed to always listen to the older animals in the jungle.\""
+  ],
+  "keywords": [
+    "wise fox",
+    "jungle",
+    "advice",
+    "lost",
+    "listening",
+    "lessons",
+    "grateful",
+    "old oak tree",
+    "banana",
+    "stories"
+  ],
+  "characters": [
+    "Kimi"
+  ],
+  "translations": {
+    "en-de": {
+      "title": "Kiki der Kluge Fuchs",
+      "moral": "Wenn wir denjenigen zuhören, die weiser sind als wir, können sie uns helfen, unsere Probleme zu lösen und uns wertvolle Lektionen beibringen.",
+      "hook": "Hast du schon von Kimi gehört, dem klugen alten Fuchs mit tausend Geschichten zu erzählen? Lass uns Kimi in den zauberhaften Dschungel von Fora folgen!",
+      "keywords": {
+        "Affe": [
+          "Monkey"
+        ],
+        "Banane": [
+          "Banana"
+        ],
+        "Dschungel": [
+          "Jungle"
+        ],
+        "Milo": [
+          "Milo"
+        ],
+        "Kimi": [
+          "Kimi"
+        ],
+        "Bananen": [
+          "Bananas"
+        ],
+        "Klugheit": [
+          "Wisdom"
+        ],
+        "Eichenbaum": [
+          "Oak Tree"
+        ]
+      },
+      "paragraphs": [
+        "Im Herzen des großen Dschungels von Fora lebte Kimi, ein Fuchs weit bekannt für seine Klugheit. Kimis Bau war unter dem höchsten Eichenbaum versteckt, wohin Tiere von überall kamen, um Rat zu suchen und Geschichten aus der Vergangenheit zu hören.\n",
+        "An einem sonnigen Tag war ein junger Affe namens Milo in der Klemme. Er hatte seine Lieblingsbanane im dichten Dschungel verloren und wusste nicht, wo er sie finden sollte. Aufgeregt lief Milo zu Kimi um Hilfe zu bekommen.\n",
+        "Kimi hörte genau zu, als Milo von seinen Sorgen erzählte und erzählte ihm von einem alten Eichenbaum in der Nähe des Flusses, wo Bananen oft herunterfielen. Milos Augen leuchteten vor Hoffnung, als er sich auf seine Reise begab.\n",
+        "Als Milo Kimis Rat befolgte, fand er seine verlorene Banane in der Nähe des alten Eichenbaums, genau als die Sonne begann unterzugehen. Dankbar bedankte sich Milo bei Kimi für die kluge Anleitung und schwor, immer auf die älteren Tiere im Dschungel zu hören.\n"
+      ]
+    },
+    "en-pt": {
+      "title": "Kimi a Raposa Sabida",
+      "moral": "Escutar aqueles que são mais sábios do que nós pode nos ajudar a resolver nossos problemas e nos ensinar lições valiosas.",
+      "hook": "Já ouviste falar do Kimi, o velho raposinho sábio com mil histórias para contar? Vamos seguir o Kimi na floresta mágica de Fora!",
+      "keywords": {
+        "monkey": [
+          "macaco"
+        ],
+        "banana": [
+          "banana"
+        ],
+        "jungle": [
+          "selva"
+        ],
+        "Kimi": [
+          "Kimi"
+        ],
+        "bananas": [
+          "bananas"
+        ],
+        "journey": [
+          "jornada"
+        ],
+        "Milo": [
+          "Milo"
+        ],
+        "forest": [
+          "floresta"
+        ],
+        "wisdom": [
+          "sabedoria"
+        ]
+      },
+      "paragraphs": [
+        "No coração da grande floresta de Fora vivia Kimi, uma raposa conhecida por todos por sua sabedoria. A toca de Kimi estava escondida embaixo da árvore de carvalho mais alta, onde animais de todos os lugares vinham buscar conselhos e ouvir contos do passado.\n",
+        "Numa dia ensolarado, um macaquinho chamado Milo estava em apuros. Ele tinha perdido sua banana favorita na selva densa e não sabia onde encontrá-la. Preocupado, Milo correu para Kimi em busca de ajuda.\n",
+        "Kimi ouviu atentamente o problema de Milo e contou uma história sobre uma velha árvore de carvalho perto do rio, onde as bananas caíam com frequência. Os olhos de Milo se encheram de esperança ao embarcar em sua jornada.\n",
+        "Seguindo o conselho de Kimi, Milo encontrou sua banana perdida perto da velha árvore de carvalho, exatamente quando o sol começou a se pôr. Agradecido, Milo agradeceu a Kimi pela orientação sábia e prometeu sempre ouvir os animais mais velhos na selva.\n"
+      ]
+    },
+    "id-en": {
+      "hook": "Have you ever heard of Kimi, the wise old fox with a thousand stories to tell? Let's follow Kimi in the magical jungle of Fora!",
+      "moral": "Listening to those wiser than us can help solve our problems and teach us valuable lessons.",
+      "title": "Kimi the Wise Fox",
+      "keywords": {
+        "Milo": [
+          "Milo"
+        ],
+        "Kimi": [
+          "Kimi"
+        ],
+        "banana": [
+          "pisang"
+        ],
+        "bananas": [
+          "pisang"
+        ],
+        "adventure": [
+          "petualangan"
+        ],
+        "monkey": [
+          "monyet"
+        ],
+        "forest": [
+          "hutan"
+        ],
+        "jungle": [
+          "hutan belantara"
+        ],
+        "fox": [
+          "rubah"
+        ],
+        "wisdom": [
+          "kebijaksanaan"
+        ]
+      },
+      "paragraphs": [
+        "In a big forest far away, there was a clever fox named Kimi. Kimi's home was under the tallest tree, where animals visited to hear stories and ask for help.\n",
+        "One bright day, a little monkey named Milo was in trouble. He lost his best banana in the thick forest and didn't know where to look for it. Worried, Milo quickly went to Kimi for assistance.\n",
+        "Kimi listened very well to Milo's sad story. Kimi told a story about an old tree by the river, where yummy bananas would fall. Milo's eyes brightened with joy as he started his adventure.\n",
+        "Milo listened to Kimi and found his missing banana by the big tree as the sun went down. Milo thanked Kimi for helping and promised to always listen to the older animals in the forest.\n"
+      ]
+    },
+    "en-fr": {
+      "title": "Kimi le Renard Sage",
+      "moral": "Écouter les plus malins que nous peut aider à résoudre nos problèmes et nous apprendre des leçons précieuses.",
+      "hook": "As-tu déjà entendu parler de Kimi, le vieux renard sage avec mille histoires à raconter? Suivons Kimi dans la jungle magique de Fora!",
+      "keywords": {
+        "Kimi": [
+          "Kimi"
+        ],
+        "Milo": [
+          "Milo"
+        ],
+        "vieux chêne": [
+          "old oak"
+        ],
+        "banane": [
+          "banana"
+        ],
+        "jungle": [
+          "jungle"
+        ],
+        "fox": [
+          "fox"
+        ],
+        "wisdom": [
+          "wisdom"
+        ],
+        "singe": [
+          "monkey"
+        ]
+      },
+      "paragraphs": [
+        "Au milieu de la grande jungle de Fora, habitait Kimi, un renard connu partout pour sa sagesse. La tanière de Kimi était nichée sous le chêne le plus grand, où les animaux de partout venaient chercher des conseils et écouter des contes du passé.\n",
+        "Il y avait une fois un jeune singe nommé Milo qui était dans l'embarras. Il avait perdu sa banane préférée dans la jungle dense et ne savait pas où la trouver. Inquiet, Milo est allé voir Kimi pour de l'aide.\n",
+        "Kimi a écouté attentivement le problème de Milo et a partagé une histoire d'un vieux chêne près de la rivière, où les bananes tombaient souvent. Les yeux de Milo se sont illuminés d'espoir lorsqu'il a entrepris son voyage.\n",
+        "En suivant le conseil de Kimi, Milo a trouvé sa banane perdue près du vieux chêne, juste au moment où le soleil commençait à se coucher. Reconnaissant, Milo a remercié Kimi pour la sage direction et a promis d'écouter toujours les animaux plus âgés de la jungle.\n"
+      ]
+    }
+  },
+  "series": "fables-of-fora-forests"
+}

@@ -1,0 +1,224 @@
+{
+  "title": "Nuri, the Mischievous Forest Spirit",
+  "hook": "Do you know Nuri, the mischievous forest spirit in the Great Jungle of Fora? What trouble will Nuri cause today?",
+  "moral": "Kindness can turn mischievous deeds into acts of kindness and friendship.",
+  "paragraphs": [
+    "Once upon a time, in the heart of the Great Jungle of Fora, lived Nuri, a mischievous forest spirit known for playing pranks on the animals and plants.",
+    "One sunny morning, as Nuri was flying around, it spotted a bird struggling to build its nest. Nuri thought, \"It's time for some fun!\"",
+    "With a mischievous grin, Nuri fluttered down and scattered the twigs and leaves the bird had gathered. The bird chirped sadly, \"Who did this?\"",
+    "Feeling a pang of guilt, Nuri decided to make things right. It gathered more twigs and leaves, helping the bird finish its nest. The bird's eyes sparkled with gratitude.",
+    "From that day on, Nuri's reputation in the jungle changed. Animals and plants no longer feared its pranks, but rather welcomed its playful presence. Nuri learned that kindness brings joy to everyone."
+  ],
+  "keywords": [
+    "Nuri",
+    "forest spirit",
+    "mischievous",
+    "Great Jungle of Fora",
+    "pranks",
+    "kindness",
+    "friendship",
+    "animals",
+    "plants",
+    "gratitude"
+  ],
+  "characters": [
+    "Nuri"
+  ],
+  "translations": {
+    "id-en": {
+      "hook": "Do you know Nuri, the mischievous forest spirit in the Great Jungle of Fora? What trouble will Nuri cause today?",
+      "moral": "Kindness can turn mischievous deeds into acts of kindness and friendship.",
+      "title": "Nuri, the Mischievous Forest Spirit",
+      "keywords": {
+        "Nuri": [
+          "Parrot"
+        ],
+        "bird": [
+          "Burung"
+        ],
+        "nest": [
+          "Sarang"
+        ],
+        "time": [
+          "Waktu"
+        ],
+        "Jungle": [
+          "Hutan"
+        ],
+        "fairy": [
+          "Peri"
+        ],
+        "mischievous": [
+          "Nakal"
+        ],
+        "scatter": [
+          "Menyebarkan",
+          "Menabur"
+        ],
+        "gather": [
+          "Mengumpulkan"
+        ],
+        "kindness": [
+          "Kebajikan",
+          "Kasih Sayang"
+        ]
+      },
+      "paragraphs": [
+        "Long time ago, deep in big Jungle of Fora, dwelt Nuri, a playful forest fairy who liked teasing animals and plants.\n",
+        "One bright morning, while Nuri was flying, it saw a bird having trouble making its home. Nuri thought, \"Time for play!\"\n",
+        "With a naughty smile, Nuri flew down and spread the sticks and leaves the bird had collected. The bird chirped sadly, \"Who did this?\"\n",
+        "Nuri felt bad and wanted to fix it. \nHe found more sticks and leaves to help the bird with its home. \nThe bird felt happy and thankful.\n",
+        "One day, all animals and plants in the forest began to like Nuri. They were happy when Nuri was around. Nuri saw that being nice makes everyone happy.\n"
+      ]
+    },
+    "en-de": {
+      "title": "Nuri, der freche Walgeist",
+      "moral": "Freundlichkeit kann freche Taten in Freundlichkeit und Freundschaft verwandeln.\n",
+      "hook": "Weisst du, wer Nuri ist? Ein frecher Waldbewohner im Grossen Dschungel von Fora. Welches Unheil wird Nuri heute anrichten?",
+      "keywords": {
+        "Nuri": [
+          "Nuri"
+        ],
+        "Vogel": [
+          "bird"
+        ],
+        "Nest": [
+          "nest"
+        ],
+        "frech": [
+          "cheeky",
+          "naughty"
+        ],
+        "Dschungel": [
+          "jungle"
+        ],
+        "Waldbewohner": [
+          "forest resident"
+        ],
+        "Dankbarkeit": [
+          "gratitude"
+        ],
+        "Nuri's reputation": [
+          "Nuri's reputation"
+        ],
+        "jungle": [
+          "jungle"
+        ],
+        "kindness": [
+          "kindness"
+        ]
+      },
+      "paragraphs": [
+        "Es war einmal, im Herzen des großen Dschungels von Fora, lebte Nuri, ein schelmischer Waldbewohner, der dafür bekannt war, Streiche mit den Tieren und Pflanzen zu spielen.\n",
+        "Eines sonnigen Morgens, als Nuri herumflog, entdeckte es einen Vogel, der Mühe hatte, sein Nest zu bauen. Nuri dachte: \"Es ist Zeit für etwas Spaß!\"\n",
+        "Mit einem frechen Grinsen flatterte Nuri hinab und verteilte die Zweige und Blätter, die der Vogel gesammelt hatte. Der Vogel zwitscherte traurig: \"Wer hat das gemacht?\"\n",
+        "Nuri fühlte einen kleinen Schmerz in seinem Herzen und beschloss, alles wieder gut zu machen. Er sammelte mehr Zweige und Blätter, half dem Vogel sein Nest fertigzustellen. Die Augen des Vogels funkelten vor Dankbarkeit.\n",
+        "Seit diesem Tag änderte sich Nuri's Ruf im Dschungel. Die Tiere und Pflanzen fürchteten seine Streiche nicht mehr, sondern begrüßten stattdessen seine spielerische Anwesenheit. Nuri lernte, dass Güte Freude für alle bringt.\n"
+      ]
+    },
+    "en-fr": {
+      "title": "Nuri, l'Esprit Coquin de la Forêt",
+      "moral": "Être gentil peut transformer les bêtises en gestes de gentillesse et d'amitié.",
+      "hook": "Connais-tu Nuri, le malicieux esprit de la forêt dans la Grande Jungle de Fora? Quelles bêtises Nuri va-t-il faire aujourd'hui?\n",
+      "keywords": {
+        "matin ensoleillé": [
+          "sunny morning"
+        ],
+        "Nuri": [
+          "parrot"
+        ],
+        "nid": [
+          "nest"
+        ],
+        "esprit farceur": [
+          "mischievous spirit"
+        ],
+        "animaux": [
+          "animals"
+        ],
+        "twigs": [
+          "brindilles"
+        ],
+        "bird": [
+          "oiseau"
+        ],
+        "sourire espiègle": [
+          "mischievous smile"
+        ],
+        "brindilles": [
+          "twigs"
+        ],
+        "jungle": [
+          "rainforest"
+        ],
+        "gentillesse": [
+          "kindness"
+        ]
+      },
+      "paragraphs": [
+        "Il était une fois, au cœur de la Grande Jungle de Fora, vivait Nuri, un esprit farceur connu pour jouer des tours aux animaux et aux plantes.\n",
+        "Un matin ensoleillé, alors que Nuri volait autour, il a repéré un oiseau qui avait du mal à construire son nid. Nuri pensa, \"C'est le moment de s'amuser !\"\n",
+        "Avec un sourire espiègle, Nuri a volé en bas et a dispersé les brindilles et les feuilles que l'oiseau avait rassemblées. L'oiseau a gazouillé tristement, \"Qui a fait ça?\"\n",
+        "Sentant un petit regret, Nuri a décidé de réparer les choses. Il a ramassé plus de branches et de feuilles, aidant l'oiseau à finir son nid. Les yeux de l'oiseau brillaient de gratitude.\n",
+        "Depuis ce jour-là, la réputation de Nuri dans la jungle a changé. Les animaux et les plantes n'ont plus eu peur de ses farces, mais ont plutôt accueilli sa présence joyeuse. Nuri a appris que la gentillesse apporte de la joie à tout le monde.\n"
+      ]
+    },
+    "en-pt": {
+      "title": "Nuri, o Espírito Travesso da Floresta",
+      "moral": "Bondade pode transformar travessuras em gestos de bondade e amizade.",
+      "hook": "Você conhece Nuri, o espírito travesso da floresta na Grande Selva de Fora? Que travessura o Nuri vai fazer hoje?",
+      "keywords": {
+        "Nuri": [
+          "Jungle"
+        ],
+        "selva": [
+          "Jungle"
+        ],
+        "travesso": [
+          "Kindness",
+          "guilt"
+        ],
+        "passarinho": [
+          "bird"
+        ],
+        "ninho": [
+          "nest"
+        ],
+        "sorriso travesso (mischievous grin)": [
+          "guilty smile",
+          "mischievous grin"
+        ],
+        "esvoaçando (fluttered)": [
+          "fluttering"
+        ],
+        "piou tristemente (chirped sadly)": [
+          "chirped sadly"
+        ],
+        "Jungle": [
+          "selva",
+          "Nuri"
+        ],
+        "Kindness": [
+          "travesso"
+        ],
+        "guilt": [
+          "travesso"
+        ],
+        "nest": [
+          "ninho"
+        ],
+        "gratitude": [
+
+        ]
+      },
+      "paragraphs": [
+        "Era uma vez, no meio da Grande Selva de Fora, morava Nuri, um espírito travesso da floresta conhecido por pregar peças nos animais e plantas.\n",
+        "Numa manhã ensolarada, enquanto Nuri voava por aí, ele viu um passarinho lutando para construir seu ninho. Nuri pensou: \"Hora de brincar!\"\n",
+        "Com um sorriso travesso, Nuri desceu esvoaçando e espalhou os gravetos e folhas que o pássaro havia juntado. O pássaro piou tristemente, \"Quem fez isso?\"\n",
+        "Sentindo uma pontada de culpa, Nuri decidiu fazer a coisa certa. Ele juntou mais galhos e folhas, ajudando o passarinho a terminar seu ninho. Os olhos do passarinho brilharam de gratidão.\n",
+        "Desde aquele dia, a reputação de Nuri na selva mudou. Os animais e plantas já não temiam mais suas brincadeiras, mas sim recebiam com alegria sua presença brincalhona. Nuri aprendeu que a bondade traz alegria para todos.\n"
+      ]
+    }
+  },
+  "series": "fables-of-fora-forests"
+}

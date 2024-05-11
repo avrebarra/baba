@@ -1,0 +1,199 @@
+{
+  "title": "Zara the Singing Mermaid",
+  "hook": "Have you ever heard the gentle songs of Zara, the singing mermaid from the great jungle of Fora?",
+  "moral": "Kindness and friendship can help overcome misunderstandings and bring harmony.",
+  "paragraphs": [
+    "\"In the great jungle of Fora, there lived Zara, a gentle singing mermaid who was loved by all the animals for her soothing melodies that echoed through the trees.\"",
+    "\"One day, as Zara was singing by the river, she noticed a group of mischievous monkeys playing pranks on the other animals. She decided to approach them with her sweet voice and asked them why they were causing trouble.\"",
+    "\"The monkeys, feeling misunderstood, explained that they were bored and looking for something fun to do. Zara suggested they join her in creating a musical performance for the jungle inhabitants instead.\"",
+    "\"With Zara leading the melody and the monkeys adding their playful beats, the jungle came alive with a magical concert that brought joy to all. The animals, including the monkeys, realized the happiness they could spread by working together.\""
+  ],
+  "keywords": [
+    "mermaid",
+    "jungle",
+    "singing",
+    "misunderstandings",
+    "harmony",
+    "kindness",
+    "friendship",
+    "melodies",
+    "musical",
+    "magical",
+    "concert",
+    "beats"
+  ],
+  "characters": [
+    "Zara"
+  ],
+  "translations": {
+    "id-en": {
+      "hook": "Have you ever heard the gentle songs of Zara, the singing mermaid from the great jungle of Fora?",
+      "moral": "Kindness and friendship can help overcome misunderstandings and bring harmony.",
+      "title": "Zara the Singing Mermaid",
+      "keywords": {
+        "jungle": [
+          "hutan",
+          "rimba"
+        ],
+        "mermaid": [
+          "putri duyung"
+        ],
+        "animals": [
+          "hewan"
+        ],
+        "Zara": [
+          "Zara"
+        ],
+        "monkeys": [
+          "monyet"
+        ],
+        "river": [
+          "sungai"
+        ],
+        "melody": [
+          "melodi"
+        ],
+        "musical performance": [
+          "pertunjukan musik"
+        ],
+        "jungle inhabitants": [
+          "penghuni hutan"
+        ]
+      },
+      "paragraphs": [
+        "In a big jungle called Fora, there was Zara, a kind mermaid who loved to sing. All the animals in the jungle adored her because her songs were so calming and beautiful.\n",
+        "One sunny day, Zara sang near the river. She saw naughty monkeys teasing animals. Zara, using her kind voice, asked the monkeys why they were being naughty.\n",
+        "The monkeys were sad because nobody understood them. They said they were tired and wanted to find something fun. Zara told them to help her make music for the animals in the jungle.\n",
+        "One day, Zara sang a happy song and the monkeys danced happily. The jungle turned into a special concert that made everyone happy. All the animals, even the monkeys, learned how nice it is to work together.\n"
+      ]
+    },
+    "en-de": {
+      "title": "Zara die Singende Meerjungfrau",
+      "moral": "Freundlichkeit und Freundschaft können dabei helfen, Missverständnisse zu überwinden und Harmonie zu schaffen.",
+      "hook": "Hast du schon einmal die sanften Lieder von Zara gehört, der singenden Meerjungfrau aus dem großen Dschungel von Fora?",
+      "keywords": {
+        "Dschungel": [
+          "jungle"
+        ],
+        "Meerjungfrau": [
+          "mermaid"
+        ],
+        "Tiere": [
+          "animals"
+        ],
+        "Zara": [
+          "Zara"
+        ],
+        "Affen": [
+          "monkeys"
+        ],
+        "Fluss": [
+          "river"
+        ],
+        "musikalische Aufführung": [
+          "musical performance"
+        ],
+        "Melodie": [
+          "melody"
+        ],
+        "Konzert": [
+          "concert"
+        ]
+      },
+      "paragraphs": [
+        "In dem großen Dschungel von Fora lebte Zara, eine sanfte singende Meerjungfrau, die von allen Tieren geliebt wurde, wegen ihrer beruhigenden Melodien, die durch die Bäume hallten.\n",
+        "Eines Tages, als Zara am Fluss sang, sah sie eine Gruppe von frechen Affen, die den anderen Tieren Streiche spielten. Sie beschloss, sich mit ihrer lieblichen Stimme ihnen zu nähern und fragte sie, warum sie Ärger machten.\n",
+        "Die Affen, die sich missverstanden fühlten, erklärten, dass sie gelangweilt waren und nach etwas Spaß suchten. Zara schlug vor, sich ihr anzuschließen, um eine musikalische Aufführung für die Bewohner des Dschungels zu erstellen.\n",
+        "Zara führte die Melodie an und die Affen fügten ihre spielerischen Beats hinzu, der Dschungel erwachte zu einem magischen Konzert, das allen Freude brachte. Die Tiere, inklusive der Affen, erkannten, wie sie durch Zusammenarbeit Glück verbreiten können.\n"
+      ]
+    },
+    "en-pt": {
+      "title": "Zara a Sereia Cantora",
+      "moral": "Ser amável e ter amizade pode ajudar a resolver mal-entendidos e trazer harmonia.",
+      "hook": "Já ouviste as canções suaves da Zara, a sereia cantora da grande selva de Fora?",
+      "keywords": {
+        "jungle": [
+          "selva"
+        ],
+        "mermaid": [
+          "sereia"
+        ],
+        "melodies": [
+          "melodias"
+        ],
+        "Zara": [
+          "Zara"
+        ],
+        "rio": [
+          "rio"
+        ],
+        "macacos": [
+          "monkeys"
+        ],
+        "divertido": [
+          "fun",
+          "entertaining"
+        ],
+        "apresentação musical": [
+          "musical presentation",
+          "musical performance"
+        ],
+        "macaquinhos": [
+          "little monkeys"
+        ],
+        "selva": [
+          "jungle"
+        ]
+      },
+      "paragraphs": [
+        "Na grande floresta de Fora, morava Zara, uma sereia cantora gentil que era amada por todos os animais por suas melodias suaves que ecoavam pelas árvores.\n",
+        "Um dia, enquanto Zara cantava perto do rio, ela viu um grupo de macacos travessos fazendo brincadeiras com os outros animais. Ela resolveu se aproximar deles com sua voz doce e perguntou por que estavam causando problemas.\n",
+        "Os macacos, se sentindo incompreendidos, explicaram que estavam entediados e procurando algo divertido para fazer. Zara sugeriu que se juntassem a ela para criar uma apresentação musical para os habitantes da selva.\n",
+        "Com a Zara liderando a música e os macaquinhos adicionando seus ritmos brincalhões, a selva ganhou vida com um concerto mágico que trouxe alegria a todos. Os animais, incluindo os macaquinhos, perceberam a felicidade que poderiam espalhar trabalhando juntos.\n"
+      ]
+    },
+    "en-fr": {
+      "title": "Zara la Sirène Chantante",
+      "hook": "Tu as déjà écouté les jolies chansons de Zara, la sirène chanteuse de la grande jungle de Fora?",
+      "moral": "La gentillesse et l'amitié peuvent aider à résoudre les malentendus et apporter l'harmonie.\n",
+      "keywords": {
+        "jungle": [
+          "jungle"
+        ],
+        "sirène": [
+          "siren",
+          "mermaid"
+        ],
+        "mélodies": [
+          "melodies"
+        ],
+        "Zara": [
+          "Zara"
+        ],
+        "singes": [
+          "monkeys"
+        ],
+        "animaux": [
+          "animals"
+        ],
+        "s'ennuyaient": [
+          "were bored"
+        ],
+        "spectacle": [
+          "show",
+          "performance"
+        ],
+        "concert": [
+          "concert"
+        ]
+      },
+      "paragraphs": [
+        "Dans la grande jungle de Fora, vivait Zara, une gentille sirène chanteuse aimée par tous les animaux pour ses mélodies apaisantes qui résonnaient à travers les arbres.\n",
+        "Il était une fois, alors que Zara chantait près de la rivière, elle aperçut un groupe de singes espiègles jouant des tours aux autres animaux. Elle décida de s'approcher d'eux avec sa voix douce et de leur demander pourquoi ils faisaient des bêtises.\n",
+        "Les singes, se sentant incompris, ont expliqué qu'ils s'ennuyaient et cherchaient quelque chose de drôle à faire. Zara a suggéré qu'ils se joignent à elle pour créer un spectacle musical pour les habitants de la jungle à la place.\n",
+        "Avec Zara menant la mélodie et les singes ajoutant leurs rythmes ludiques, la jungle s'anima d'un concert magique qui apporta de la joie à tous. Les animaux, y compris les singes, réalisèrent le bonheur qu'ils pouvaient répandre en travaillant ensemble.\n"
+      ]
+    }
+  },
+  "series": "fables-of-fora-forests"
+}
