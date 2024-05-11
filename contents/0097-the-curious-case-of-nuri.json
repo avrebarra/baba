@@ -1,0 +1,205 @@
+{
+  "title": "The Curious Case of Nuri",
+  "hook": "In the Great Fora Jungle, there lived a mischievous forest spirit named Nuri. What trouble will Nuri cause today?",
+  "moral": "Curiosity can lead to adventures, but it's important to be mindful of others.",
+  "paragraphs": [
+    "In the heart of the Great Fora Jungle, Nuri the forest spirit woke up with a mischievous glint in his eyes. \"I wonder what's beyond the tall trees?\" he mused, his curiosity piqued.",
+    "Skipping through the dense undergrowth, Nuri stumbled upon a clearing where the animals of the forest were having a picnic. The aroma of delicious fruits and cakes filled the air, making Nuri's stomach rumble.",
+    "Ignoring the warning glances from the animals, Nuri swooped down and grabbed a handful of snacks. \"These are for everyone to share, Nuri!\" chirped Lily the rabbit, her ears drooping in disappointment.",
+    "Realizing his mistake, Nuri sat down with the animals and apologized for his actions. Together, they shared stories and laughter, making new friends along the way."
+  ],
+  "keywords": [
+    "Nuri",
+    "forest spirit",
+    "mischievous",
+    "curiosity",
+    "adventures",
+    "animals",
+    "picnic",
+    "sharing",
+    "apology",
+    "friendship"
+  ],
+  "characters": [
+    "Nuri"
+  ],
+  "translations": {
+    "id-en": {
+      "hook": "In the Great Fora Jungle, there lived a mischievous forest spirit named Nuri. What trouble will Nuri cause today?",
+      "moral": "Curiosity can lead to adventures, but it's important to be mindful of others.",
+      "title": "The Curious Case of Nuri",
+      "keywords": {
+        "Nuri": [
+          "Parrot"
+        ],
+        "animals": [
+          "Hewan",
+          "Binatang"
+        ],
+        "friends": [
+          "Sahabat",
+          "Teman"
+        ],
+        "forest animals": [
+          "Hewan hutan",
+          "Binatang hutan"
+        ],
+        "delicious fruits": [
+          "Buah-buahan enak",
+          "Buah-buahan lezat"
+        ],
+        "jungle": [
+          "Hutan belantara",
+          "Hutan rimba"
+        ],
+        "guardian": [
+          "Penjaga",
+          "Pelindung"
+        ],
+        "snacks": [
+          "Makanan ringan",
+          "Kudapan"
+        ]
+      },
+      "paragraphs": [
+        "In the center of the Big Fora Jungle, Nuri the forest guardian, woke up with a playful sparkle in his eyes. \"I wonder what's on the other side of the tall trees?\" he thought, feeling very curious.\n",
+        "Running fast through the thick bushes, Nuri found a open space where the forest animals were enjoying a meal. The yummy smell of tasty fruits and sweets surrounded them, making Nuri feel hungry.\n",
+        "Nuri didn't listen to the animals' worried looks. They swooped down and took some snacks. \"These snacks are for everyone to share, Nuri!\" Lily the rabbit said, looking sad with her ears down.\n",
+        "Nuri understood he was wrong. He sat with the animals and said sorry. They told tales, laughed, and became friends.\n"
+      ]
+    },
+    "en-pt": {
+      "title": "A História Curiosa de Nuri",
+      "moral": "A curiosidade pode nos levar a aventuras, mas é importante lembrar de respeitar os outros.",
+      "hook": "Na Grande Floresta Fora, vivia um espírito travesso da floresta chamado Nuri. Que travessura Nuri irá fazer hoje? ",
+      "keywords": {
+        "Nuri": [
+          "Nuri"
+        ],
+        "Lily": [
+          "Lily"
+        ],
+        "lanchinhos": [
+          "snacks"
+        ],
+        "animais": [
+          "animals"
+        ],
+        "amigos": [
+          "friends"
+        ],
+        "piquenique": [
+          "picnic"
+        ],
+        "frutas": [
+          "fruits"
+        ],
+        "espírito da floresta": [
+          "spirit of the forest"
+        ],
+        "brilho travesso": [
+          "mischievous sparkle"
+        ],
+        "curiosidade despertada": [
+          "awakened curiosity"
+        ]
+      },
+      "paragraphs": [
+        "No coração da Grande Floresta do Fora, Nuri, o espírito da floresta, acordou com um brilho travesso nos seus olhos. \"Eu me pergunto o que há além das árvores altas?\" ele pensou, sua curiosidade despertada.\n",
+        "Pulando pela vegetação densa, Nuri encontrou uma clareira onde os animais da floresta estavam tendo um piquenique. O aroma de frutas deliciosas e bolos enchia o ar, fazendo o estômago de Nuri roncar.\n",
+        "Ignorando os olhares de aviso dos bichinhos, Nuri mergulhou e pegou um punhado de lanchinhos. \"Esses são para todo mundo compartilhar, Nuri!\" cantarolou Lily, a coelhinha, suas orelhas pendendo desapontadas.\n",
+        "Percebendo seu erro, Nuri sentou com os animais e pediu desculpas por suas ações. Juntos, eles contaram histórias e riram, fazendo novos amigos pelo caminho.\n"
+      ]
+    },
+    "en-fr": {
+      "moral": "La curiosité peut entrainer des aventures, mais il est important de penser aux autres.",
+      "title": "L'Histoire Curieuse de Nuri",
+      "hook": "Dans la Grande Jungle de Fora, vivait un esprit farceur appelé Nuri. Quelle bêtise Nuri va-t-il faire aujourd'hui?\n",
+      "keywords": {
+        "Nuri": [
+          "Nuri"
+        ],
+        "animaux": [
+          "animals"
+        ],
+        "excuses": [
+          "excuses"
+        ],
+        "Lily": [
+          "Lily"
+        ],
+        "snacks": [
+          "snacks"
+        ],
+        "forêt": [
+          "forest"
+        ],
+        "pique-nique": [
+          "picnic"
+        ],
+        "Jungle des Fora": [
+          "Jungle of the Fora"
+        ],
+        "esprit de la forêt": [
+          "spirit of the forest"
+        ],
+        "curiosité": [
+          "curiosity"
+        ]
+      },
+      "paragraphs": [
+        "Au cœur de la Grande Jungle des Fora, Nuri l'esprit de la forêt s'est réveillé avec un éclat espiègle dans ses yeux. \"Je me demande ce qui se trouve au-delà des grands arbres ?\" pensa-t-il, sa curiosité éveillée.\n",
+        "En sautant à travers les buissons épais, Nuri est tombé sur une clairière où les animaux de la forêt faisaient un pique-nique. L'odeur des fruits délicieux et des gâteaux remplissait l'air, faisant grogner le ventre de Nuri.\n",
+        "Malgré les regards d'avertissement des animaux, Nuri a plongé et attrapé une poignée de snacks. \"Ceux-ci sont à partager avec tout le monde, Nuri!\" pépia Lily le lapin, ses oreilles tombant de déception.\n",
+        "En réalisant son erreur, Nuri s'est assis avec les animaux et s'est excusé pour ce qu'il a fait. Ensemble, ils ont partagé des histoires et des rires, se faisant de nouveaux amis en chemin.\n"
+      ]
+    },
+    "en-de": {
+      "title": "Die Neugierige Geschichte von Nuri",
+      "moral": "Neugier kann zu Abenteuern führen, aber es ist wichtig, auf andere zu achten.",
+      "hook": "Im Großen Fora-Dschungel lebte ein frecher Waldbewohner namens Nuri. Was für Unfug wird Nuri heute anstellen?",
+      "keywords": {
+        "Nuri": [
+          "Nuri"
+        ],
+        "Tiere des Waldes": [
+          "Forest animals"
+        ],
+        "Picknick": [
+          "Picnic"
+        ],
+        "warnenden Blicke": [
+          "Warning glances"
+        ],
+        "Handvoll": [
+          "Handful"
+        ],
+        "zum Teilen": [
+          "To share"
+        ],
+        "Herzen": [
+          "Hearts"
+        ],
+        "Waldgeist": [
+          "Forest spirit"
+        ],
+        "Neugier": [
+          "Curiosity"
+        ],
+        "Tiere": [
+          "Animals"
+        ],
+        "entschuldigte": [
+          "Apologized"
+        ]
+      },
+      "paragraphs": [
+        "Im Herzen des Großen Fora-Dschungels wachte Nuri, der Waldgeist, mit einem schelmischen Funkeln in seinen Augen auf. \"Ich frage mich, was jenseits der hohen Bäume ist?\" dachte er, seine Neugier geweckt.\n",
+        "Hüpfend durch das dichte Unterholz stolperte Nuri über eine Lichtung, wo die Tiere des Waldes ein Picknick machten. Der Duft von leckeren Früchten und Kuchen erfüllte die Luft und ließ Nuris Magen knurren.\n",
+        "Trotz der warnenden Blicke von den Tieren, glitt Nuri nach unten und griff eine Handvoll Snacks. \"Diese sind zum Teilen für alle, Nuri!\" zwitscherte Lily das Kaninchen, ihre Ohren hingen enttäuscht nach unten.\n",
+        "Als Nuri seinen Fehler bemerkte, setzte er sich mit den Tieren hin und entschuldigte sich für sein Verhalten. Gemeinsam teilten sie Geschichten und Lachen, und machten neue Freunde entlang des Weges.\n"
+      ]
+    }
+  },
+  "series": "fables-of-fora-forests"
+}

@@ -1,0 +1,187 @@
+{
+  "title": "Luna's Starry Adventure",
+  "hook": "Join Luna in the great jungle of Fora as she embarks on an exciting starry adventure!",
+  "moral": "Curiosity can lead to wonderful discoveries and new friendships.",
+  "paragraphs": [
+    "Once upon a time in the great jungle of Fora, there lived a young owl named Luna. Luna was known for her curiosity and love for star-gazing. Each night, she would perch on the highest branch of the tallest tree, admiring the twinkling stars in the sky.",
+    "One clear night, Luna noticed a particularly bright star that seemed to be moving. Intrigued, she spread her wings and flew towards it, determined to discover its secret. As Luna approached, she realized that the star was not a star at all, but a firefly named Sparkle.",
+    "\"Hello, I'm Luna! What brings you here, Sparkle?\" Luna asked, her eyes wide with wonder. Sparkle explained that she had lost her way and was trying to find her friends. Without hesitation, Luna offered to help Sparkle search for them.",
+    "Together, Luna and Sparkle embarked on a journey through the jungle, encountering challenges and making new friends along the way. With Luna's keen eyes and Sparkle's glowing light, they were able to reunite Sparkle with her friends and find their way back home."
+  ],
+  "keywords": [
+    "owl",
+    "star-gazing",
+    "jungle",
+    "firefly",
+    "friendship",
+    "adventure",
+    "curiosity",
+    "discovery",
+    "challenges",
+    "teamwork"
+  ],
+  "characters": [
+    "Luna"
+  ],
+  "translations": {
+    "id-en": {
+      "hook": "Join Luna in the great jungle of Fora as she embarks on an exciting starry adventure!",
+      "title": "Luna's Starry Adventure",
+      "moral": "Curiosity can lead to wonderful discoveries and new friendships.",
+      "keywords": {
+        "forest": [
+          "hutan"
+        ],
+        "owl": [
+          "burung hantu"
+        ],
+        "stars": [
+          "bintang"
+        ],
+        "Luna": [
+          "bulan"
+        ],
+        "Sparkle": [
+          "bersinar",
+          "berkilau"
+        ],
+        "friends": [
+          "sahabat",
+          "teman"
+        ],
+        "adventure": [
+          "petualangan"
+        ],
+        "night": [
+          "malam"
+        ]
+      },
+      "paragraphs": [
+        "Long time ago in big forest of Fora, there was a little owl called Luna. Luna liked looking at stars very much. Every night, she sat on top of tallest tree, watching shiny stars overhead.\n",
+        "One night that was very clear and bright, Luna saw a shiny light that was going from one place to another. Interested, she opened her arms and started flying towards the light, wanting to find out what was there. When Luna got closer, she realized the light was not a light at all, but a small insect called Sparkle.\n",
+        "\"Hello, I'm Luna! What brings you here, Sparkle?\" Luna asked, her eyes wide with wonder. Sparkle explained that she had lost her way and was trying to find her friends. Without hesitation, Luna offered to help Sparkle search for them.\n",
+        "Luna and Sparkle went on an adventure in the forest. They met problems and made new friends. With Luna's sharp eyes and Sparkle's shiny light, they brought Sparkle back to her friends and found the way home.\n"
+      ]
+    },
+    "en-de": {
+      "title": "Lunas Sternenabenteuer",
+      "moral": "Neugier kann zu wundervollen Entdeckungen und neuen Freundschaften führen.",
+      "hook": "Komm mit Luna in den großen Dschungel von Fora, wenn sie ein aufregendes, sterniges Abenteuer beginnt!",
+      "keywords": {
+        "Eule": [
+          "owl"
+        ],
+        "Sterne": [
+          "stars"
+        ],
+        "Dschungel": [
+          "jungle"
+        ],
+        "Luna": [
+          "moon"
+        ],
+        "Sparkle": [
+          "sparkle"
+        ],
+        "friends": [
+          "friends"
+        ],
+        "Stern": [
+          "star"
+        ],
+        "Glühwürmchen": [
+          "firefly"
+        ]
+      },
+      "paragraphs": [
+        "Es war einmal in dem großen Dschungel von Fora, in dem ein junger Eule namens Luna lebte. Luna war dafür bekannt, neugierig zu sein und Sterne zu lieben. Jede Nacht würde sie auf dem höchsten Ast des höchsten Baumes sitzen und die funkelnden Sterne am Himmel bewundern.\n",
+        "An einem klaren Nacht Nacht, Luna entdeckte einen besonders hellen Stern, der schien sich zu bewegen. Neugierig, sie breitete ihre Flügel aus und flog darauf zu, entschlossen, sein Geheimnis zu entdecken. Als Luna näher kam, merkte sie, dass der Stern überhaupt kein Stern war, sondern eine Glühwürmchen namens Glitzern.\n",
+        "\"Hallo, Ich bin Luna! Was bringt dich hierher, Funkeln?\" fragte Luna, ihre Augen waren weit vor Erstaunen. Funkeln erklärte, dass sie sich verlaufen hatte und versuchte, ihre Freunde zu finden. Ohne zu zögern, bot Luna an, Funkeln bei der Suche nach ihnen zu helfen.\n",
+        "Zusammen gingen Luna und Sparkle auf eine Reise durch den Dschungel, wo sie auf Herausforderungen stießen und neue Freunde fanden. Dank Lunas scharfen Augen und Sparkles leuchtendem Licht konnten sie Sparkle wieder mit ihren Freunden vereinen und ihren Weg nach Hause finden.\n"
+      ]
+    },
+    "en-pt": {
+      "title": "A Aventura Estrelada da Luna",
+      "hook": "Venha com Luna na grande selva de Fora enquanto ela embarca em uma emocionante aventura estrelada!",
+      "moral": "A curiosidade pode nos levar a descobertas maravilhosas e novas amizades.",
+      "keywords": {
+        "Luna": [
+          "Moon"
+        ],
+        "Sparkle": [
+          "Glimmer",
+          "Shine"
+        ],
+        "friends": [
+          "companions",
+          "buddies"
+        ],
+        "jungle": [
+          "forest",
+          "woodland"
+        ],
+        "coruja": [
+          "owl"
+        ],
+        "estrelas": [
+          "stars"
+        ],
+        "estrela": [
+          "star"
+        ],
+        "Brilhante": [
+          "Bright"
+        ]
+      },
+      "paragraphs": [
+        "Era uma vez, na grande floresta de Fora, morava uma jovem coruja chamada Luna. Luna era conhecida por sua curiosidade e amor por observar as estrelas. Todas as noites, ela se empoleirava no galho mais alto da árvore mais alta, admirando as estrelas cintilantes no céu.\n",
+        "Certa noite clara, Luna percebeu uma estrela especialmente brilhante que parecia estar se movendo. Curiosa, ela abriu suas asas e voou em direção a ela, determinada a descobrir seu segredo. Quando Luna se aproximou, ela percebeu que a estrela não era uma estrela de verdade, mas uma vaga-lume chamada Brilhante.\n",
+        "Olá, eu sou Luna! O que te traz aqui, Sparkle? -perguntou Luna, seus olhos arregalados de admiração. Sparkle explicou que tinha se perdido e estava tentando encontrar seus amigos. Sem hesitação, Luna ofereceu ajuda para Sparkle procurá-los.\n",
+        "Junto, Luna e Brilho embarcaram em uma aventura pela selva, encontrando desafios e fazendo novos amigos pelo caminho. Com os olhos atentos de Luna e a luz brilhante de Brilho, eles conseguiram reunir Brilho com seus amigos e encontrar o caminho de volta para casa.\n"
+      ]
+    },
+    "en-fr": {
+      "moral": "La curiosité peut entraîner de superbes découvertes et de nouvelles amitiés.",
+      "hook": "Viens avec Luna dans la grande jungle de Fora pour vivre une aventure étoilée excitante!",
+      "title": "L'aventure étoilée de Luna",
+      "keywords": {
+        "hibou": [
+          "owl"
+        ],
+        "curiosité": [
+          "curiosity",
+          "inquisitiveness"
+        ],
+        "étoiles": [
+          "stars"
+        ],
+        "Luna": [
+          "moon"
+        ],
+        "Étincelle": [
+          "spark"
+        ],
+        "amis": [
+          "friends"
+        ],
+        "Sparkle": [
+          "shine",
+          "glitter"
+        ],
+        "jungle": [
+          "forest"
+        ],
+        "vola": [
+          "flies"
+        ]
+      },
+      "paragraphs": [
+        "Il était une fois dans la grande jungle de Fora, vivait un jeune hibou nommé Luna. Luna était connue pour sa curiosité et son amour de regarder les étoiles. Chaque nuit, elle se percherait sur la plus haute branche de l'arbre le plus haut, admirant les étoiles scintillantes dans le ciel.\n",
+        "Une nuit claire, Luna remarqua une étoile particulièrement brillante qui semblait bouger. Intriguée, elle déploya ses ailes et vola vers elle, déterminée à découvrir son secret. En s'approchant, Luna se rendit compte que l'étoile n'était pas du tout une étoile, mais une luciole nommée Étincelle.\n",
+        "\"Bonjour, je suis Luna! Qu'est-ce qui t'amène ici, Étincelle?\" Demanda Luna, ses yeux grands avec émerveillement. Étincelle expliqua qu'elle avait perdu son chemin et essayait de trouver ses amies. Sans hésitation, Luna offrit d'aider Étincelle à les chercher.\n",
+        "Luna et Sparkle ont voyagé ensemble à travers la jungle, rencontrant des défis et se faisant de nouveaux amis en chemin. Grâce aux yeux perçants de Luna et à la lumière étincelante de Sparkle, ils ont pu retrouver les amis de Sparkle et trouver leur chemin de retour à la maison.\n"
+      ]
+    }
+  },
+  "series": "fables-of-fora-forests"
+}

@@ -1,0 +1,285 @@
+{
+  "title": "Surya the Time-Leaping Pirate",
+  "hook": "Join Surya, the daring pirate in Fora Jungle, as he embarks on a mystical adventure through time!",
+  "moral": "With courage and kindness, you can solve any problem.",
+  "paragraphs": [
+    "Once in the mystical Fora Jungle lived Surya, a spirited pirate with the ability to leap through time.",
+    "Known for his bravery and quick thinking, Surya roamed the jungle in search of magical treasures.",
+    "One day, Surya stumbled upon a village where the villagers were troubled by a mysterious shadow that stole their sunlight.",
+    "\"Fear not, dear villagers! I shall use my time-leaping powers to uncover the truth,\" Surya declared with determination.",
+    "By leaping back in time, he discovered that the shadow was actually a mischievous cloud playing tricks on the sun.",
+    "With a clever plan, Surya convinced the cloud to stop its pranks and let the sunlight shine on the village once more."
+  ],
+  "keywords": [
+    "Surya",
+    "pirate",
+    "time-leaping",
+    "jungle",
+    "bravery",
+    "magical",
+    "treasures",
+    "villagers",
+    "shadow",
+    "sunlight"
+  ],
+  "characters": [
+    "Surya"
+  ],
+  "translations": {
+    "en-pt": {
+      "title": "Surya o Pirata que Pula no Tempo",
+      "moral": "Com coragem e bondade, você consegue resolver qualquer problema.",
+      "hook": "Junte-se a Surya, o corajoso pirata na Floresta Fora, enquanto ele embarca em uma aventura mística através do tempo!\n",
+      "keywords": {
+        "Surya": [
+          "sunlight"
+        ],
+        "vila": [
+          "villagers"
+        ],
+        "sombra": [
+          "shadow"
+        ],
+        "coragem": [
+          "courage"
+        ],
+        "selva": [
+          "jungle"
+        ],
+        "tesouros": [
+          "treasures"
+        ],
+        "clever": [
+          "mischievous"
+        ],
+        "convince": [
+          "persuade"
+        ],
+        "medo (fear)": [
+          "fear"
+        ],
+        "verdade (truth)": [
+          "truth"
+        ],
+        "pirata": [
+          "pirate"
+        ],
+        "energia": [
+          "energy"
+        ],
+        "tempo": [
+          "time"
+        ],
+        "leaping": [
+          "jumping"
+        ],
+        "mischievous": [
+          "clever",
+          "sly"
+        ],
+        "playing tricks on": [
+          "pranking",
+          "tricking"
+        ]
+      },
+      "paragraphs": [
+        "Era uma vez, na misteriosa Floresta de Fora, vivia Surya, um pirata cheio de energia com o poder de pular no tempo.\n",
+        "Conhecido pela sua coragem e pensamento rápido, Surya explorava a selva em busca de tesouros mágicos.\n",
+        "Certo dia, Surya encontrou uma vila onde os moradores estavam preocupados com uma sombra misteriosa que roubava a luz do sol deles.\n",
+        "\"Não tenham medo, queridos moradores! Irei usar meus poderes de pular no tempo para descobrir a verdade\", declarou Surya com determinação.\n",
+        "Pulando para trás no tempo, ele descobriu que a sombra na verdade era uma nuvem travessa brincando de pegar o sol.\n",
+        "Com um plano inteligente, Surya convenceu a nuvem a parar de fazer travessuras e deixar a luz do sol brilhar na vila mais uma vez.\n"
+      ]
+    },
+    "id-en": {
+      "hook": "Join Surya, the daring pirate in Fora Jungle, as he embarks on a mystical adventure through time!",
+      "moral": "With courage and kindness, you can solve any problem.",
+      "title": "Surya the Time-Leaping Pirate",
+      "keywords": {
+        "bravery": [
+          "keberanian"
+        ],
+        "magical treasures": [
+          "harta karun ajaib"
+        ],
+        "jungle": [
+          "hutan belantara"
+        ],
+        "mystical": [
+          "mistis"
+        ],
+        "spirited": [
+          "bersemangat"
+        ],
+        "leap": [
+          "loncat"
+        ],
+        "clever plan": [
+          "rencana cerdik"
+        ],
+        "sunshine": [
+          "sinar matahari"
+        ],
+        "village": [
+          "desa"
+        ],
+        "villagers": [
+          "penduduk desa"
+        ],
+        "time-leaping powers": [
+          "kekuatan meloncat waktu"
+        ],
+        "truth": [
+          "kebenaran"
+        ],
+        "Surya": [
+          "Matahari"
+        ],
+        "sunlight": [
+          "cahaya matahari"
+        ],
+        "leaping back": [
+          "meloncat kembali"
+        ],
+        "mischievous cloud": [
+          "awan nakal"
+        ],
+        "playing tricks": [
+          "bermain trik"
+        ]
+      },
+      "paragraphs": [
+        "Once in the magical Fora Jungle, there was a brave pirate named Surya, who could jump through time.\n",
+        "Surya, a brave and smart boy, walked in the forest looking for special treasures.\n",
+        "One sunny day, Surya found a small town. The people living there were upset because a strange shadow took away their sunshine.\n",
+        "\"Don't worry, my dear village friends! I will use my magic powers to find out what's true,\" Surya said bravely.\n",
+        "He went back to the olden days and found out that the dark shape was a playful cloud fooling around with the bright star.\n",
+        "With a smart idea, Surya made the cloud stop being naughty and allowed the sunshine to brighten the village again.\n"
+      ]
+    },
+    "en-de": {
+      "title": "Surya der Zeit-Sprung-Pirat",
+      "moral": "Wenn du mutig und nett bist, kannst du jedes Problem lösen.\n",
+      "hook": "Begleite Surya, den mutigen Piraten im Fora Jungle, während er ein zauberhaftes Abenteuer durch die Zeit beginnt!",
+      "keywords": {
+        "zauberhaft": [
+          "enchanting",
+          "charming"
+        ],
+        "Pirat": [
+          "pirate"
+        ],
+        "Zeit": [
+          "time"
+        ],
+        "Surya": [
+          "Sun God"
+        ],
+        "mutig": [
+          "brave",
+          "courageous"
+        ],
+        "Dschungel": [
+          "jungle"
+        ],
+        "Wolke": [
+          "cloud"
+        ],
+        "Sonne": [
+          "sun"
+        ],
+        "Vergangenheit": [
+          "past"
+        ],
+        "Dorf": [
+          "village"
+        ],
+        "Dorfbewohner": [
+          "villager"
+        ],
+        "Sonnenlicht": [
+          "sunlight"
+        ],
+        "Zeitreise-Kräfte": [
+          "time-travel powers"
+        ],
+        "Wahrheit": [
+          "truth"
+        ]
+      },
+      "paragraphs": [
+        "In dem zauberhaften Fora Dschungel wohnte Surya, ein aufgeweckter Pirat mit der Fähigkeit, durch die Zeit zu springen.\n",
+        "Surya war sehr mutig und klug. Er lief durch den Dschungel, um magische Schätze zu finden.\n",
+        "Einmal stolperte Surya über ein Dorf, in dem die Dorfbewohner von einem geheimnisvollen Schatten, der ihnen ihr Sonnenlicht stahl, beunruhigt waren.\n",
+        "\"Fürchte dich nicht, liebe Dorfbewohner! Ich werde meine Zeitreise-Kräfte einsetzen, um die Wahrheit aufzudecken\", erklärte Surya entschlossen.\n",
+        "Als er zurück in die Vergangenheit sprang, entdeckte er, dass der Schatten tatsächlich eine schelmische Wolke war, die der Sonne Streiche spielte.\n",
+        "Mit einem schlauen Plan überzeugte Surya die Wolke, ihre Streiche einzustellen und die Sonne wieder auf das Dorf scheinen zu lassen.\n"
+      ]
+    },
+    "en-fr": {
+      "title": "Surya la pirate qui saute à travers le temps",
+      "moral": "Avec courage et gentillesse, tu peux résoudre n'importe quel problème.",
+      "hook": "Rejoins Surya, le courageux pirate dans la jungle de Fora, alors qu'il se lance dans une aventure magique à travers le temps !",
+      "keywords": {
+        "mystérieuse": [
+          "mysterious"
+        ],
+        "pirate": [
+          "pirate"
+        ],
+        "capacité": [
+          "capability",
+          "ability"
+        ],
+        "bravoure": [
+          "bravery"
+        ],
+        "réflexion rapide": [
+          "quick thinking"
+        ],
+        "trésors magiques": [
+          "magical treasures"
+        ],
+        "Surya": [
+          "Surya"
+        ],
+        "village": [
+          "village"
+        ],
+        "ombremystérieuse": [
+          "mysterious shadow"
+        ],
+        "villageois": [
+          "villager"
+        ],
+        "pouvoir": [
+          "power"
+        ],
+        "vérité": [
+          "truth"
+        ],
+        "nuage": [
+          "cloud"
+        ],
+        "leaping": [
+          "leaping"
+        ],
+        "mischievous": [
+          "mischievous"
+        ],
+        "tricks": [
+          "tricks"
+        ]
+      },
+      "paragraphs": [
+        "Il était une fois dans la mystérieuse jungle de Fora Surya, un pirate plein d'énergie avec la capacité de sauter à travers le temps.\n",
+        "Connue pour sa bravoure et sa réflexion rapide, Surya arpentait la jungle à la recherche de trésors magiques.\n",
+        "Un jour, Surya a découvert un village où les habitants étaient embêtés par une ombre mystérieuse qui volait leur lumière du soleil.\n",
+        "\"Ne crains rien, chers villageois! Je vais utiliser mes pouvoirs de saut dans le temps pour découvrir la vérité\", déclara Surya avec détermination.\n",
+        "En sautant dans le temps, il a découvert que l'ombre était en fait un nuage espiègle jouant des tours au soleil.\n",
+        "Avec un plan astucieux, Surya a convaincu le nuage d'arrêter ses farces et de laisser la lumière du soleil briller sur le village une nouvelle fois.\n"
+      ]
+    }
+  },
+  "series": "fables-of-fora-forests"
+}

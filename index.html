@@ -96,17 +96,17 @@
 <div class="content">
   <div class="separator mt-2"></div>
   <!-- <span class="font-semibold text-gray-500">Today's Story:</span> -->
-  <a href="/baba/contents/0049-the-curious-acorn.html" id="bt-read">
+  <a href="/baba/contents/0101-baba's-lost-treasure.html" id="bt-read">
     <div id="story-title" class="flex flex-col max-w-md mb-2">
       <span class="text-md text-md font-bold text-gray-800"> Today's Addition!</span>
-      <span class="data ba-serif text-4xl font-black leading-normal">The Curious Acorn</span>
+      <span class="data ba-serif text-4xl font-black leading-normal">Baba's Lost Treasure</span>
       <span class="text-md text-lg font-bold text-lime-600 leading-normal mt-1">
-        <span class="text-gray-600">from</span> The Curious Acorn
+        <span class="text-gray-600">from</span> Baba's Lost Treasure
       </span>
     </div>
-    <!-- <div class="ba-serif max-w-md text-4xl font-black leading-normal mb-2">The Curious Acorn</div> -->
+    <!-- <div class="ba-serif max-w-md text-4xl font-black leading-normal mb-2">Baba's Lost Treasure</div> -->
     <div id="story-hook">
-      <div class="data excerpt text-lg leading-loose flex flex-col gap-y-3 text-gray-700">What happens when a tiny acorn has big dreams in a vast forest?</div>
+      <div class="data excerpt text-lg leading-loose flex flex-col gap-y-3 text-gray-700">One sunny day, Baba found a mysterious map in her backyard. Where would it lead her?</div>
     </div>
   </a>
   <div class="separator mt-4"></div>
@@ -114,7 +114,7 @@
 
 <div class="button-reels flex flex-col sm:flex-row gap-4 mt-8">
   <a
-    href="/baba/contents/0049-the-curious-acorn.html"
+    href="/baba/contents/0101-baba's-lost-treasure.html"
     id="bt-read"
     class="bg-lime-600 px-4 py-4 text-white font-black hover:bg-lime-700 focus:bg-lime-700 focus:outline-none focus:shadow-outline"
     >Read Today's Tale
@@ -136,7 +136,7 @@
     const lang = await getLang();
     const [from, to] = lang.split("-");
 
-    const storyID = "/contents/0049-the-curious-acorn.html".replace(".html", "");
+    const storyID = "/contents/0101-baba's-lost-treasure.html".replace(".html", "");
     const storyAssets = await useStoryAssets(storyID);
     const story = storyAssets.translations[lang];
     const hasTranslation = story ? true : false;

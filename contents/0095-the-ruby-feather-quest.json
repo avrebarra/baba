@@ -1,0 +1,267 @@
+{
+  "title": "The Ruby Feather Quest",
+  "hook": "Can Washa and Xia overcome their fears to find the mysterious Ruby Feather in the deep jungle?",
+  "moral": "Courage and cooperation can lead to unexpected discoveries and new friendships.",
+  "paragraphs": [
+    "In the heart of the Great Fora Jungle, Washa the wise serpent charmer and Xia the swift-footed mountain goat were the best of friends. One day, they heard a rumor about the legendary Ruby Feather hidden deep within the treacherous jungle.",
+    "Excited by the possibility of finding the magical feather, Washa and Xia set off on a daring adventure. However, as they ventured further into the dense undergrowth, they encountered a roaring river blocking their path.",
+    "\"How will we cross this river, Washa?\" Xia asked nervously, her hooves trembling at the sight of the fast-flowing water. Washa smiled reassuringly and taught Xia a clever way to build a makeshift bridge using vines and branches they found nearby.",
+    "With newfound courage and teamwork, Washa and Xia crossed the river and continued their quest. Along the way, they faced challenges such as slippery rocks and mysterious sounds, but they helped each other overcome their fears with laughter and encouragement.",
+    "As they reached the heart of the jungle, a dazzling ray of light illuminated a majestic bird with a shimmering ruby feather. Washa and Xia realized that the real treasure was not the feather itself, but the bond of friendship and bravery they had formed on their adventure."
+  ],
+  "keywords": [
+    "Washa",
+    "Xia",
+    "Ruby Feather",
+    "Great Fora Jungle",
+    "Courage",
+    "Cooperation",
+    "Friendship",
+    "Discovery",
+    "Adventure",
+    "Perseverance"
+  ],
+  "characters": [
+    "Washa",
+    "Xia"
+  ],
+  "translations": {
+    "en-fr": {
+      "title": "La Quête de la Plume Rubis",
+      "moral": "Ensemble, en étant courageux et en travaillant ensemble, on peut découvrir des choses inattendues et se faire de nouveaux amis.",
+      "hook": "Est-ce que Washa et Xia pourront surmonter leurs peurs pour trouver la mystérieuse Plume de Rubis dans la jungle profonde?",
+      "keywords": {
+        "Washa": [
+          "feather"
+        ],
+        "Xia": [
+          "Jungle",
+          "jungle"
+        ],
+        "quête": [
+          "aventure audacieuse"
+        ],
+        "Jungle": [
+          "Xia",
+          "jungle"
+        ],
+        "Amis": [
+          "friendship"
+        ],
+        "Rumeur": [
+
+        ],
+        "jungle": [
+          "Xia",
+          "Jungle"
+        ],
+        "feather": [
+          "Washa"
+        ],
+        "friendship": [
+          "Amis"
+        ],
+        "rivière": [
+          "rivière"
+        ],
+        "pont": [
+
+        ],
+        "plume magique": [
+
+        ],
+        "aventure audacieuse": [
+          "quête"
+        ],
+        "rivière rugissante": [
+
+        ]
+      },
+      "paragraphs": [
+        "Au cœur de la Grande Jungle des Fora, Washa, l'enchanteur de serpents sage et Xia, la chèvre de montagne aux pieds rapides étaient les meilleurs amis. Un jour, ils ont entendu une rumeur sur la légendaire Plume de Rubis cachée profondément dans la jungle traîtresse.\n",
+        "Très excités de la possibilité de trouver la plume magique, Washa et Xia se lancent dans une aventure audacieuse. Mais, en s'aventurant plus loin dans le sous-bois dense, ils rencontrent une rivière rugissante bloquant leur chemin.\n",
+        "\"Comment allons-nous traverser cette rivière, Washa?\" Xia demanda nerveusement, ses sabots tremblant à la vue de l'eau qui coulait rapidement. Washa sourit rassurant et appris à Xia une astuce pour construire un pont de fortune en utilisant des lianes et des branches trouvées à proximité.\n",
+        "Avec leur nouveau courage et travaillant ensemble, Washa et Xia ont traversé la rivière et ont continué leur quête. En chemin, ils ont fait face à des défis comme des rochers glissants et des bruits mystérieux, mais ils se sont aidés mutuellement à surmonter leurs peurs avec rire et encouragement.\n",
+        "En arrivant au cœur de la jungle, un rayon lumineux éblouissant a illuminé un oiseau majestueux avec une plume en rubis étincelante. Washa et Xia ont réalisé que le vrai trésor n'était pas la plume elle-même, mais le lien d'amitié et de bravoure qu'ils avaient formé lors de leur aventure.\n"
+      ]
+    },
+    "en-de": {
+      "title": "Die Suche nach der Rubin Feder",
+      "moral": "Mut und Zusammenarbeit können zu unerwarteten Entdeckungen und neuen Freundschaften führen.\n",
+      "hook": "Können Washa und Xia ihre Ängste überwinden, um die geheimnisvolle Rubin Feder im tiefen Dschungel zu finden?",
+      "keywords": {
+        "Großen Fora Dschungel": [
+          "Great Fora Jungle"
+        ],
+        "Schlangenbändiger": [
+          "Snake Charmer"
+        ],
+        "Bergziege": [
+          "Mountain Goat"
+        ],
+        "Washa": [
+          "Washa"
+        ],
+        "Xia": [
+          "Xia"
+        ],
+        "magische Feder": [
+          "Magic Feather"
+        ],
+        "Mut": [
+          "Courage",
+          "Bravery"
+        ],
+        "Zusammenarbeit": [
+          "Collaboration"
+        ],
+        "Herausforderungen": [
+          "Challenges"
+        ],
+        "Dschungel": [
+          "Jungle"
+        ],
+        "Vogel": [
+          "Bird",
+          "Avian"
+        ],
+        "Freundschaft": [
+          "Friendship"
+        ],
+        "Fluss": [
+          "River"
+        ],
+        "Ranken": [
+          "Vines"
+        ],
+        "Äste": [
+          "Branches"
+        ]
+      },
+      "paragraphs": [
+        "In dem Herzen des Großen Fora Dschungels waren Washa, der kluge Schlangenbändiger, und Xia, die schnellfüßige Bergziege, die besten Freunde. Eines Tages hörten sie ein Gerücht über die legendäre Rubin Feder, die tief im gefährlichen Dschungel versteckt war.\n",
+        "Washa und Xia waren aufgeregt, als sie die Möglichkeit hatten, die magische Feder zu finden. Sie machten sich gemeinsam auf ein mutiges Abenteuer. Aber als sie tiefer in den dichten Unterwuchs vordrangen, trafen sie auf einen wilden Fluss, der ihren Weg blockierte.\n",
+        "\"Wie werden wir diesen Fluss überqueren, Washa?\" fragte Xia nervös, wobei ihre Hufe beim Anblick des schnell fließenden Wassers zitterten. Washa lächelte beruhigend und zeigte Xia einen klugen Weg, eine behelfsmäßige Brücke aus Ranken und Ästen zu bauen, die sie in der Nähe fanden.\n",
+        "Mit neuer Mut und Zusammenarbeit, Washa und Xia überquerten den Fluss und setzten ihre Reise fort. Auf dem Weg trafen sie auf Herausforderungen wie rutschige Steine und mysteriöse Geräusche, aber sie halfen einander, ihre Ängste mit Lachen und Ermutigung zu überwinden.\n",
+        "Als sie das Herz des Dschungels erreichten, erleuchtete ein funkeldes Lichtstrahl einen majestätischen Vogel mit einem schimmernden Rubin-Feder. Washa und Xia realisierten, dass der wahre Schatz nicht die Feder selbst war, sondern die Freundschafts- und Tapferkeitsbande, die sie auf ihrem Abenteuer geschmiedet hatten.\n"
+      ]
+    },
+    "en-pt": {
+      "title": "A Jornada da Pena de Rubi",
+      "moral": "Coragem e trabalhar juntos podem nos levar a descobrir coisas novas e fazer novos amigos.",
+      "hook": "Será que Washa e Xia vão conseguir vencer seus medos para encontrar a misteriosa Pena de Rubi na floresta profunda?",
+      "keywords": {
+        "magical feather": [
+          "mágica pluma"
+        ],
+        "daring adventure": [
+          "aventura audaz"
+        ],
+        "roaring river": [
+          "rio rugindo"
+        ],
+        "Washa": [
+          "Washa"
+        ],
+        "Xia": [
+          "Xia"
+        ],
+        "lendária": [
+          "legendary"
+        ],
+        "rio": [
+          "river"
+        ],
+        "ponte": [
+          "bridge"
+        ],
+        "cipós": [
+          "vines"
+        ],
+        "coragem": [
+          "courage"
+        ],
+        "trabalho em equipe": [
+          "teamwork"
+        ],
+        "desafios": [
+          "challenges"
+        ],
+        "coração da floresta": [
+          "heart of the forest"
+        ],
+        "raio de luz": [
+          "beam of light"
+        ],
+        "amizade e coragem": [
+          "friendship and courage"
+        ]
+      },
+      "paragraphs": [
+        "Lá no coração da Grande Selva de Fora, Washa o sábio encantador de serpentes e Xia a ágil cabra montanhesa eram os melhores amigos. Um dia, eles ouviram um boato sobre a lendária Pena de Rubi escondida nas profundezas da selva traiçoeira.\n",
+        "Muito animados com a ideia de encontrar a pena mágica, Washa e Xia partiram em uma aventura corajosa. No entanto, ao avançarem mais adiante pela densa vegetação, eles se depararam com um rio rugindo bloqueando o caminho.\n",
+        "\"Como vamos atravessar esse rio, Washa?\" perguntou Xia nervosa, suas patas tremendo ao ver a água rápida. Washa sorriu tranquilamente e ensinou a Xia uma maneira esperta de construir uma ponte improvisada usando cipós e galhos que encontraram por perto.\n",
+        "Com nova coragem e trabalho em equipe, Washa e Xia atravessaram o rio e continuaram sua jornada. No caminho, enfrentaram desafios como pedras escorregadias e sons misteriosos, mas se ajudaram a superar seus medos com risadas e encorajamento.\n",
+        "Quando chegaram ao coração da floresta, um raio de luz deslumbrante iluminou um pássaro majestoso com uma pena de rubi cintilante. Washa e Xia perceberam que o verdadeiro tesouro não era a pena em si, mas o vínculo de amizade e coragem que haviam formado em sua aventura.\n"
+      ]
+    },
+    "id-en": {
+      "hook": "Can Washa and Xia overcome their fears to find the mysterious Ruby Feather in the deep jungle?",
+      "moral": "Courage and cooperation can lead to unexpected discoveries and new friendships.",
+      "title": "The Ruby Feather Quest",
+      "keywords": {
+        "Washa": [
+          "Washa"
+        ],
+        "teamwork": [
+          "kerja sama"
+        ],
+        "encouragement": [
+          "semangat"
+        ],
+        "magical feather": [
+          "bulu ajaib"
+        ],
+        "daring adventure": [
+          "petualangan berani"
+        ],
+        "roaring river": [
+          "sungai menggelegar"
+        ],
+        "jungle": [
+          "hutan belantara"
+        ],
+        "bird": [
+          "burung"
+        ],
+        "friendship": [
+          "persahabatan"
+        ],
+        "friends": [
+          "teman",
+          "sahabat"
+        ],
+        "rumor": [
+          "desas-desus"
+        ],
+        "river": [
+          "sungai"
+        ],
+        "bridge": [
+          "jembatan"
+        ],
+        "vines": [
+          "ranting"
+        ]
+      },
+      "paragraphs": [
+        "In the middle of the Big Forest Jungle, Washa the very smart snake tamer and Xia the very fast mountain goat were the best buddies. One day, they heard some news about the special Ruby Feather hidden deep in the dangerous jungle.\n",
+        "Washa and Xia were very happy because they might find a special feather. They started a big adventure. But then, they saw a loud river in front of them.\n",
+        "\"How will we cross this river, Washa?\" Xia asked nervously, her hooves trembling at the sight of the fast-flowing water. Washa smiled reassuringly and taught Xia a clever way to build a makeshift bridge using vines and branches they found nearby.\n",
+        "Washa and Xia were brave and worked together. They crossed the river and kept going on their adventure. They met some hard things like slippery rocks and strange noises, but they supported each other with smiles and kind words.\n",
+        "In the middle of the jungle, a very bright light showed a big bird with a shiny red feather. Washa and Xia understood that what mattered the most was not the feather, but the strong friendship and courage they had.\n"
+      ]
+    }
+  },
+  "series": "fables-of-fora-forests"
+}
