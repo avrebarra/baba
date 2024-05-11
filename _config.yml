@@ -32,3 +32,5 @@ exclude:
 collections:
   contents:
     output: true
+  series:
+    output: true
