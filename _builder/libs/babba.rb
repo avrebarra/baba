@@ -48,7 +48,7 @@ module Babba
             Give dialogues. Give unique and original conflicts & resolutions. Give bit more details on the conflict resolutions. Use paragraphs.
             Use vocabulary suitable for #{language_complexity}yo local speaker.
             Use basic & descriptive sentence structures.
-            #{"Use #{hint_character} as character. No character developments." unless hint_character.nil?}
+            #{"Use #{hint_character} as character. DO NOT involve permanent character/traits/relationship changes when the story ends." unless hint_character.nil?}
             #{"Use #{hint_mood} as story mood." unless hint_mood.nil?}
             #{"Use #{hint_cultural_influence} as cultural influence." unless hint_cultural_influence.nil?}
 
