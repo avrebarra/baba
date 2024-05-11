@@ -31,6 +31,7 @@ module Babba
     words_length_range: "250-350",
     hint_cultural_influence: nil,
     hint_mood: nil,
+    fable_group: nil,
     hint_character: nil
   )
     characters =
@@ -63,6 +64,7 @@ module Babba
 
     out = YAML.load out
     out["characters"] = characters
+    out["series"] = fable_group unless fable_group.nil?
     out
   end
 
