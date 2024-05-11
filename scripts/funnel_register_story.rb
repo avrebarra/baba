@@ -22,6 +22,7 @@ hook = parsed_input["hook"]
 moral = parsed_input["moral"]
 paragraphs = parsed_input["paragraphs"]
 keywords = parsed_input["keywords"]
+characters = parsed_input["characters"]
 
 id = get_next_id
 filename = "./_contents/#{id}-#{kebab_case(title)}"
@@ -31,6 +32,7 @@ layout: story
 title: #{title}
 hook: #{hook}
 moral: #{moral}
+characters: #{characters}
 keywords: #{keywords}
 ---
 
