@@ -13,6 +13,11 @@ OptionParser
       "Expected size (wordlength) for fable"
     ) { |t| options[:size] = t }
     opts.on(
+      "-g",
+      "--group FABLE_GROUP",
+      "Fable's group or series name. Will show on specific series."
+    ) { |t| options[:group] = t }
+    opts.on(
       "-l",
       "--level LEVEL_COMPLEXITY",
       "Level of language complexity of fable"
@@ -38,6 +43,7 @@ OptionParser
 api_key = ENV["OPENAI_API_KEY"] || raise("No OPENAI_API_KEY in env vars")
 level = options[:level]
 character = options[:character]
+group = options[:group]
 mood = options[:mood]
 influence = options[:influence]
 size = options[:size]
@@ -46,6 +52,7 @@ out =
   Babba.generate_fable(
     openai_api_key: api_key,
     words_length_range: size,
+    fable_group: group,
     language_complexity: level,
     hint_cultural_influence: influence,
     hint_mood: mood,

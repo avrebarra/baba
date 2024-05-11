@@ -31,8 +31,14 @@ module Babba
     words_length_range: "250-350",
     hint_cultural_influence: nil,
     hint_mood: nil,
+    fable_group: nil,
     hint_character: nil
   )
+    characters =
+      hint_character
+        .split(";")
+        .map { |txt| txt.split(",").first } unless hint_character.nil?
+
     out =
       clean_yaml(
         OpenAI.prompt(
@@ -43,7 +49,7 @@ module Babba
             Give dialogues. Give unique and original conflicts & resolutions. Give bit more details on the conflict resolutions. Use paragraphs.
             Use vocabulary suitable for #{language_complexity}yo local speaker.
             Use basic & descriptive sentence structures.
-            #{"Use #{hint_character} as character." unless hint_character.nil?}
+            #{"Use #{hint_character} as character. DO NOT involve permanent character/traits/relationship changes when the story ends." unless hint_character.nil?}
             #{"Use #{hint_mood} as story mood." unless hint_mood.nil?}
             #{"Use #{hint_cultural_influence} as cultural influence." unless hint_cultural_influence.nil?}
 
@@ -56,7 +62,10 @@ module Babba
         )
       )
 
-    YAML.load out
+    out = YAML.load out
+    out["characters"] = characters
+    out["series"] = fable_group unless fable_group.nil?
+    out
   end
 
   def self.generate_translation(

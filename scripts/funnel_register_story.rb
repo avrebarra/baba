@@ -19,18 +19,22 @@ parsed_input = JSON.parse(ARGF.read)
 
 title = parsed_input["title"]
 hook = parsed_input["hook"]
+series = parsed_input["series"]
 moral = parsed_input["moral"]
 paragraphs = parsed_input["paragraphs"]
 keywords = parsed_input["keywords"]
+characters = parsed_input["characters"]
 
 id = get_next_id
 filename = "./_contents/#{id}-#{kebab_case(title)}"
 file_content = <<~MD
 ---
 layout: story
+series: #{series}
 title: #{title}
 hook: #{hook}
 moral: #{moral}
+characters: #{characters}
 keywords: #{keywords}
 ---
 
