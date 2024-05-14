@@ -96,17 +96,17 @@
 <div class="content">
   <div class="separator mt-6"></div>
   <img class="mb-4" src="/baba/assets/images/home-headers.png">
-  <a href="/baba/contents/0105-the-lost-teddy-bear.html" id="bt-read">
+  <a href="/baba/contents/0106-the-sparkling-seeds.html" id="bt-read">
     <div id="story-title" class="flex flex-col max-w-md mb-4">
       <span class="text-md text-md font-bold text-gray-800"> Today's Addition!</span>
-      <span class="data ba-serif text-4xl font-black leading-normal">The Lost Teddy Bear</span>
+      <span class="data ba-serif text-4xl font-black leading-normal">The Sparkling Seeds</span>
       <span class="text-md text-lg font-bold text-lime-600 leading-normal">
-        <span class="text-gray-600">from</span> The Lost Teddy Bear
+        <span class="text-gray-600">from</span> The Sparkling Seeds
       </span>
     </div>
-    <!-- <div class="ba-serif max-w-md text-4xl font-black leading-normal mb-2">The Lost Teddy Bear</div> -->
+    <!-- <div class="ba-serif max-w-md text-4xl font-black leading-normal mb-2">The Sparkling Seeds</div> -->
     <div id="story-hook">
-      <div class="data excerpt text-lg leading-loose flex flex-col gap-y-3 text-gray-700">One sunny morning, Baba woke up to find her favorite teddy bear missing! Where could it have gone?
+      <div class="data excerpt text-lg leading-loose flex flex-col gap-y-3 text-gray-700">One day, Quira and Liwei stumbled upon mysterious sparkling seeds in the Great Fora jungle. What will they discover?
       </div>
     </div>
   </a>
@@ -116,7 +116,7 @@
 
 
 <div class="button-reels flex flex-col sm:flex-row gap-4 mt-8">
-  <a href="/baba/contents/0105-the-lost-teddy-bear.html" id="bt-read"
+  <a href="/baba/contents/0106-the-sparkling-seeds.html" id="bt-read"
     class="bg-lime-600 px-4 py-4 text-white font-black hover:bg-lime-700 focus:bg-lime-700 focus:outline-none focus:shadow-outline">Read
     Today's Tale
   </a>
@@ -134,7 +134,7 @@
     const lang = await getLang();
     const [from, to] = lang.split("-");
 
-    const storyID = "/contents/0105-the-lost-teddy-bear.html".replace(".html", "");
+    const storyID = "/contents/0106-the-sparkling-seeds.html".replace(".html", "");
     const storyAssets = await useStoryAssets(storyID);
     const story = storyAssets.translations[lang];
     const hasTranslation = story ? true : false;
