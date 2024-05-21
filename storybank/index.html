@@ -97,10 +97,10 @@
   <img class="mb-4" src="/baba/assets/images/story-bank-headers.png">
   <div class="font-semibold text-gray-500">Today's Story:</div>
   <div class="separator mt-2"></div>
-  <a id="story-title" href="/baba/contents/0112-the-ruby-caterpillar.html">
-    <div class="data ba-serif max-w-md text-4xl font-black leading-normal mb-2">The Ruby Caterpillar</div>
+  <a id="story-title" href="/baba/contents/0113-the-sparkling-moonstone-quest.html">
+    <div class="data ba-serif max-w-md text-4xl font-black leading-normal mb-2">The Sparkling Moonstone Quest</div>
     <div id="story-hook">
-      <div class="data excerpt text-lg leading-loose flex flex-col gap-y-5 text-gray-700">Have you ever seen a caterpillar that shimmers like a precious gem?
+      <div class="data excerpt text-lg leading-loose flex flex-col gap-y-5 text-gray-700">Why did Jia and Rua sneak into Asha's secret cave in the Great Fora jungle at midnight?
       </div>
     </div>
   </a>
@@ -127,6 +127,13 @@
 
   <div class="font-semibold text-gray-500">All Previous Stories:</div>
   <!--  -->
+  
+  <div class="flex article items-center mb-2 mt-2" series="fables-of-fora-forests">
+    <div class="flex flex-row gap-2 text-md">
+      <span class="text-lime-600">⚉</span>
+      <a href="/baba/contents/0113-the-sparkling-moonstone-quest.html" class="title underlined">The Sparkling Moonstone Quest</a>
+    </div>
+  </div>
   
   <div class="flex article items-center mb-2 mt-2" series="">
     <div class="flex flex-row gap-2 text-md">
@@ -558,7 +565,7 @@
     const lang = await getLang();
     const [from, to] = lang.split("-");
 
-    const storyID = "/contents/0112-the-ruby-caterpillar.html".replace(".html", "");
+    const storyID = "/contents/0113-the-sparkling-moonstone-quest.html".replace(".html", "");
     const storyAssets = await useStoryAssets(storyID);
     const story = storyAssets.translations[lang];
     const hasTranslation = story ? true : false;
