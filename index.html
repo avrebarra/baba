@@ -96,17 +96,17 @@
 <div class="content">
   <div class="separator mt-6"></div>
   <img class="mb-4" src="/baba/assets/images/home-headers.png">
-  <a href="/baba/contents/0113-the-sparkling-moonstone-quest.html" id="bt-read">
+  <a href="/baba/contents/0114-amia-and-the-lost-sunbeam.html" id="bt-read">
     <div id="story-title" class="flex flex-col max-w-md mb-4">
       <span class="text-md text-md font-bold text-gray-800"> Today's Addition!</span>
-      <span class="data ba-serif text-4xl font-black leading-normal">The Sparkling Moonstone Quest</span>
+      <span class="data ba-serif text-4xl font-black leading-normal">Amia and the Lost Sunbeam</span>
       <span class="text-md text-lg font-bold text-lime-600 leading-normal">
-        <span class="text-gray-600">from</span> The Sparkling Moonstone Quest
+        <span class="text-gray-600">from</span> Amia and the Lost Sunbeam
       </span>
     </div>
-    <!-- <div class="ba-serif max-w-md text-4xl font-black leading-normal mb-2">The Sparkling Moonstone Quest</div> -->
+    <!-- <div class="ba-serif max-w-md text-4xl font-black leading-normal mb-2">Amia and the Lost Sunbeam</div> -->
     <div id="story-hook">
-      <div class="data excerpt text-lg leading-loose flex flex-col gap-y-3 text-gray-700">Why did Jia and Rua sneak into Asha's secret cave in the Great Fora jungle at midnight?
+      <div class="data excerpt text-lg leading-loose flex flex-col gap-y-3 text-gray-700">In the heart of the great Fora jungle, a gentle-hearted flower fairy named Amia lived peacefully. But one sunny day, something unexpected happened...
       </div>
     </div>
   </a>
@@ -116,7 +116,7 @@
 
 
 <div class="button-reels flex flex-col sm:flex-row gap-4 mt-8">
-  <a href="/baba/contents/0113-the-sparkling-moonstone-quest.html" id="bt-read"
+  <a href="/baba/contents/0114-amia-and-the-lost-sunbeam.html" id="bt-read"
     class="bg-lime-600 px-4 py-4 text-white font-black hover:bg-lime-700 focus:bg-lime-700 focus:outline-none focus:shadow-outline">Read
     Today's Tale
   </a>
@@ -134,7 +134,7 @@
     const lang = await getLang();
     const [from, to] = lang.split("-");
 
-    const storyID = "/contents/0113-the-sparkling-moonstone-quest.html".replace(".html", "");
+    const storyID = "/contents/0114-amia-and-the-lost-sunbeam.html".replace(".html", "");
     const storyAssets = await useStoryAssets(storyID);
     const story = storyAssets.translations[lang];
     const hasTranslation = story ? true : false;
