@@ -97,10 +97,10 @@
   <img class="mb-4" src="/baba/assets/images/story-bank-headers.png">
   <div class="font-semibold text-gray-500">Today's Story:</div>
   <div class="separator mt-2"></div>
-  <a id="story-title" href="/baba/contents/0138-nuri's-nutty-adventure.html">
-    <div class="data ba-serif max-w-md text-4xl font-black leading-normal mb-2">Nuri's Nutty Adventure</div>
+  <a id="story-title" href="/baba/contents/0139-the-lost-flower-kindness.html">
+    <div class="data ba-serif max-w-md text-4xl font-black leading-normal mb-2">The Lost Flower Kindness</div>
     <div id="story-hook">
-      <div class="data excerpt text-lg leading-loose flex flex-col gap-y-5 text-gray-700">Why did Nuri venture into unknown parts of the forest, and what mischief did he find?
+      <div class="data excerpt text-lg leading-loose flex flex-col gap-y-5 text-gray-700">Why did Maila, the helpful garden fairy, have a sad look on her face?
       </div>
     </div>
   </a>
@@ -127,6 +127,13 @@
 
   <div class="font-semibold text-gray-500">All Previous Stories:</div>
   <!--  -->
+  
+  <div class="flex article items-center mb-2 mt-2" series="fables-of-fora-forests">
+    <div class="flex flex-row gap-2 text-md">
+      <span class="text-lime-600">⚉</span>
+      <a href="/baba/contents/0139-the-lost-flower-kindness.html" class="title underlined">The Lost Flower Kindness</a>
+    </div>
+  </div>
   
   <div class="flex article items-center mb-2 mt-2" series="fables-of-fora-forests">
     <div class="flex flex-row gap-2 text-md">
@@ -740,7 +747,7 @@
     const lang = await getLang();
     const [from, to] = lang.split("-");
 
-    const storyID = "/contents/0138-nuri's-nutty-adventure.html".replace(".html", "");
+    const storyID = "/contents/0139-the-lost-flower-kindness.html".replace(".html", "");
     const storyAssets = await useStoryAssets(storyID);
     const story = storyAssets.translations[lang];
     const hasTranslation = story ? true : false;
