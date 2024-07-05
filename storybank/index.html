@@ -97,10 +97,10 @@
   <img class="mb-4" src="/baba/assets/images/story-bank-headers.png">
   <div class="font-semibold text-gray-500">Today's Story:</div>
   <div class="separator mt-2"></div>
-  <a id="story-title" href="/baba/contents/0155-the-curious-caterpillar.html">
-    <div class="data ba-serif max-w-md text-4xl font-black leading-normal mb-2">The Curious Caterpillar</div>
+  <a id="story-title" href="/baba/contents/0156-the-missing-treasure-of-fora-jungle.html">
+    <div class="data ba-serif max-w-md text-4xl font-black leading-normal mb-2">The Missing Treasure of Fora Jungle</div>
     <div id="story-hook">
-      <div class="data excerpt text-lg leading-loose flex flex-col gap-y-5 text-gray-700">One sunny day in the Enchanted Forest, a tiny caterpillar named Coco had a big question on her mind.
+      <div class="data excerpt text-lg leading-loose flex flex-col gap-y-5 text-gray-700">What will happen when Nisha and Kavia stumble upon Surya, the time leaping pirate?
       </div>
     </div>
   </a>
@@ -127,6 +127,13 @@
 
   <div class="font-semibold text-gray-500">All Previous Stories:</div>
   <!--  -->
+  
+  <div class="flex article items-center mb-2 mt-2" series="fables-of-fora-forests">
+    <div class="flex flex-row gap-2 text-md">
+      <span class="text-lime-600">⚉</span>
+      <a href="/baba/contents/0156-the-missing-treasure-of-fora-jungle.html" class="title underlined">The Missing Treasure of Fora Jungle</a>
+    </div>
+  </div>
   
   <div class="flex article items-center mb-2 mt-2" series="">
     <div class="flex flex-row gap-2 text-md">
@@ -859,7 +866,7 @@
     const lang = await getLang();
     const [from, to] = lang.split("-");
 
-    const storyID = "/contents/0155-the-curious-caterpillar.html".replace(".html", "");
+    const storyID = "/contents/0156-the-missing-treasure-of-fora-jungle.html".replace(".html", "");
     const storyAssets = await useStoryAssets(storyID);
     const story = storyAssets.translations[lang];
     const hasTranslation = story ? true : false;
