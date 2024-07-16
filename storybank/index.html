@@ -97,10 +97,10 @@
   <img class="mb-4" src="/baba/assets/images/story-bank-headers.png">
   <div class="font-semibold text-gray-500">Today's Story:</div>
   <div class="separator mt-2"></div>
-  <a id="story-title" href="/baba/contents/0166-the-joyful-berry-bush.html">
-    <div class="data ba-serif max-w-md text-4xl font-black leading-normal mb-2">The Joyful Berry Bush</div>
+  <a id="story-title" href="/baba/contents/0167-the-butterfly-garden.html">
+    <div class="data ba-serif max-w-md text-4xl font-black leading-normal mb-2">The Butterfly Garden</div>
     <div id="story-hook">
-      <div class="data excerpt text-lg leading-loose flex flex-col gap-y-5 text-gray-700">Follow Baba as she discovers a secret berry bush! What will she learn along the way?
+      <div class="data excerpt text-lg leading-loose flex flex-col gap-y-5 text-gray-700">One sunny day, the animals in the forest discovered a mysterious garden. What did they find inside?
       </div>
     </div>
   </a>
@@ -127,6 +127,13 @@
 
   <div class="font-semibold text-gray-500">All Previous Stories:</div>
   <!--  -->
+  
+  <div class="flex article items-center mb-2 mt-2" series="">
+    <div class="flex flex-row gap-2 text-md">
+      <span class="text-lime-600">⚉</span>
+      <a href="/baba/contents/0167-the-butterfly-garden.html" class="title underlined">The Butterfly Garden</a>
+    </div>
+  </div>
   
   <div class="flex article items-center mb-2 mt-2" series="young-babas-experiences">
     <div class="flex flex-row gap-2 text-md">
@@ -936,7 +943,7 @@
     const lang = await getLang();
     const [from, to] = lang.split("-");
 
-    const storyID = "/contents/0166-the-joyful-berry-bush.html".replace(".html", "");
+    const storyID = "/contents/0167-the-butterfly-garden.html".replace(".html", "");
     const storyAssets = await useStoryAssets(storyID);
     const story = storyAssets.translations[lang];
     const hasTranslation = story ? true : false;
