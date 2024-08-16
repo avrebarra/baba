@@ -15,11 +15,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
 
 
-<meta name="description" content="" />
-<meta property="og:description" content="" />
+<meta name="description" content="Once upon a time, in the heart of the great Fora jungle, lived Asha, a compassionate healer dragoness. She was loved by all creatures for her gentle ways.
+" />
+<meta property="og:description" content="Once upon a time, in the heart of the great Fora jungle, lived Asha, a compassionate healer dragoness. She was loved by all creatures for her gentle ways.
+" />
 
 <meta name="author" content="Avre Barra" />
 
+
+<meta property="og:title" content="Asha and the Moonlight Mischief" />
+<meta property="twitter:title" content="Asha and the Moonlight Mischief" />
 
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-6ZHVK1RRQ0"></script>
@@ -40,7 +45,7 @@
   <script>
   var Babba = {}
   Babba.baseURL = "/baba/"
-  Babba.storyURL = "/"
+  Babba.storyURL = "/contents/0197-asha-and-the-moonlight-mischief.html"
   Babba.storyID = Babba.storyURL.replace('.html','').substring(1)
   Babba.storyAssetsURL = Babba.storyURL.replace('.html', '.json')
 </script>
@@ -90,65 +95,107 @@
 </script>
 
     <div class="mb-4"></div>
-    <title>Baba - New Story Every Day!</title>
+    <title>Baba - Asha and the Moonlight Mischief</title>
 
+<script src="https://unpkg.com/@popperjs/core@2"></script>
 
-<div class="content">
+<div class="separator mt-10"></div>
+<div class="content flex flex-col">
+  <div class="separator mt-2"></div>
+  <a href="">
+    <div id="story-title" class="flex flex-col max-w-md">
+      <span class="text-md text-lg font-bold text-lime-600 leading-normal mt-1"> Asha and the Moonlight Mischief </span>
+      <div class="data ba-serif text-4xl font-black leading-normal">Asha and the Moonlight Mischief</div>
+    </div>
+  </a>
+  <span id="warning-no-translation" class="text-md text-sm max-w-sm text-gray-500 leading-normal mt-2">
+    Has no translation in your language choice, yet.
+  </span>
+  <div class="separator mt-3"></div>
+  <div id="story-content">
+    <div class="data excerpt text-lg leading-loose flex flex-col gap-y-5 mt-2 text-gray-700 cursor-default"><p>Once upon a time, in the heart of the great Fora jungle, lived Asha, a compassionate healer dragoness. She was loved by all creatures for her gentle ways.</p>
+
+<p>One night, as Asha was dozing under the twinkling stars, she heard soft giggles nearby. Opening her eyes, she saw Jia and Rua, the mischievous moonlight pixies, playing with her healing herbs.</p>
+
+<p>Asha gently asked, “What are you two doing with my herbs?”</p>
+
+<p>Jia and Rua looked sheepish. “We thought they were shiny treasures to play with. We are sorry.”</p>
+
+<p>Asha smiled kindly. “It’s alright, little ones. Let me show you the magical uses of these herbs.”</p>
+
+<p>She taught the pixies about the healing powers of each herb, and how they could help others in need. Jia and Rua listened with wonder and promised to never disturb her herbs again.</p>
+</div>
+  </div>
+  <div id="story-moral" class="excerpt text-lg italic leading-loose gap-y-3 mt-6 text-green-800">
+    <span class="font-semibold">Morals of Story:</span>
+    <div class="data">Kindness and understanding can resolve even the trickiest of misunderstandings.</div>
+  </div>
   <div class="separator mt-6"></div>
-  <img class="mb-4" src="/baba/assets/images/home-headers.png">
-  <a href="/baba/contents/0197-asha-and-the-moonlight-mischief.html" id="bt-read">
-    <div id="story-title" class="flex flex-col max-w-md mb-4">
-      <span class="text-md text-md font-bold text-gray-800"> Today's Addition!</span>
-      <span class="data ba-serif text-4xl font-black leading-normal">Asha and the Moonlight Mischief</span>
-      <span class="text-md text-lg font-bold text-lime-600 leading-normal">
-        <span class="text-gray-600">from</span> Asha and the Moonlight Mischief
-      </span>
-    </div>
-    <!-- <div class="ba-serif max-w-md text-4xl font-black leading-normal mb-2">Asha and the Moonlight Mischief</div> -->
-    <div id="story-hook">
-      <div class="data excerpt text-lg leading-loose flex flex-col gap-y-3 text-gray-700">One dark night in the great Fora jungle, Asha the dragoness heard giggles. What were Jia and Rua up to this time?
-      </div>
-    </div>
-  </a>
-  <div class="separator mt-4"></div>
 </div>
 
-
-
-<div class="button-reels flex flex-col sm:flex-row gap-4 mt-8">
-  <a href="/baba/contents/0197-asha-and-the-moonlight-mischief.html" id="bt-read"
-    class="bg-lime-600 px-4 py-4 text-white font-black hover:bg-lime-700 focus:bg-lime-700 focus:outline-none focus:shadow-outline">Read
-    Today's Tale
-  </a>
-  <a href="/baba/storybank" id="bt-previous"
-    class="bg-gray-100 px-4 py-4 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline">Other
-    Stories</a>
+<div class="button-reels flex flex-row gap-4 mt-3">
+  <a
+    href="/baba/storybank"
+    id="bt-read"
+    class="bg-lime-600 px-4 py-3 text-white font-bold hover:bg-lime-700 focus:bg-lime-700 focus:outline-none focus:shadow-outline"
+    >Read Other Stories</a
+  >
 </div>
-
 <div class="separator mt-20"></div>
 
+<div id="tooltip" class="px-3 py-1 bg-black text-white text-center rounded-md" role="tooltip">
+  <div id="content">Translation Not Found</div>
+  <div id="arrow" data-popper-arrow></div>
+</div>
+
+<style>
+  #arrow,
+  #arrow::before {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: inherit;
+  }
+
+  #arrow {
+    visibility: hidden;
+  }
+
+  #arrow::before {
+    visibility: visible;
+    content: "";
+    transform: rotate(45deg);
+  }
+
+  #tooltip {
+    display: none;
+  }
+
+  #tooltip[data-show] {
+    display: block;
+  }
+
+  #tooltip[data-popper-placement^="top"] > #arrow {
+    bottom: -4px;
+  }
+
+  #tooltip[data-popper-placement^="bottom"] > #arrow {
+    top: -4px;
+  }
+
+  #tooltip[data-popper-placement^="left"] > #arrow {
+    right: -4px;
+  }
+
+  #tooltip[data-popper-placement^="right"] > #arrow {
+    left: -4px;
+  }
+</style>
+
+<script src="/baba/assets/js/useDictionary.js"></script>
 <script src="/baba/assets/js/useStoryAssets.js"></script>
-<script>
-  const onload = async () => {
-    const { get: getLang } = await useLanguageSwitcher();
-    const lang = await getLang();
-    const [from, to] = lang.split("-");
+<script src="/baba/assets/js/storify.js"></script>
 
-    const storyID = "/contents/0197-asha-and-the-moonlight-mischief.html".replace(".html", "");
-    const storyAssets = await useStoryAssets(storyID);
-    const story = storyAssets.translations[lang];
-    const hasTranslation = story ? true : false;
-
-    const titleEl = document.querySelector("#story-title > .data");
-    titleEl.innerHTML = hasTranslation ? story.title : storyAssets.title;
-    titleEl.innerHTML += !hasTranslation ? "*" : "";
-
-    const hookEl = document.querySelector("#story-hook > .data");
-    hookEl.innerHTML = hasTranslation && from != "en" ? story.hook : storyAssets.hook;
-  };
-
-  document.addEventListener("DOMContentLoaded", onload);
-</script>
     <div class="mb-4"></div>
     <div class="footer mb-4 text-sm text-gray-400">
   <div class="mb-3">
