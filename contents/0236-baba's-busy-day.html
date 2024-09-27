@@ -15,11 +15,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
 
 
-<meta name="description" content="" />
-<meta property="og:description" content="" />
+<meta name="description" content="One sunny morning, Baba was playing with her favorite toy, a shiny red ball, in the garden. Suddenly, the ball bounced off and disappeared behind the bushes. Baba looked everywhere but couldn’t find it.
+" />
+<meta property="og:description" content="One sunny morning, Baba was playing with her favorite toy, a shiny red ball, in the garden. Suddenly, the ball bounced off and disappeared behind the bushes. Baba looked everywhere but couldn’t find it.
+" />
 
 <meta name="author" content="Avre Barra" />
 
+
+<meta property="og:title" content="Baba's Busy Day" />
+<meta property="twitter:title" content="Baba's Busy Day" />
 
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-6ZHVK1RRQ0"></script>
@@ -40,7 +45,7 @@
   <script>
   var Babba = {}
   Babba.baseURL = "/baba/"
-  Babba.storyURL = "/"
+  Babba.storyURL = "/contents/0236-baba's-busy-day.html"
   Babba.storyID = Babba.storyURL.replace('.html','').substring(1)
   Babba.storyAssetsURL = Babba.storyURL.replace('.html', '.json')
 </script>
@@ -90,65 +95,103 @@
 </script>
 
     <div class="mb-4"></div>
-    <title>Baba - New Story Every Day!</title>
+    <title>Baba - Baba's Busy Day</title>
 
+<script src="https://unpkg.com/@popperjs/core@2"></script>
 
-<div class="content">
+<div class="separator mt-10"></div>
+<div class="content flex flex-col">
+  <div class="separator mt-2"></div>
+  <a href="">
+    <div id="story-title" class="flex flex-col max-w-md">
+      <span class="text-md text-lg font-bold text-lime-600 leading-normal mt-1"> Baba's Busy Day </span>
+      <div class="data ba-serif text-4xl font-black leading-normal">Baba's Busy Day</div>
+    </div>
+  </a>
+  <span id="warning-no-translation" class="text-md text-sm max-w-sm text-gray-500 leading-normal mt-2">
+    Has no translation in your language choice, yet.
+  </span>
+  <div class="separator mt-3"></div>
+  <div id="story-content">
+    <div class="data excerpt text-lg leading-loose flex flex-col gap-y-5 mt-2 text-gray-700 cursor-default"><p>One sunny morning, Baba was playing with her favorite toy, a shiny red ball, in the garden. Suddenly, the ball bounced off and disappeared behind the bushes. Baba looked everywhere but couldn’t find it.</p>
+
+<p>Baba felt sad and went inside the house to look for it. While searching, she heard her brother, Amir, humming in his room. She peeked in and saw him playing with her ball, using it as a pretend microphone!</p>
+
+<p>Baba felt a mix of emotions - surprised, upset, and confused. She didn’t understand why Amir took her ball. So, she approached him and asked, “Amir, why do you have my ball?”</p>
+
+<p>Amir looked sheepish and explained that he thought she wouldn’t mind since she had many toys. Baba smiled and gently told Amir that she loved that ball very much. Amir felt sorry and handed the ball back to Baba with an apology.</p>
+</div>
+  </div>
+  <div id="story-moral" class="excerpt text-lg italic leading-loose gap-y-3 mt-6 text-green-800">
+    <span class="font-semibold">Morals of Story:</span>
+    <div class="data">Helping each other makes our day brighter and better.</div>
+  </div>
   <div class="separator mt-6"></div>
-  <img class="mb-4" src="/baba/assets/images/home-headers.png">
-  <a href="/baba/contents/0236-baba's-busy-day.html" id="bt-read">
-    <div id="story-title" class="flex flex-col max-w-md mb-4">
-      <span class="text-md text-md font-bold text-gray-800"> Today's Addition!</span>
-      <span class="data ba-serif text-4xl font-black leading-normal">Baba's Busy Day</span>
-      <span class="text-md text-lg font-bold text-lime-600 leading-normal">
-        <span class="text-gray-600">from</span> Baba's Busy Day
-      </span>
-    </div>
-    <!-- <div class="ba-serif max-w-md text-4xl font-black leading-normal mb-2">Baba's Busy Day</div> -->
-    <div id="story-hook">
-      <div class="data excerpt text-lg leading-loose flex flex-col gap-y-3 text-gray-700">What will happen when Baba's favorite toy goes missing at home?
-      </div>
-    </div>
-  </a>
-  <div class="separator mt-4"></div>
 </div>
 
-
-
-<div class="button-reels flex flex-col sm:flex-row gap-4 mt-8">
-  <a href="/baba/contents/0236-baba's-busy-day.html" id="bt-read"
-    class="bg-lime-600 px-4 py-4 text-white font-black hover:bg-lime-700 focus:bg-lime-700 focus:outline-none focus:shadow-outline">Read
-    Today's Tale
-  </a>
-  <a href="/baba/storybank" id="bt-previous"
-    class="bg-gray-100 px-4 py-4 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline">Other
-    Stories</a>
+<div class="button-reels flex flex-row gap-4 mt-3">
+  <a
+    href="/baba/storybank"
+    id="bt-read"
+    class="bg-lime-600 px-4 py-3 text-white font-bold hover:bg-lime-700 focus:bg-lime-700 focus:outline-none focus:shadow-outline"
+    >Read Other Stories</a
+  >
 </div>
-
 <div class="separator mt-20"></div>
 
+<div id="tooltip" class="px-3 py-1 bg-black text-white text-center rounded-md" role="tooltip">
+  <div id="content">Translation Not Found</div>
+  <div id="arrow" data-popper-arrow></div>
+</div>
+
+<style>
+  #arrow,
+  #arrow::before {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: inherit;
+  }
+
+  #arrow {
+    visibility: hidden;
+  }
+
+  #arrow::before {
+    visibility: visible;
+    content: "";
+    transform: rotate(45deg);
+  }
+
+  #tooltip {
+    display: none;
+  }
+
+  #tooltip[data-show] {
+    display: block;
+  }
+
+  #tooltip[data-popper-placement^="top"] > #arrow {
+    bottom: -4px;
+  }
+
+  #tooltip[data-popper-placement^="bottom"] > #arrow {
+    top: -4px;
+  }
+
+  #tooltip[data-popper-placement^="left"] > #arrow {
+    right: -4px;
+  }
+
+  #tooltip[data-popper-placement^="right"] > #arrow {
+    left: -4px;
+  }
+</style>
+
+<script src="/baba/assets/js/useDictionary.js"></script>
 <script src="/baba/assets/js/useStoryAssets.js"></script>
-<script>
-  const onload = async () => {
-    const { get: getLang } = await useLanguageSwitcher();
-    const lang = await getLang();
-    const [from, to] = lang.split("-");
+<script src="/baba/assets/js/storify.js"></script>
 
-    const storyID = "/contents/0236-baba's-busy-day.html".replace(".html", "");
-    const storyAssets = await useStoryAssets(storyID);
-    const story = storyAssets.translations[lang];
-    const hasTranslation = story ? true : false;
-
-    const titleEl = document.querySelector("#story-title > .data");
-    titleEl.innerHTML = hasTranslation ? story.title : storyAssets.title;
-    titleEl.innerHTML += !hasTranslation ? "*" : "";
-
-    const hookEl = document.querySelector("#story-hook > .data");
-    hookEl.innerHTML = hasTranslation && from != "en" ? story.hook : storyAssets.hook;
-  };
-
-  document.addEventListener("DOMContentLoaded", onload);
-</script>
     <div class="mb-4"></div>
     <div class="footer mb-4 text-sm text-gray-400">
   <div class="mb-3">
