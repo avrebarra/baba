@@ -97,10 +97,10 @@
   <img class="mb-4" src="/baba/assets/images/story-bank-headers.png">
   <div class="font-semibold text-gray-500">Today's Story:</div>
   <div class="separator mt-2"></div>
-  <a id="story-title" href="/baba/contents/0266-the-little-caterpillar's-challenge.html">
-    <div class="data ba-serif max-w-md text-4xl font-black leading-normal mb-2">The Little Caterpillar's Challenge</div>
+  <a id="story-title" href="/baba/contents/0267-the-kind-hearted-squirrel.html">
+    <div class="data ba-serif max-w-md text-4xl font-black leading-normal mb-2">The Kind-hearted Squirrel</div>
     <div id="story-hook">
-      <div class="data excerpt text-lg leading-loose flex flex-col gap-y-5 text-gray-700">Why did the little caterpillar climb up the tallest leaf in the garden?
+      <div class="data excerpt text-lg leading-loose flex flex-col gap-y-5 text-gray-700">One bright morning, the animals in the forest woke up to find all their food missing. Who could be behind this mystery?
       </div>
     </div>
   </a>
@@ -127,6 +127,13 @@
 
   <div class="font-semibold text-gray-500">All Previous Stories:</div>
   <!--  -->
+  
+  <div class="flex article items-center mb-2 mt-2" series="">
+    <div class="flex flex-row gap-2 text-md">
+      <span class="text-lime-600">⚉</span>
+      <a href="/baba/contents/0267-the-kind-hearted-squirrel.html" class="title underlined">The Kind-hearted Squirrel</a>
+    </div>
+  </div>
   
   <div class="flex article items-center mb-2 mt-2" series="">
     <div class="flex flex-row gap-2 text-md">
@@ -1636,7 +1643,7 @@
     const lang = await getLang();
     const [from, to] = lang.split("-");
 
-    const storyID = "/contents/0266-the-little-caterpillar's-challenge.html".replace(".html", "");
+    const storyID = "/contents/0267-the-kind-hearted-squirrel.html".replace(".html", "");
     const storyAssets = await useStoryAssets(storyID);
     const story = storyAssets.translations[lang];
     const hasTranslation = story ? true : false;
